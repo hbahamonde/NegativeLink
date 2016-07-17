@@ -13,7 +13,7 @@ load("/Users/hectorbahamonde/RU/Dissertation/Data/dissertation.Rdata") # Load da
 
 ## Keep sample countries and variables
 data = subset(dissertation, country == "Chile" | country ==  "Colombia" | country ==  "Ecuador" | country ==  "Guatemala" | country ==  "Nicaragua" | country ==  "Peru" | country ==  "Venezuela")
-data = subset(data, select = c(country, year, democ, autoc, polity, polity2, urbpop, totpop, constmanufact, constagricult, exports, ppp, propagrmanu, realgdp, incometax, madisongdp, madisonpop, boix_democracy, madisonpercapgdp, customtax))
+#data = subset(data, select = c(country, year, democ, autoc, polity, polity2, urbpop, totpop, constmanufact, constagricult, exports, ppp, propagrmanu, realgdp, incometax, madisongdp, madisonpop, boix_democracy, madisonpercapgdp, customtax))
 data = subset(data, constmanufact != "NA" & constagricult != "NA")
 
 ## Construct a the outcome variable (0,1) for when the income tax was imposed.
