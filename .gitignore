@@ -4,3 +4,7 @@
 *.RData
 
 *.pdf
+
+*.gph
+
+xtwest.do
