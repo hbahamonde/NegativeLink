@@ -32,39 +32,41 @@ plot_5.gph  plot_6.gph plot_7.gph, col(2) iscale(0.4)
 *** drift
 
 ** Chile
-dfuller constmanufact if country==4  /* integrated */
-dfuller constagricult if country==4 /* integrated */
+dfuller constmanufact if country==4 & year <= 1970  /* integrated */
+dfuller constagricult if country==4 & year <= 1970 /* integrated */
  
 
 ** Colombia
-dfuller constmanufact if country==5  /* integrated */
-dfuller constagricult if country==5 /* integrated */
+dfuller constmanufact if country==5 & year <= 1970  /* integrated */
+dfuller constagricult if country==5 & year <= 1970 /* integrated */
 
 
 
 ** Ecuador
-dfuller constmanufact if country==8 /* integrated */
-dfuller constagricult if country==8 /* integrated */
+dfuller constmanufact if country==8 & year <= 1970 /* integrated */
+dfuller constagricult if country==8 & year <= 1970 /* integrated */
 
 
  ** Guatemala
-dfuller constmanufact if country==10, trend /* stationary with trend  */
-dfuller constagricult if country==10 /* integrated */
+dfuller constmanufact if country==10 & year <= 1970, trend /* stationary around a trend  */
+dfuller constagricult if country==10 & year <= 1970 /* integrated */
+
+*** TRY PANEL TEST, combined
 
 
  ** Nicaragua
-dfuller constmanufact if country==14 /* integrated */
-dfuller constagricult if country==14 /* integrated */
+dfuller constmanufact if country==14 & year <= 1970 /* integrated */
+dfuller constagricult if country==14 & year <= 1970 /* integrated */
 
 
  ** Peru
-dfuller constmanufact if country==17 /* integrated */
-dfuller constagricult if country==17 /* integrated */
+dfuller constmanufact if country==17 & year <= 1970 /* integrated */
+dfuller constagricult if country==17 & year <= 1970 /* integrated */
 
 
  ** Venezuela
-dfuller constmanufact if country==20 /* integrated */
-dfuller constagricult if country==20 /* integrated */
+dfuller constmanufact if country==20 & year <= 1970 /* integrated */
+dfuller constagricult if country==20 & year <= 1970 /* integrated */
 
 
 
@@ -79,51 +81,123 @@ dfuller constagricult if country==20 /* integrated */
 
 capture drop res*
 
-reg constmanufact constagricult if country==4
-predict res4 if country==4, res
+reg constmanufact constagricult if country==4 & year <= 1970
+predict res4 if country==4 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==5
-predict res5 if country==5, res
+reg constmanufact constagricult if country==5 & year <= 1970
+predict res5 if country==5 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==8
-predict res8 if country==8, res
+reg constmanufact constagricult if country==8 & year <= 1970
+predict res8 if country==8 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==10
-predict res10 if country==10, res
+reg constmanufact constagricult if country==10 & year <= 1970
+predict res10 if country==10 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==14
-predict res14 if country==14, res
+reg constmanufact constagricult if country==14 & year <= 1970
+predict res14 if country==14 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==17
-predict res17 if country==17, res
+reg constmanufact constagricult if country==17 & year <= 1970
+predict res17 if country==17 & year <= 1970, res
 
 
-reg constmanufact constagricult if country==20
-predict res20 if country==20, res
-
-* how do I read these critical values?
-* country 14 says stationary with drift but integrated with trend...?
-
-dfuller res4 if country==4, drift /* stationary with drift */
-dfuller res5 if country==5, drift /* stationary with drift: Colombia */
-dfuller res8 if country==8, drift /* stationary?? */
-dfuller res10 if country==10, drift /* stationary with drift or trend: Guatemala */
-dfuller res14 if country==14, drift /* stationary with drift */
-dfuller res17 if country==17, drift /* stationary with drift */
-dfuller res20 if country==20, drift /* stationary with drift: Venezuela */
+reg constmanufact constagricult if country==20 & year <= 1970
+predict res20 if country==20 & year <= 1970, res
 
 
+
+
+** SEE ALTERNATIVE CRITICAL VALUES HERE!
+** DONT INCLUDE DRIFT TERM HERE!!!!
+** DONT USE D FULLER, BUT USE JOHANNSEN
+
+**** PUT LAGS IN THE DF TEST!
+
+** sign. pvalue = stationarity
+
+dfuller res4 if country==4, reg lag(2) /* Chile: unit root */
+qui tsline res4, saving(plot_12, replace) title("Chile: stationary")
+
+dfuller res5 if country==5 /* Colombia: stationary */
+qui tsline res5, saving(plot_22, replace) title("Colombia: stationary")
+
+dfuller res8 if country==8 /* Ecuador: non stationary */
+qui tsline res8, saving(plot_32, replace) title("Ecuador: stationary")
+
+dfuller res10 if country==10 /* Guatemala: stationary */
+qui tsline res10, saving(plot_42, replace) title("Guatemala: stationary")
+
+dfuller res14 if country==14 /* Nicaragua: non-stationary */
+qui tsline res14, saving(plot_52, replace) title("Nicaragua: stationary")
+
+dfuller res17 if country==17 /* Peru: stationary */
+qui tsline res14, saving(plot_62, replace) title("Peru: stationary")
+
+dfuller res20 if country==20 /* Venezuela: stationary (but not at 5%)  */
+qui tsline res20, saving(plot_72, replace) title("Venezuela: stationary")
+
+
+gr combine plot_12.gph  plot_22.gph  plot_32.gph  plot_42.gph  ///
+plot_52.gph  plot_62.gph plot_72.gph, col(2) iscale(0.4)
 
 
 * "VECMs "fix" integrated series that [are] cointegrated and first 
 * differences "fix" integrated series that do not cointegrate".
 
 
+** DO NOT TAKE THE DIFFERENCE,
+** THEY GO UNTRANSFORMED INTO THE TEST (MARK SAID THAT).
 
+* Chile
+varsoc constmanufact constagricult if country==4 & year <= 1970 /* lag 3 */
+vecrank constmanufact constagricult if country==4 & year <= 1970, lags(3) trend(trend) /* rank 1 */
+vec constmanufact constagricult if country==4 & year <= 1970, rank(1) lags(3)  trend(trend)
+vecstable, graph /* NOT STABLE? */
+
+
+** THE ONE THAT'S SIGNIFICANT TRIES TO CATCH UP WITH THE OTHER ONE
+
+
+* Colombia
+varsoc constmanufact constagricult if country==5 & year <= 1970 /* lag 2 */
+vecrank constmanufact constagricult if country==5 & year <= 1970, lags(2) /* rank 1 */
+vec constmanufact constagricult if country==5 & year <= 1970, rank(1) lags(2)
+vecstable, graph /* NOT STABLE? */
+
+
+* Ecuador
+varsoc constmanufact constagricult if country==8 & year <= 1970 /* lag 1 */ 
+vecrank constmanufact constagricult if country==8 & year <= 1970, lags(1) /* rank 0 */ 
+
+
+* Guatemala
+varsoc constmanufact constagricult if country==10 & year <= 1970 /* lag 3 */ 
+vecrank constmanufact constagricult if country==10 & year <= 1970, lags(3) /* rank 2 */ 
+
+
+* Nicaragua
+varsoc constmanufact constagricult if country==14 & year <= 1970 /* lag 1 */ 
+vecrank constmanufact constagricult if country==14 & year <= 1970, lags(1) trend(trend) /* rank 0 */ 
+** VAR or VECm
+
+
+* Peru
+varsoc constmanufact constagricult if country==17 & year <= 1970 /* lag 1 */ 
+vecrank constmanufact constagricult if country==17 & year <= 1970, lags(1) /* rank 1 */ 
+vec constmanufact constagricult if country==17 & year <= 1970, rank(1) lags(1)
+** ?? Why am I getting just the c equation?
+vecstable, graph /* NOT STABLE? */
+
+ 
+* Venezuela
+varsoc constmanufact constagricult if country==20 & year <= 1970 /* lag 1 */  
+vecrank constmanufact constagricult if country==20 & year <= 1970, lags(1) /* rank 1 */  
+vec constmanufact constagricult if country==20 & year <= 1970, rank(1) lags(1)
+** ?? Why am I getting just the c equation?
+vecstable, graph /* NOT STABLE? */
 
 
