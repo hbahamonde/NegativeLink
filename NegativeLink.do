@@ -201,3 +201,7 @@ vec constmanufact constagricult if country==20 & year <= 1970, rank(1) lags(1)
 vecstable, graph /* NOT STABLE? */
 
 
+
+
+
+
