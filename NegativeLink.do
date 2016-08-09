@@ -1,5 +1,6 @@
 * Negative Link Paper
 
+
 clear all
 use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta"
 
@@ -10,13 +11,13 @@ tsset country year
 
 
 * Plot the data 
-tsline constagricult constmanufact if country==4, saving(plot_1, replace) title("Chile") ytitle("Output")
-tsline constagricult constmanufact if country==5, saving(plot_2, replace) title("Colombia") ytitle("Output")
-tsline constagricult constmanufact if country==8, saving(plot_3, replace) title("Ecuador") ytitle("Output")
-tsline constagricult constmanufact if country==10, saving(plot_4, replace) title("Guatemala") ytitle("Output")
-tsline constagricult constmanufact if country==14, saving(plot_5, replace) title("Nicaragua") ytitle("Output")
-tsline constagricult constmanufact if country==17, saving(plot_6, replace) title("Peru") ytitle("Output")
-tsline constagricult constmanufact if country==20, saving(plot_7, replace) title("Venezuela") ytitle("Output")
+tsline constagricult constmanufact if country==4 & year <= 1970, saving(plot_1, replace) title("Chile") ytitle("Output")
+tsline constagricult constmanufact if country==5 & year <= 1970, saving(plot_2, replace) title("Colombia") ytitle("Output")
+tsline constagricult constmanufact if country==8 & year <= 1970, saving(plot_3, replace) title("Ecuador") ytitle("Output")
+tsline constagricult constmanufact if country==10 & year <= 1970, saving(plot_4, replace) title("Guatemala") ytitle("Output")
+tsline constagricult constmanufact if country==14 & year <= 1970, saving(plot_5, replace) title("Nicaragua") ytitle("Output")
+tsline constagricult constmanufact if country==17 & year <= 1970, saving(plot_6, replace) title("Peru") ytitle("Output")
+tsline constagricult constmanufact if country==20 & year <= 1970, saving(plot_7, replace) title("Venezuela") ytitle("Output")
 gr combine plot_1.gph  plot_2.gph  plot_3.gph  plot_4.gph  ///
 plot_5.gph  plot_6.gph plot_7.gph, col(2) iscale(0.4)
 
@@ -50,8 +51,6 @@ dfuller constagricult if country==8 & year <= 1970 /* integrated */
  ** Guatemala
 dfuller constmanufact if country==10 & year <= 1970, trend /* stationary around a trend  */
 dfuller constagricult if country==10 & year <= 1970 /* integrated */
-
-*** TRY PANEL TEST, combined
 
 
  ** Nicaragua
@@ -153,10 +152,18 @@ plot_52.gph  plot_62.gph plot_72.gph, col(2) iscale(0.4)
 ** THEY GO UNTRANSFORMED INTO THE TEST (MARK SAID THAT).
 
 * Chile
-varsoc constmanufact constagricult if country==4 & year <= 1970 /* lag 3 */
-vecrank constmanufact constagricult if country==4 & year <= 1970, lags(3) trend(trend) /* rank 1 */
-vec constmanufact constagricult if country==4 & year <= 1970, rank(1) lags(3)  trend(trend)
-vecstable, graph /* NOT STABLE? */
+varsoc constmanufact constagricult if country==4 & year <= 1970, maxlag(10) /* lag 1 */
+vecrank constmanufact constagricult if country==4 & year <= 1970, lags(1) trend(trend) /* rank 1 */
+vec constmanufact constagricult if country==4 & year <= 1970, rank(1) lags(3) trend(trend)  /* trend(trend) IF I INCLUDE THIS IT WONT COMPUTE NORMALITY TESTS */
+
+vecstable /* STABLE */
+veclmar, mlag(6) 
+vecnorm
+
+
+capture drop ce1_chile 
+predict ce1_chile, ce equation(_ce1)
+tsline ce1_chile
 
 
 ** THE ONE THAT'S SIGNIFICANT TRIES TO CATCH UP WITH THE OTHER ONE
