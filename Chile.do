@@ -238,6 +238,11 @@ mgarch dcc (constmanufact constagricult = L.constmanufact L.constagricult), arch
 mgarch dcc (constmanufact constagricult = D.constmanufact D.constagricult), arch(1)
 
 
+mgarch dcc (constmanufact constagricult = , noconstant arch(1))
+
+
+
+
 capture drop xb
 predict xb, xb
 tsline xb
