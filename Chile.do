@@ -262,5 +262,30 @@ tsline mgarch_man_agr mgarch_agr_man
 
 
 ************************************
-////////// ARDL-Bounds //////////////
+////////// ADL-Bounds //////////////
 ************************************
+
+
+clear all
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta"
+
+* keep only Chile and before 1970.
+keep if country == 4 &  year <= 1970
+
+* set ts data
+tsset, clear /* lets clean prior settings, if any */
+tsset year
+
+
+
+* Test for I(0):
+dfuller constmanufact, regress drift lags(1) // I(1)
+pperron constmanufact, regress lags(1) // I(1) w/o drift
+// dfgls constmanufact, maxlag(1) // I(1) w/ trend
+// dfgls constmanufact, not maxlag(1) // I(1) w/o trend
+// dfgls constmanufact, ers maxlag(1) // I(1)
+
+
+kpss constmanufact, maxlag(3) // I(1)
+** Conclusion: constmanufact is I(1)
+
