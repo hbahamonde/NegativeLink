@@ -65,13 +65,25 @@
 	\citet[p. 343]{Kaldor1970}: ``the induced changes in wages increases are not sufficient to offset the differences in productivity increases, the comparative costs of production in fast growing areas tend to fall in time relatively to those in slow growing areas; and thereby enhance the competitive advantage of the former at the expense of the latter''. This is the principle of ``principle of cumulative causation'', ``which explains the unequal regional incidence of industrial development by endogenous factors resulting from the process of historical development itself rather than by exogenous differences in ``resource endowment''''.
 
 % it's not dual
-\citet[p. 163]{Gollin2002}: ``improvements in agricultural productivity allow resources [such as labor] to be released to other activities  [...] there is a positive relation between the growth in a country's agricultural productivity and the movement of labor out of agriculture ''% Then my question is, Why should one release agricultural resources to, say, invest them in nonagricultural (risky) operations, IF the agricultural sector's doing so good?
+		\citet[p. 163]{Gollin2002}: ``improvements in agricultural productivity allow resources [such as labor] to be released to other activities  [...] there is a positive relation between the growth in a country's agricultural productivity and the movement of labor out of agriculture ''% Then my question is, Why should one release agricultural resources to, say, invest them in nonagricultural (risky) operations, IF the agricultural sector's doing so good?
 
-\citet[p. 179]{Bertola2012}: ``The criticisms that have traditionally been leveled at the Latin American industri- alization process have focused on three issues: its anti-agriculture and anti-export biases and the macroeconomic imbalances that characterized it. A thorough analysis does not, however, corroborate the first of these traits and indicates that the second and third features were present in no more than a limited group
-of countries. Agriculture was not, in fact, sidelined from the growth trends in production and productivity or from the dynamic institution-building process of the time-''.
+		\citet[p. 179]{Bertola2012}: ``The criticisms that have traditionally been leveled at the Latin American industri- alization process have focused on three issues: its anti-agriculture and anti-export biases and the macroeconomic imbalances that characterized it. A thorough analysis does not, however, corroborate the first of these traits and indicates that the second and third features were present in no more than a limited group of countries. Agriculture was not, in fact, sidelined from the growth trends in production and productivity or from the dynamic institution-building process of the time-''.
+
+		% In Chile, the agr. sector was very productive just at the time when nitrates boomed.
+		- ``Carmen Carióla y Osvaldo Sunkel elaboraron esta interpretación, seña- lando que la urbanización, la industrialización y el crecimiento de la industria salitrera provocaron un considerable aumento de la demanda, a la cual el sector agrícola respondió en forma muy dinámica'' (RoblesOrtiz2009, p. 115)
+
+		% Keller & Wright argue that there exists a negative association between modernization and agricultural development. However, RoblesOrtiz2009:125 criticizes that.
+		- ``Keller y Wright encontraron en el cultivo de trigo, cebada y avena después de 1910 co- rresponde sólo a la última parte de la Era del Salitre y no puede ser considerado una caracterización fidedigna de las tendencias en el con- junto del periodo y para todo el sector agropecuario''
+
+
+		% el sector agricola era moderno y mecanizado.
+		Robles-Ortiz2009a: ``demuestra que el fomento a la mecanización fue un elemento central de la estrategia que esta organización empresarial adoptó para impulsar la modernización tecnológica en la agricultura''
 
 
 % productivity
+
+	% assuming that the agriculture sector was inefficient is wrong.
+	\citet{RoblesOrtiz2009}
 	
 	\citet[p. 723]{Caselli2005}: ``there are three proximate reasons for poor countries’ poverty: their much lower labor productivity in agriculture; their somewhat lower labor productivity outside agriculture; and their larger share of employment in the sector that – on average – is less productive''.
 
