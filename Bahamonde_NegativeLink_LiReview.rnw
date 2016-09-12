@@ -5,13 +5,17 @@
 
 	% Definition
 	\citet[p. 571]{Wooldridge2002}: ``The issue of cointegration applies when two series are I(1), but a linear combination of them is I(0); in this case, the regression of one on the other is not spurious, but instead tells us something about the long-run relationship between them. Cointegration between two series also implies a particular kind of model, called an error correction model, for the short-term dynamics''.
+	
 	% dependent variable
 	Dixit in \citet[p. 328]{Mirrlees1973a}: ``The marked shift in labour-force composition is the most important fact: the proportion of labour engaged in agriculture falls from over 70 per cent to under 20 per cent during the course of development.''
+
 
 % Big Push
 
   % How countries industrialize
   \citet[p. 1003]{Murphy1989}: ``Of the many causes of lack of growth of underdeveloped countries, a particularly important and frequently discussed constraint on industrialization is the small size of the domestic market''.
+
+  \citet[324]{Jorgenson1961}: ``To study the development of a dual economy [implies] an agricultural surplus [that] eventually emerges so that development of an advanced sector is possible''. This links up with \citet[]{Leibenstein:1957aa} (``minimum effort'' theory). However\citet[327]{Jorgenson1961} says that his ``theory which [works in] the absence of a critical ``minimum effort'' necessary for take-off into sustained growth''
 
   \citet[p. 621-622]{Matsuyama1991}: ``[i]ndustrialization [consists of] a shift of resources from agriculture to manufacturing''.
 
@@ -45,7 +49,9 @@
 % Dual Economy: Why DUAL
 
 	% definition
-	Dixit in \citet[p. 325]{Mirrlees1973a}: ``Dual economy models provide a significantly better description and understanding of the problems of development than any aggregative model, not because two sectors are better than one (several economists including me seem to have grave doubts on that point), but because the sectoral division chosen reflects several vital social and economic distinctions in the type of economy being analyzed''.
+		Dixit in \citet[p. 325]{Mirrlees1973a}: ``Dual economy models provide a significantly better description and understanding of the problems of development than any aggregative model, not because two sectors are better than one (several economists including me seem to have grave doubts on that point), but because the sectoral division chosen reflects several vital social and economic distinctions in the type of economy being analyzed''.
+
+		\citet[311]{Jorgenson1961}: ``The economic system may be divided into two sectors-the advanced or modern sector, which we will call, somewhat inaccurately, the manu- facturing sector, and the backward or traditional sector, which may be suggestively denoted agriculture''. Footnote # 2 provides to examples ``In the primary-producing countries of South-East Asia the advanced sector is plantation agriculture, mining and extraction of petroleum. The traditional sector is peasant agriculture and fishing. In Japan the traditional sector includes agriculture, small manufacturing and most construction; the advanced sector should be identified with Japanese heavy industry'' (\citet[311]{Jorgenson1961}).
 
 	% why it's better than the single sector model
 	\citet[p. 438]{Temple2005}: ``the one sector approach [...] has little to say about economies that are at least partly agricultural''
@@ -69,6 +75,11 @@
 
 		\citet[p. 179]{Bertola2012}: ``The criticisms that have traditionally been leveled at the Latin American industri- alization process have focused on three issues: its anti-agriculture and anti-export biases and the macroeconomic imbalances that characterized it. A thorough analysis does not, however, corroborate the first of these traits and indicates that the second and third features were present in no more than a limited group of countries. Agriculture was not, in fact, sidelined from the growth trends in production and productivity or from the dynamic institution-building process of the time-''.
 
+
+		% 
+		``The critical condition, which marks the dividing line between economies caught in the low-level equilibrium trap and economies capable of sustained growth, is simply that for sustained growth an agricultural surplus must come into existence and must persist'' (\citet[334]{Jorgenson1961}).
+
+
 		% In Chile, the agr. sector was very productive just at the time when nitrates boomed.
 		- ``Carmen Carióla y Osvaldo Sunkel elaboraron esta interpretación, seña- lando que la urbanización, la industrialización y el crecimiento de la industria salitrera provocaron un considerable aumento de la demanda, a la cual el sector agrícola respondió en forma muy dinámica'' (RoblesOrtiz2009, p. 115)
 
@@ -91,6 +102,8 @@
 
 	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour''.
 
+	``Agricultural activity is characterised by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}).
+
 	% contradiction: the more mechanized the agricultural sector became, the more released labor to the industrial sector.
 	``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[p. 511]{Robles-Ortiz2009}).
 
@@ -104,6 +117,8 @@
 	 \citet[p. 755]{Mosley2004}: Shows in Table 1 that ``legislative structure'' (i.e. democracy/no democracy) was proposed by Lewis 1965, but empirical models haven't found any statistical results regarding this variable.
 
 % comparative advantages
+
+
   \citet[p. 643]{Matsuyama1991}: ``A low productivity in agriculture implies an abundant supply of ``cheap labor'' that the manufacturing sector can rely on. This is essentially the Principle of Comparative Advantage''.
 
    \citet[p. 160]{Gollin2002}: ``the state of the agricultural sector affects the labor available for the nonagricultural sector''.
@@ -120,6 +135,9 @@
 
 	% there are gaps
 	\citet[p. 280]{Skott1998}: ``Workers who fail to find employment in industry join the agricultural labour force [...] Industrial firms pay no more than the alternative wage available to workers in the agricultural sector, so that wages equalise between sectors''.
+
+	% transition level
+	``An industrial labour force comes into being when [...] agricultural output attains the minimum level necessary for population to grow at its maximum rate'' (\citet[324]{Jorgenson1961}).
 
 	% there are no gaps AFTER the transition is done (this here builds on Dixit 73).
 	\citet[p. 462]{Temple2005}: ``the agricultural production function ties down the wage in the two sectors''.
@@ -160,6 +178,9 @@
 
 % transition // Lewis-Solow // technical change // elite blocking // social transformations // structural transformation
 
+	% Leibenstein
+	\citet{Leibenstein:1957aa} proposes the theory of critical minimum effort. According to him, critical minimum effort is necessary to achieve a steady economic growth raising per capita income. THIS COULD BE IMPORTANT IN MY THEORY: DEVELOPMENT HAPPENS WHEN THE INDUSTRIAL SECTOR GROWS, WHICH IS REFLECTED IN GENERAL GROWTH AND INCOME PER CAPITA TOO. 
+
 	% as a intermediate development stage
 	\citet[p. 462]{Temple2005}: ``beyond a threshold level of the aggregate capital-labour ratio, the agricultural sector closes down and we are back in the world of the one-sector Solow model, with a constant elasticity of substitution aggregate production function''.
 
@@ -182,6 +203,8 @@
 	% the role of agriculture 
 	Dixit in \citet[p. 330]{Mirrlees1973a}: ``the vital necessary conditions which the agricultural sector must fulfil before it can perform its dual role of supplier of labour to industry and of food for the industrial labour force''. Dixit in \citet[p. 329]{Mirrlees1973a}: ``the marginal pro- ductivity of labour in the backward sector is a far less important parameter compared to some others, especially the elasticity of supply of food to the advanced sector''.
 
+	``If the food supply is more than sufficient there exists an agricultural surplus, and labour may be freed from the land for employment in manufacturing. Labour is divided between the two sectors in a straightforward manner: if there is no agricultural surplus, all labour remains on the land; if an agricultural surplus can be generated, a labour force available for employment in manufacturing grows at a rate which is equal to the rate of growth of the agricultural surplus''. (\citet[312]{Jorgenson1961}).
+
 
 % Characterization of each sector
 
@@ -190,6 +213,12 @@
 Dixit in \citet[p. 326]{Mirrlees1973a}: ``the methods of production are quite different in the two sectors. Land may, depending on the resource endowment of the economy, be a scarce resource in agriculture; it is far less important in industry''.
 
 Dixit in \citet[p. 326]{Mirrlees1973a}: ``A major drawback of dualistic theories that should be stated at the outset is the total neglect of the service sector, including not only personal services but also transport and communications, trade, banking and finance, professional and government activities. As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis''.
+
+
+	% production functions for each sector
+	``In the theory of a dual economy the output of the traditional or agricultural sector is a function of land and labour alone; there is no capital accumulation, except where investment takes the form of land reclamation [additionally] the land is in fixed supply'' (\citet[311]{Jorgenson1961}). `` Land does not appear as a factor of production in the manufacturing sector; the level of manufacturing output is a function of capital and labour alone'' (\citet[311]{Jorgenson1961}). ``The characteristic feature of the theory of development of a dual economy is the asymmetry between production relations in the industrial and agricultural sectors'' (\citet[312]{Jorgenson1961}).
+
+	% 
 
 
 % Protectionism / Tariffs
