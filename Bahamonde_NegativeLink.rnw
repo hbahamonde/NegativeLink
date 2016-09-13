@@ -145,7 +145,7 @@
 % TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Structural Transformations TITLE}} % Article title
+\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Sectoral Contradictions and Structural Transformations in Latin America: The Political Origins of the Industrial Sector, 1900-2010}} % Article title
 
 
 \author[1]{
@@ -183,6 +183,13 @@ ABSTRACT
 
 
 %\tableofcontents
+
+\section{Introduction}
+
+
+
+\epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists]}}{Arthur Lewis, 1965 (p. 410)}
+
 
 
 \newpage

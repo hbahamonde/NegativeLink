@@ -102,7 +102,7 @@
 
 	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour''.
 
-	``Agricultural activity is characterised by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}).
+	``Agricultural activity is characterised by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}). As \citet[181]{Stern1972} explains ``The main reason for the assumption of constant returns in the traditional sector was technical''.
 
 	% contradiction: the more mechanized the agricultural sector became, the more released labor to the industrial sector.
 	``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[p. 511]{Robles-Ortiz2009}).
@@ -137,7 +137,11 @@
 	\citet[p. 280]{Skott1998}: ``Workers who fail to find employment in industry join the agricultural labour force [...] Industrial firms pay no more than the alternative wage available to workers in the agricultural sector, so that wages equalise between sectors''.
 
 	% transition level
-	``An industrial labour force comes into being when [...] agricultural output attains the minimum level necessary for population to grow at its maximum rate'' (\citet[324]{Jorgenson1961}).
+		``An industrial labour force comes into being when [...] agricultural output attains the minimum level necessary for population to grow at its maximum rate'' (\citet[324]{Jorgenson1961}).
+
+		``when we do not value traditional sector output (as Marglin and Dixit do not) [...] we shall have the three phases of development described by \citet{Dixit1968}, i.e. (i) unemployment and minimum wages, (ii) full employment and minimum wages, (iii) full employment and rising wages'' (\citet[178]{Stern1972}).
+
+
 
 	% there are no gaps AFTER the transition is done (this here builds on Dixit 73).
 	\citet[p. 462]{Temple2005}: ``the agricultural production function ties down the wage in the two sectors''.
