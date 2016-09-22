@@ -41,6 +41,9 @@
 
 		Therefore, migration from rural areas to urban areas will increase if: (1) Urban wages increase in the urban sector, increasing the expected urban income. (2) Agricultural productivity decreases, lowering marginal productivity and wages in the agricultural sector, decreasing the expected rural income. Rural to urban migration causes overcrowding and unemployment in cities as migration rates exceed urban job creation rates, with many people ending up in unproductive or underproductive employment in the informal sector. However, even though this migration creates unemployment and induces informal sector growth, this behavior is economically rational and utility-maximizing in the context of the Harris–Todaro model.
 
+	% assumptions of the Harris-Todaro Model
+	\citet[65]{Calvo1978}: ``countries where there is a sector (urban sector) with an above-equilibrium minimum wage, side by side with another (rural sector) in which wages are determined by competitive forces. The urban sector is characterized by the fact that the unemployed workers of that sector have a positive probability of getting a job there, thus giving rise to search unemployment which equilibrium level is determined by the assumption that job seekers will migrate to the urban sector until expected wage in the latter is equalized to the rural wage. One of the crucial assumptions of that model is the existence of an exogenously determined (and binding) minimum wage in the urban sector.''
+
 % Assumptions
 
 	\citet[p. 450]{Temple2005}: ``The first key assumption is that the urban wage is fixed above the market-clearing level, perhaps for institutional reasons such as minimum wage legislation or the presence of a trade union. This results in unemployment''. ``The second key assumption is that workers will migrate between sectors unless expected utility is the same in each sector''.
@@ -54,7 +57,11 @@
 		\citet[311]{Jorgenson1961}: ``The economic system may be divided into two sectors-the advanced or modern sector, which we will call, somewhat inaccurately, the manu- facturing sector, and the backward or traditional sector, which may be suggestively denoted agriculture''. Footnote # 2 provides to examples ``In the primary-producing countries of South-East Asia the advanced sector is plantation agriculture, mining and extraction of petroleum. The traditional sector is peasant agriculture and fishing. In Japan the traditional sector includes agriculture, small manufacturing and most construction; the advanced sector should be identified with Japanese heavy industry'' (\citet[311]{Jorgenson1961}).
 
 	% why it's better than the single sector model
-	\citet[p. 438]{Temple2005}: ``the one sector approach [...] has little to say about economies that are at least partly agricultural''
+		\citet[p. 438]{Temple2005}: ``the one sector approach [...] has little to say about economies that are at least partly agricultural''
+
+		% why to put mining in industry is best
+		\citet[87]{Kuznets:1967aa}: ``In some other broad classifications mining is combined with agriculture on the ground that it too is an extractive ``primary,'' industry; but we have preferred to put it under industry because of the large scale of its productive, unit, its close connection with manufacturing, and the distinctive trend in its share in product and resources''.
+
 
 	% definition
 	\citet[p. 437]{Temple2005}: ``I will adopt an unconventionally broad definition of dualism, namely that a non-agricultural sector (industry and services) coexists with a sizeable agricultural sector''.
@@ -116,10 +123,22 @@
 
 	 \citet[p. 755]{Mosley2004}: Shows in Table 1 that ``legislative structure'' (i.e. democracy/no democracy) was proposed by Lewis 1965, but empirical models haven't found any statistical results regarding this variable.
 
-% comparative advantages
+% comparative advantages // productivity
+
+  % on labor
+	\citet[67-68]{Enzo-Faletto:1979ty} argues that elites had to compete for labor, and that the traditional sector controlled it. But instead of a clash of sectors, landowners started to invest in the modern sector, making this inter-sectoral transference of labor easier (in \citet[14]{Gallo:1991kx})
 
 
   \citet[p. 643]{Matsuyama1991}: ``A low productivity in agriculture implies an abundant supply of ``cheap labor'' that the manufacturing sector can rely on. This is essentially the Principle of Comparative Advantage''.
+
+   \citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on''.
+
+   % in Bolivia
+ 		\citet[57]{Gallo:1991kx} ``agriculture was the most important economic in the country. It accounted for 32 percent of the GNP in 1950, ad, in 1900, approximately 73 percent of the population was rural, a proportion that had only slightly decreased by 1950, when it was about 70 percent''. This is from census data.
+
+ 		\citet[57]{Gallo:1991kx} ``The tools employed in production were few and rudimentary, the use of fertilizers was minimal, and methods for conservation of the soil were practically unknown until the beginning of the 1950s [...] As a result, productivity was very low''.
+
+
 
    \citet[p. 160]{Gollin2002}: ``the state of the agricultural sector affects the labor available for the nonagricultural sector''.
 
@@ -139,7 +158,11 @@
 	% transition level
 		``An industrial labour force comes into being when [...] agricultural output attains the minimum level necessary for population to grow at its maximum rate'' (\citet[324]{Jorgenson1961}).
 
+
 		``when we do not value traditional sector output (as Marglin and Dixit do not) [...] we shall have the three phases of development described by \citet{Dixit1968}, i.e. (i) unemployment and minimum wages, (ii) full employment and minimum wages, (iii) full employment and rising wages'' (\citet[178]{Stern1972}).
+
+	% population
+	\citet[86]{Kuznets:1967aa} ``if  population grows, its ratio to land and other natural resources changes, with different consequences for different industries; if total and per capita product grow as a result of technological change, capital investment, and improvements in the quality of productive resources, the impact on different industries is not likely to be the same''.
 
 
 
@@ -218,6 +241,8 @@ Dixit in \citet[p. 326]{Mirrlees1973a}: ``the methods of production are quite di
 
 Dixit in \citet[p. 326]{Mirrlees1973a}: ``A major drawback of dualistic theories that should be stated at the outset is the total neglect of the service sector, including not only personal services but also transport and communications, trade, banking and finance, professional and government activities. As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis''.
 
+Lewis assumed ``(1) that technology can be divided in capital-using (capitalist) and non-capital-using (subsistence); (2) that the labor supply is elastic at a conventional wage; and (3) that saving is done largely by the recipients of nonwage income (capitalists).'' (\citet[311]{Chenery1975}).
+
 
 	% production functions for each sector
 	``In the theory of a dual economy the output of the traditional or agricultural sector is a function of land and labour alone; there is no capital accumulation, except where investment takes the form of land reclamation [additionally] the land is in fixed supply'' (\citet[311]{Jorgenson1961}). `` Land does not appear as a factor of production in the manufacturing sector; the level of manufacturing output is a function of capital and labour alone'' (\citet[311]{Jorgenson1961}). ``The characteristic feature of the theory of development of a dual economy is the asymmetry between production relations in the industrial and agricultural sectors'' (\citet[312]{Jorgenson1961}).
@@ -234,7 +259,6 @@ Dixit in \citet[p. 326]{Mirrlees1973a}: ``A major drawback of dualistic theories
 % problems with the dual sector model
 
 \citet[p. 468]{Temple2005}: ``the usual aggregation of industry and services into a single non-agricultural sector begs a number of questions: more than 30 years ago, Dixit \citet[ch. X]{Mirrlees1973a} pointed to the neglect of the service sector in much of the literature''.
-
 
 % taxation
 \citet[]{Sah:2002qf}: ``taxation, and the effects of government policy on peasants and city-dwellers, respectively'' (from \citet[p. 468]{Temple2005}).
