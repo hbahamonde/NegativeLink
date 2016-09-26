@@ -109,7 +109,9 @@
 
 	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour''.
 
-	``Agricultural activity is characterised by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}). As \citet[181]{Stern1972} explains ``The main reason for the assumption of constant returns in the traditional sector was technical''.
+	``Agricultural activity is characterized by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}). As \citet[181]{Stern1972} explains ``The main reason for the assumption of constant returns in the traditional sector was technical''.
+
+	\citet[28]{Kirsch:1977aa} says that Gerschenkron argues that a number of European countries industrialized ``in a setting of relative economic backwardness''.
 
 	% contradiction: the more mechanized the agricultural sector became, the more released labor to the industrial sector.
 	``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[p. 511]{Robles-Ortiz2009}).
@@ -123,10 +125,30 @@
 
 	 \citet[p. 755]{Mosley2004}: Shows in Table 1 that ``legislative structure'' (i.e. democracy/no democracy) was proposed by Lewis 1965, but empirical models haven't found any statistical results regarding this variable.
 
+	 % the state did help the SOFOFA by 1889
+	 \citet[42-43]{Kirsch:1977aa}: ``From the outset the SFF was closely linked to the state through whose initiative it was convoked and from which it received an annual subsidy. This was not unusual, since both the other two economic interests group associations in existence, those for agriculture and mining, also enjoyed such assistance. But by 1889, the SFF was receiving state funds which surpassed those of either the Sociedad Nacional de Agricultura (SNA) or the Sociedad Nacional de Mineria (SNM).'' % SNM fue fundada en 1883. 
+
+	 % the state helped to develop the industrial sector
+	 \citet[55]{Kirsch:1977aa}: ``as the 1920s advanced, governmental policy required that all public sector orders be placed with Chilean firms whenever possible.''
+
+	 % access to credit
+		 \citet[58]{Kirsch:1977aa}: ``In Chile many aspects of modern capitalistic organization had made their appearance before the end of the nineteenth century. Commercial and mortgage banking institutions were numerous, stock exchanges listed in Santiago and Valpara\'iso, and the commercial houses provided credit for the firms whose products they distributed, thereby extending to industry the position of banker that they had traditionally occupied with respect to Chilean agriculture ''. \citet[188-191]{Bauer1970} argues that merchants provided credit to landowners. 
+
+		 access to credit // Two classes ?//
+		 \citet[60]{Kirsch:1977aa}: Since only real state could serve as collateral, credit was very limited for the industrial sector.  ``This, unless the industrialist also had landholdings or mining interests which could be mortgaged, he could not qualify for this important source of credit.''
+
+
+
+
 % comparative advantages // productivity
 
   % on labor
 	\citet[67-68]{Enzo-Faletto:1979ty} argues that elites had to compete for labor, and that the traditional sector controlled it. But instead of a clash of sectors, landowners started to invest in the modern sector, making this inter-sectoral transference of labor easier (in \citet[14]{Gallo:1991kx})
+
+	\citet[43]{Kirsch:1977aa}: ``The SFF's journal for 1884 and the following years is filled with numerous examples of the association's gestures before congress, the ministries, and various state agencies in behalf of industrial interests, both individual and collective. In 1884, the society had 305 members, of whom a third were in local councils in other cities. The editorial of the \emph{El Heraldo}, Valpara\'iso, August 23, 1892, summarized all of the obstacles which the SFF would have to overcome in order to increase industrial activity. Among the most important were the lack of skilled labor, the need to import capital equipment and raw material which was subjected to import duty, and insufficient tariff protection.'' % Foot note number 43. // this is regarding Chile.
+
+	% industrial schools // co-founded by SOFOFA and the state.
+	\citet[43]{Kirsch:1977aa}: ``The SFF became a primary instrument of industrialists especially in the difficult decade 1900-1910, when there was widespread discontent over the rising cost of living and a growing antiprotectionist sentiment among the masses. It opened an industrial immigration office which was efficient in subsidizing the movement of European entrepreneurs and skilled labor to the country until the First World War. By 1908, the SFF was operating industrial schools in Santiago, Valpara\'iso, La Serena, Talca, Chill\'an, Concepci\'on, and Valdivia, with substantial funding by the government. By 1909, these institutions were training over 900 students, of whom half were registered at the technical school in Santiago.''
 
 
   \citet[p. 643]{Matsuyama1991}: ``A low productivity in agriculture implies an abundant supply of ``cheap labor'' that the manufacturing sector can rely on. This is essentially the Principle of Comparative Advantage''.
@@ -247,7 +269,8 @@ Lewis assumed ``(1) that technology can be divided in capital-using (capitalist)
 	% production functions for each sector
 	``In the theory of a dual economy the output of the traditional or agricultural sector is a function of land and labour alone; there is no capital accumulation, except where investment takes the form of land reclamation [additionally] the land is in fixed supply'' (\citet[311]{Jorgenson1961}). `` Land does not appear as a factor of production in the manufacturing sector; the level of manufacturing output is a function of capital and labour alone'' (\citet[311]{Jorgenson1961}). ``The characteristic feature of the theory of development of a dual economy is the asymmetry between production relations in the industrial and agricultural sectors'' (\citet[312]{Jorgenson1961}).
 
-	% 
+	% tension
+	\citet[41]{Kirsch:1977aa}: ``The final component of the background to industrialization is that of the state of tension created by the awareness of the incongruence between the actual exploitation of economic forces and the potential that could be extracted from them through industrialization. Identification of this condition in Chile prior to World War I may be had by way of certain publications of the era, the organization of and participation in industrial exhibitions both in Chile and abroad and the founding of the Sociedad de Fomento Fabril and its activities from 1883''
 
 
 % Protectionism / Tariffs
