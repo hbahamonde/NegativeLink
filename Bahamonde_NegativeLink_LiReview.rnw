@@ -113,6 +113,8 @@
 
 	\citet[28]{Kirsch:1977aa} says that Gerschenkron argues that a number of European countries industrialized ``in a setting of relative economic backwardness''.
 
+	\citet[231]{Keller1931}: There exsited in Chile a ``falta de conocimientos t\'ecnico-cient\'ificos'' in the agricultural sector.
+
 	% contradiction: the more mechanized the agricultural sector became, the more released labor to the industrial sector.
 	``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[p. 511]{Robles-Ortiz2009}).
 
@@ -284,7 +286,10 @@ Lewis assumed ``(1) that technology can be divided in capital-using (capitalist)
 \citet[p. 468]{Temple2005}: ``the usual aggregation of industry and services into a single non-agricultural sector begs a number of questions: more than 30 years ago, Dixit \citet[ch. X]{Mirrlees1973a} pointed to the neglect of the service sector in much of the literature''.
 
 % taxation
-\citet[]{Sah:2002qf}: ``taxation, and the effects of government policy on peasants and city-dwellers, respectively'' (from \citet[p. 468]{Temple2005}).
+		\citet[]{Sah:2002qf}: ``taxation, and the effects of government policy on peasants and city-dwellers, respectively'' (from \citet[p. 468]{Temple2005}).
+
+		% sectoral competition and dual-economy model
+		Though inter-elite conflicts can be expressed politically and militarily, inter-sectoral contestation itself is deeply rooted in a country's economy structure. However, the \emph{origins} of this inter-sectoral (im)balance (expressed in sectoral output differentials in \autoref{fig:incometax}) reflect structural economic dynamics between the two sectors that cause them to compete over a limited supply of labor, specifically urban labor\footnote{\citet[67-68]{Enzo-Faletto:1979ty}. As \citet[318]{Matsuyama1992} puts it, ``the manufacturing sector has to compete with the agriculture sector for labor. Low productivity in agriculture implies the abundant supply of ``cheap labor'' which the manufacturing can rely on''. See also \citet[160]{Gollin2002}.}. For the modern sector to develop, the traditional sector had to decay\footnote{\citet[621-622]{Matsuyama1991} argues that the process of ``[i]ndustrialization [consists of] a shift of resources from agriculture to manufacturing''.}. \citet[642-643]{Matsuyama1991} explains that ``a takeoff is possible in an economy with less productive agriculture, while an economy with productive agriculture will be trapped into the state of preindustrialization''\footnote{\citet[293]{Skott1998} point out that ``an increase in the growth rate of agricultural productivity may reduce the rate of growth of real income under free trade''.}. That is, the process of industrialization is governed by the law of comparative advantages. The \hyperref[unpacking]{case study} below shows that the economic-structural dimension of inter-elite political contestation was true in Chile.\footnote{But see \citet{RoblesOrtiz2009}.} Moreover, these conditions apply to other Latin American economies as well. The sectoral conflict regarding the generation of income and its potential taxation has been studied elsewhere too.\footnote{See \citet[55]{Best1976}.} For example, \citet[]{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. For example, \citet[ 8]{Bash1986} explains that ``Colombia's two traditional political parties crystallized in the 1840's and reflected in many respects the dual nature of the Colombian economy.'' Taxation and state formation with a sector/class approach  has also been studied in Africa. For example, \citet{SanchezdelaSierra2014} studies the relationship between taxation and state formation in Eastern Congo, and how the interplay of different sectors fostered (or not) state-building processes.
 
 
 % READ
