@@ -105,6 +105,20 @@
 	
 	\citet[p. 723]{Caselli2005}: ``there are three proximate reasons for poor countries’ poverty: their much lower labor productivity in agriculture; their somewhat lower labor productivity outside agriculture; and their larger share of employment in the sector that – on average – is less productive''.
 
+	% on low productivity and abundance of labor in the agriculture sector.
+		\citet[15]{Segall1962}: ``Ya Manuel de Salas, en su conocido informe a1 Ministro Gardoqui, describi\'o el n\'umero de hombres desocupados que ambulaban en las calles de Santiago. El llamado esp\'iritu aventurero, andariego, del pe\'on criollo es s\'olo la forma literaria de la terrible emigraci\'n de los trabajadores sin faenas. Las cr\'onicas de la epoca, narran otra curiosidad chilena: el gran bandidaje rural; pero, en general omiten decir que est\'a originado en la gravedad que asumia para el campesino “afuerino”, sin cultivo propio, la \'epoca de inactividad agricola.''
+
+		\citet[18]{Segall1962}: ``Con el auge de la miner\'ia, todos los desocupados del campo y de la ciudad emigraron al desierto de Atacama. Lo hicieron los campesinos pobres, los jornaleros y los inquilinos. “El Ej\'ercito de Reserva del Trabajo” desapareci\'o. Los terratenientes, sin brazos baratos, comenzaron a presionar. Y lo har\'an durante todo el siglo. Due\~nos de gran parte del poder, con el pretexto de impedir la “vagancia”, obtuvieron de sus representantes pol\'iticos, un decreto dr\'astico emitido el 16 de agosto de 1843. Entregando al criterio policial el reclutamiento forzado de los individuos sin ocupaci\'on contratada, para su utilizaci\'on en las actividades agr\'icolas.''
+
+		% name of the excess of labor supply // comes from Marxist theory
+		\citet{Segall1953}: The concept is called ``formaci\'on del mercado para la gran industria''. ``Y denominado ej\'ercito industrial, porque es el conjunto de hombres absorbidos, o dispuestos a serlo, por la industria. Cuando el trabajador es utilizado es miembro del ej\'ercito industrial activo; cuando espera su aprovechamiento es el de reserva.''
+
+	% how miners took advantage of low agricultural productivity // generated competition for labor.
+	\citet[15-16]{Segall1962}: ``con la apertura del mercado mundial de los metales, posterior a la Independencia, se produjo otra rivalidad que contrabalance\'o la anterior. La demanda de peones creada por la mineria, modific\'o la balanza. Se origin\'o una constante movilidad de poblaci\'on hacia el norte [...] Y no menos fuertemente atacada por los terratenientes [...] La miner\'ia exigi\'o cada d\'ia m\'as brazos. Transform\'o a los antiguos campesinos aborigenes de Arauco en obreros del carb\'on. Los ga\~nanes de las haciendas del norte poco a poco abandonaron sus labores temporales de la agricultura por las m\'as permanentes de la mina y de la fundici\'on.''
+
+	% labor and soldiers available 
+	\citet[18]{Segall1962}: ``Cuando hubo de reclutarse el ej\'ercito que hizo la guerra del Per\'u, se encontr\'o en las calles de Santiago suficiente n\'umero de hombres para formarlo, sin que su falta se hiciese sentir en los talleres y en la labranza.''
+
 	\citet[p. 724]{Caselli2005}: ``if poor countries achieved the same level of agricultural labor productivity as the US, world income in- equality would virtually disappear!''. %related to convergence and the US structural paper.
 
 	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour''.
