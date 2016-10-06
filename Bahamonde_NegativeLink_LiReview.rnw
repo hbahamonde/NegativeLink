@@ -9,13 +9,28 @@
 	% dependent variable
 	Dixit in \citet[p. 328]{Mirrlees1973a}: ``The marked shift in labour-force composition is the most important fact: the proportion of labour engaged in agriculture falls from over 70 per cent to under 20 per cent during the course of development.''
 
+	% for the paper
+	- tests: 
+		* Chow Test: structural break before/after income tax.
+		* Co-integration methods: cointegration implies balanced growth whoch should imply contested elites, which should imply state-development. 
+	- theory
+		* My theory goes in line with Lewis: there must be balanced growth to produce economic development. 
+
+	% The Chow test is used to test for "structural changes"
+	The Chow test assumes that there is a known break-point in the series. FOR THIS IT COULD BE THE INCOME TAX LAW.
+	
+	SEE: http://stats.stackexchange.com/questions/40504/how-to-identify-structural-change-using-a-chow-test-on-eviews
+
+	IT IS ESSENTIALLY A STRUCTURAL BREAK ANALYSYS: CHECK ICPSR NOTES.
+	IT ENCOMPASSES A DUMMY VARIABLE: BEFORE AND AFTER THE BREAK.
+
 
 % Big Push
 
   % How countries industrialize
   \citet[p. 1003]{Murphy1989}: ``Of the many causes of lack of growth of underdeveloped countries, a particularly important and frequently discussed constraint on industrialization is the small size of the domestic market''.
 
-  \citet[324]{Jorgenson1961}: ``To study the development of a dual economy [implies] an agricultural surplus [that] eventually emerges so that development of an advanced sector is possible''. This links up with \citet[]{Leibenstein:1957aa} (``minimum effort'' theory). However\citet[327]{Jorgenson1961} says that his ``theory which [works in] the absence of a critical ``minimum effort'' necessary for take-off into sustained growth''
+  \citet[324]{Jorgenson1961}: ``To study the development of a dual economy [implies] an agricultural surplus [that] eventually emerges so that development of an advanced sector is possible.'' This links up with \citet[]{Leibenstein:1957aa} (``minimum effort'' theory). However\citet[327]{Jorgenson1961} says that his ``theory which [works in] the absence of a critical ``minimum effort'' necessary for take-off into sustained growth''
 
   \citet[p. 621-622]{Matsuyama1991}: ``[i]ndustrialization [consists of] a shift of resources from agriculture to manufacturing''.
 
@@ -26,7 +41,22 @@
 
     \citet[p. 1008]{Murphy1989}: ``industrialization must be individually unprofitable at a low aggregate level of industrialization but individually profitable as long as a sufficient number of other sectors industrialize''. 
 
-    \citet[p. 344]{Kaldor1970}: ``The increase in production and income in one region will, as such, stimulate the demand for ``complementary'' products of other regions [...] so the principle of cumulative causation leads to the concentration of industrial development in a number of successful regions and not of a single region''.
+    \citet[p. 344]{Kaldor1970}: ``The increase in production and income in one region will, as such, stimulate the demand for ``complementary'' products of other regions [...] so the principle of cumulative causation leads to the concentration of industrial development in a number of successful regions and not of a single region.''
+
+    	% on balanced growth // demand IND and AGR produce
+    	\citet[151]{Lewis:1965nr}: ``the productivity of manufacturing industry [...] must be paralleled by measures to increase the demand for manufactured products. This demand comes only to a small proportion of the population of such countries. It comes to a greater extent from all other classes, of whom the farmers are far and away the largest category. If capital is being put into developing manufacturing industry while a country's agriculture remains stagnant, the result is bound to be distress in the manufacturing sector, as factory and cottage workers compete for a limited demand. But if there is balanced development, with the productivity of the farmers growing rapidly, and the demand for manufactures correspondingly increasing, there is ample scope for investment in industry [...] The secret pf most development problems is to maintain a proper balance between sectors.''
+
+
+
+    	% explanation of Lewis' Theory: BALANCED (not unbalanced) growth between the two sectors.
+    	\citet[276-277]{Lewis:1965nr}: ``the various sectors of the economy must grow in the right relationship to each other, or they cannot grow at all. For example, suppose that there is considerable innovation in the agricultural sector producing food for the home market. The result is either a surplus of food to sell to the towns, or a surplus of labour in agriculture seeking non-agricultural employment, or some combination of both. If manufacturing industry is growing simultaneously and at the right rate [which doesn't need to be the same rate, \citet[278]{Lewis:1965nr}], it can absorb both the surplus goods and the surplus labour. If it is not, the terms of trade will move against agriculture, and there will be a surplus of farm labour as well as farm products, agricultural incomes will be depressed, and further investment and innovation in this sector may be discouraged [...] Exactly the same difficulties arise if economic development is concentrated upon industrialization, to the neglect of agriculture, as happened in the U.S.S.R. There is then an acute shortage of agricultural products, and an inflation of their prices, which drives up all other prices in a spiral movement [...] If agriculture stagnates, the capitalist sector cannot grow [...] Smooth economic development requires that industry and agriculture should grow together.''
+
+    		% On the assumption of unlimited labor surplus
+    		\citet[39]{Kelley:1972zl}: Argue that this assumption is not critical ``the existence or nonexistence of disguised unemployment is neither a necessary nor a sufficient test of the appropriateness if the classical theory.'' \citet{Sen1966} makes this argument. READ.
+
+    	% more on balanced growth
+    	\citet[388]{Lewis:1965nr}: ``If either of these sectors expands its output, the effect is to increase the demand for the products of the other sector [...] A rapid growth of industry calls for a rapid growth of agriculture. The industrial workers will want more food; the factories will want labour from the countryside; the expanding market of the farmers will be needed to take up the output of consumer goods; or alternatively the savings or taxed of the farmers will be needed to finance industrial construction. Similarly, if agriculture is expanding, it will need a growing industry, to absorb its product and its labour, and to provide the farmers with more consumer and capital goods [...] Balanced growth means not equal growth, but growth in the proportions dictated by the different rates of growth of demand.''
+
 
     \citet[p. 346]{Kaldor1970}: how subsidies/protectionist policies can offset the effect of unfavorable trends.
 
@@ -54,7 +84,13 @@
 	% definition
 		Dixit in \citet[p. 325]{Mirrlees1973a}: ``Dual economy models provide a significantly better description and understanding of the problems of development than any aggregative model, not because two sectors are better than one (several economists including me seem to have grave doubts on that point), but because the sectoral division chosen reflects several vital social and economic distinctions in the type of economy being analyzed''.
 
-		\citet[311]{Jorgenson1961}: ``The economic system may be divided into two sectors-the advanced or modern sector, which we will call, somewhat inaccurately, the manu- facturing sector, and the backward or traditional sector, which may be suggestively denoted agriculture''. Footnote # 2 provides to examples ``In the primary-producing countries of South-East Asia the advanced sector is plantation agriculture, mining and extraction of petroleum. The traditional sector is peasant agriculture and fishing. In Japan the traditional sector includes agriculture, small manufacturing and most construction; the advanced sector should be identified with Japanese heavy industry'' (\citet[311]{Jorgenson1961}).
+		\citet[311]{Jorgenson1961}: ``The economic system may be divided into two sectors-the advanced or modern sector, which we will call, somewhat inaccurately, the manufacturing sector, and the backward or traditional sector, which may be suggestively denoted agriculture''. Footnote # 2 provides to examples ``In the primary-producing countries of South-East Asia the advanced sector is plantation agriculture, mining and extraction of petroleum. The traditional sector is peasant agriculture and fishing. In Japan the traditional sector includes agriculture, small manufacturing and most construction; the advanced sector should be identified with Japanese heavy industry'' (\citet[311]{Jorgenson1961}).
+
+		% Types of "dualism" in the economy
+		\citet[8]{Kelley:1972zl}: ``There are many views of dualism, ranging from vaguely stated hypotheses regarding sectoral differences in social, political, and economic behavior to formal statements implying well-defined predictions about the course of economic development and structural change.'' In the same page, they say that: ``The existence of dualism has been argued on the basis of differences in (1) social systems, (2) racial or ethnic backgrounds, (3) production conditions, (4) demographic behavior, (5) consumer expenditure and consumer savings behavior, and (6) the domestic and foreign sectors.''
+
+		% dual-sector model comes a ``long tradition''
+		\citet[8]{Kelley:1972zl}: ``Following a long tradition in development economics, we shall specify a rural-agricultural and an urban-industrial sector.''
 
 	% why it's better than the single sector model
 		\citet[p. 438]{Temple2005}: ``the one sector approach [...] has little to say about economies that are at least partly agricultural''
@@ -68,9 +104,9 @@
 
 	\citet[p. 160]{Gollin2002}: ``a model of structural transformation provides a useful theory of both why industrialization occurs at different dates and why it proceeds slowly''. \citet[p. 163]{Gollin2002}: ``The reason for the difference is that, in our model, labor moves only slowly into the nonagricultural sector. This matters a lot for the speed of convergence to the steady state''. 
 
-	\citet[p. 642-643]{Matsuyama1991}: ``a takeoff is possible in an economy with less productive agriculture, while an economy with productive agriculture will be trapped into the state of preindustrialization''. This is in line with the idea of ``unbalanced growth'': [from Wikipedia] ``Unequal development of various sectors often generates conditions for rapid development. More-developed industries provide undeveloped industries an incentive to grow''.
+	\citet[p. 642-643]{Matsuyama1991}: ``a takeoff is possible in an economy with less productive agriculture, while an economy with productive agriculture will be trapped into the state of preindustrialization''. This is in line with the idea of ``unbalanced growth'': [from Wikipedia] ``Unequal development of various sectors often generates conditions for rapid development. More-developed industries provide undeveloped industries an incentive to grow.''
 
-	\citet[p. 318]{Matsuyama1992}: ``According to this view, the manufacturing sector has to compete with the agriculture sector for labor. Low productivity in agriculture implies the abundant supply of ``cheap labor'' which the manufacturing can rely on''.
+	\citet[p. 318]{Matsuyama1992}: ``According to this view, the manufacturing sector has to compete with the agriculture sector for labor. Low productivity in agriculture implies the abundant supply of ``cheap labor'' which the manufacturing can rely on.''
 
 
 	\citet[p. 326]{Matsuyama1992}: ``under the open economy assumption, the model predicts a negative link agricultural productivity and economic growth. In an economy with less productive agriculture, the manufacturing sector attracts more labor and, therefore, grows faster. On the other hand, the productive agriculture sector squeezes out the manufacturing sector, and the economy will de-industrialize over time''.
@@ -121,7 +157,7 @@
 
 	\citet[p. 724]{Caselli2005}: ``if poor countries achieved the same level of agricultural labor productivity as the US, world income in- equality would virtually disappear!''. %related to convergence and the US structural paper.
 
-	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour''.
+	\citet[p. 458]{Temple2005}: ``structural change is an endogenous process, driven by sectoral productivity growth, income elasticities of demand, changes in factor endowments and world prices, and possibly even switches between multiple equilibria'', hence ``to ask the question ‘What is the growth effect of structural change?’ can be too much like asking ‘What is the growth effect of equilibrium prices and quantities?’''. ``This suggests that attempting to measure the growth effects of structural change is a mistaken endeavour.''
 
 	``Agricultural activity is characterized by diminishing returns to scale [while] In manufacturing, expansion of productive activity proceeds with constant returns to scale'' (\citet[311]{Jorgenson1961}). As \citet[181]{Stern1972} explains ``The main reason for the assumption of constant returns in the traditional sector was technical''.
 
@@ -150,8 +186,15 @@
 	 % access to credit
 		 \citet[58]{Kirsch:1977aa}: ``In Chile many aspects of modern capitalistic organization had made their appearance before the end of the nineteenth century. Commercial and mortgage banking institutions were numerous, stock exchanges listed in Santiago and Valpara\'iso, and the commercial houses provided credit for the firms whose products they distributed, thereby extending to industry the position of banker that they had traditionally occupied with respect to Chilean agriculture ''. \citet[188-191]{Bauer1970} argues that merchants provided credit to landowners. 
 
-		 access to credit // Two classes ?//
-		 \citet[60]{Kirsch:1977aa}: Since only real state could serve as collateral, credit was very limited for the industrial sector.  ``This, unless the industrialist also had landholdings or mining interests which could be mortgaged, he could not qualify for this important source of credit.''
+		 
+		 % Two classes ?
+			% access to credit 
+			 	\citet[60]{Kirsch:1977aa}: Since only real state could serve as collateral, credit was very limited for the industrial sector.  ``This, unless the industrialist also had landholdings or mining interests which could be mortgaged, he could not qualify for this important source of credit.''
+
+	 		% surplus in agriculture can be reinvested in other sectors of the economy 
+	 			\citet[334]{Lewis:1965nr}: ``if agricultural productivity is rising fast enough, the savings of the farmers, forced or voluntary, may become available to finance investment in other sectors of the economy. This is why the proportion of the population engaged in agriculture, and the rate of growth of agricultural productivity are two of the best indices of the extent and rate of economic growth.'' 
+
+
 
 
 
@@ -178,9 +221,17 @@
 
 
 
-   \citet[p. 160]{Gollin2002}: ``the state of the agricultural sector affects the labor available for the nonagricultural sector''.
+   \citet[p. 160]{Gollin2002}: ``the state of the agricultural sector affects the labor available for the nonagricultural sector.''
 
-   \citet[p. 161]{Gollin2002}: ``Since poor countries are not in the business of creating ideas, the assumption of exogenous technological change is reasonable from their perspective''.
+
+	% on the relationship between growth and transference of labor
+	\citet[340]{Lewis:1965nr}: ``The transfer from agriculture to other occupations which occurs with economic growth is the result and no the cause of growth.''
+
+
+   \citet[p. 161]{Gollin2002}: ``Since poor countries are not in the business of creating ideas, the assumption of exogenous technological change is reasonable from their perspective.''
+
+   % technological dualism
+   \citet[7]{Kelley:1972zl}: ``Leibenstein has persuasively argued that the pattern of industrialization resulting from these features is reinforced by a bias in each sector's technology. He asserts that innovations in secondary industries have been of a labor-saving kind, while those in agriculture have tended to be labor using.''
 
    \citet[p. 293]{Skott1998}: ``an increase in the growth rate of agricultural productivity may reduce the rate of growth of real income under free trade''.
 
@@ -217,6 +268,8 @@
 	% Harris–Todaro model explains...
 	
 		\citet[p. 450]{Temple2005}: Harris–Todaro model ``can explain why rural-urban migration persists even in the face of high urban unemployment''
+
+		\citet[11]{Kelley:1972zl}: ``one of the most important aspects of economic development is the migration of capital and labor. The movement of factors from sectors of low productivity is one of the primary means by which economic progress takes place.''
 
 		\citet[p. 129]{Harris1970}: ``The essence of our argument is that in many developing nations the existence of an institutionally determined urban minimum wage at levels substantially higher than that which the free market would allow can, and usually does, lead to an equilibrium with considerable urban unemployment. In our model migration is a disequilibrium phenomenon''.
 
@@ -274,6 +327,10 @@
 % Characterization of each sector
 
 \citet[p. 279-280]{Skott1998}: ``The industrial sector uses two inputs, capital and labour, and has non-decreasing returns to scale'' (p. 279), while agriculture is assumed ``that the amount of land is fixed and that labour is the only variable input'' (p. 280).
+
+	% some have argued that the agricult. sector ALSO USES CAPITAL
+	\citet[12]{Kelley:1972zl}: their model ``includes capital and labor in the agricultural production function.'' They argue that ``the inclusion of industrial capital in the agricultural production function is based in part on the historical evidence of early application of nonfarm inputs (such as fertilizer, insecticides, and machinery) to agriculture.''
+
 
 Dixit in \citet[p. 326]{Mirrlees1973a}: ``the methods of production are quite different in the two sectors. Land may, depending on the resource endowment of the economy, be a scarce resource in agriculture; it is far less important in industry''.
 
