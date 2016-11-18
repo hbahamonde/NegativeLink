@@ -14,3 +14,21 @@ Resources/kellyenns_mood.do
 .DS_Store
 
 *.webloc
+
+*.aux
+
+*.bbl
+
+*.tex
+
+*.gz
+
+*.out
+
+*.log
+
+*.fls
+
+*.blg
+
+*.fdb_latexmk

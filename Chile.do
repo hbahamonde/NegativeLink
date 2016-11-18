@@ -1,41 +1,42 @@
 * Negative Link Paper
-* Chile
 
+
+* ssc install blindschemes, replace all
+* set scheme plotplainblind, permanently
+
+
+****************************
+* DESCRIBING THE DATA
+****************************
+
+
+* Declare data
 clear all
 use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta"
 
-* keep only Chile and before 1970.
-keep if country == 4 &  year <= 1970
-
 * set ts data
-tsset, clear /* lets clean prior settings, if any */
-tsset year
+tsset, clear
+tsset country year, yearly
 
 
 * Plot the data 
-tsline constagricult constmanufact, title("Chile") ytitle("Output")
+	tsline constagricult constmanufact if country==4, title("Chile") xtitle("") ytitle("") name(Chile_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	tsline constagricult constmanufact if country==5, title("Colombia") xtitle("") ytitle("") name(Colombia_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	
+	tsline constagricult constmanufact if country==8, title("Ecuador") xtitle("") ytitle("") name(Ecuador_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	
+	tsline constagricult constmanufact if country==10, title("Guatemala") xtitle("") ytitle("") name(Guatemala_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	
+	tsline constagricult constmanufact if country==14, title("Nicaragua") xtitle("") ytitle("") name(Nicaragua_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	
+	tsline constagricult constmanufact if country==17, title("Peru") xtitle("") ytitle("") name(Peru_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
 
+	tsline constagricult constmanufact if country==20, title("Venezuela") xtitle("") ytitle("") name(Venezuela_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	* combining all ts graphs // install package grc1leg
+	grc1leg Chile_TS Venezuela_TS Peru_TS Nicaragua_TS Guatemala_TS Ecuador_TS Colombia_TS, legendfrom(Chile_TS) cols(3) 
+	graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/ts_graphs.pdf", replace
+	
 
-* Before testing for cointegration, 
-* we need to make sure all series are 
-* integrated of order one.
-
-** sign. pvalue = stationarity
-
-** Tested with both, but no difference (except for Guatemala, manufacture
-*** trend
-*** drift
-
-** 
-dfuller constmanufact // I(1)
-dfuller constmanufact, drift // I(1)
-dfuller constmanufact, trend // I(1)
-// conclusion: I(1)
-
-dfuller constagricult // I(1)
-dfuller constagricult, drift // I(1)
-dfuller constagricult, trend // I(1)
-// conclusion: I(1)
 
 
 * Now I estimate the cointegrating regressions, 
@@ -46,46 +47,135 @@ dfuller constagricult, trend // I(1)
 * but jointly stationary. Hence, these residuals should be
 * stationary.
 
-capture drop res*
-reg L1.constmanufact L2.constmanufact constagricult
-predict res4, res
-
-
-
 ** SEE ALTERNATIVE CRITICAL VALUES HERE!
 ** DONT INCLUDE DRIFT TERM HERE!!!!
 ** DONT USE D FULLER, BUT USE JOHANNSEN
 
-**** PUT LAGS IN THE DF TEST!
+*** PUT LAGS IN THE DF TEST!
+*** sign. pvalue = stationarity
 
-** sign. pvalue = stationarity
+**** ECM
+**** "VECMs "fix" integrated series that [are] cointegrated and first 
+**** differences "fix" integrated series that do not cointegrate".
+**** THE ONE THAT'S SIGNIFICANT TRIES TO CATCH UP WITH THE OTHER ONE
+**** DO NOT TAKE THE DIFFERENCE,
+**** THEY GO UNTRANSFORMED INTO THE TEST (MARK SAID THAT).
 
 
-dfuller res4 // ~ stationary 
-dfuller res4, drift // stationary
-dfuller res4, trend // I(1)
-// conclusion: stationary
 
-dfuller res4, reg lag(2) // I(1)
-dfuller res4, reg lag(2) drift // ~ stationary
-dfuller res4, reg lag(2) trend // I(1)
+****************************
+* UNIT ROOT TESTS
+****************************
+
+* CHILE
+
+clear all
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta"
+
+* Keeping one country
+keep if country==4
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+
+************
+* ADF
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+dfuller constmanufact, lag(1) // I(1)
+dfuller constmanufact, lag(1) drift // I(1)
+dfuller constmanufact, lag(1) trend // I(1)
 // conclusion: I(1)
 
-//  Residuals: regression plot
-tsline res4, saving(plot_12, replace) title("Residuals: Chile")
-
-// Auto-Correlation Functions
-ac res4
-pac res4 
+dfuller constagricult, lag(1) // I(1)
+dfuller constagricult, lag(1) drift // I(1)
+dfuller constagricult, lag(1) trend // I(1)
+// conclusion: I(1)
 
 
-* "VECMs "fix" integrated series that [are] cointegrated and first 
-* differences "fix" integrated series that do not cointegrate".
-* THE ONE THAT'S SIGNIFICANT TRIES TO CATCH UP WITH THE OTHER ONE
+************
+* Phillips–Perron // See Phillips (1987) and Phillips and Perron (1988)
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+pperron constmanufact, lag(1) // I(1)
+pperron constmanufact, lag(1) trend // I(1)
+// conclusion: I(1)
+
+pperron constagricult, lag(1) // I(1)
+pperron constagricult, lag(1) trend // I(1)
+// conclusion: I(1)
 
 
-** DO NOT TAKE THE DIFFERENCE,
-** THEY GO UNTRANSFORMED INTO THE TEST (MARK SAID THAT).
+
+************
+* KPSS 
+************
+
+
+
+
+
+************
+* GLS detrended augmented Dickey–Fuller test // See Elliott et al. (1996)
+************
+** 
+dfgls constmanufact, maxlag(3) // 
+dfgls constmanufact, maxlag(3) trend // 
+// conclusion: 
+
+dfgls constagricult, maxlag(3) // 
+dfgls constagricult, maxlag(3) trend // 
+// conclusion: 
+
+
+
+
+************
+* Engle-Granger
+************
+
+* Cointegrating Regression
+capture drop res*
+reg constmanufact L1.constmanufact constagricult
+predict res_Chile, res
+tsline res_Chile, title("Chile") xtitle("") ytitle("") name(Chile_CoIntReg_Res, replace)
+
+* Testing Stationarity of Residuals of Cointegrating Regression
+dfuller res_Chile, reg lag(1) // stationary 
+dfuller res_Chile, reg lag(1) drift // stationary
+dfuller res_Chile, reg lag(1) trend // stationary
+// conclusion: stationary
+
+
+
+// Auto-Correlation Functions for Cointegrating Regression Residuals
+ac res_Chile, xtitle("AC") ytitle("") note("") name(Chile_AC_Res_CoIntReg, replace) 
+pac res_Chile, xtitle("PAC") ytitle("") note("") name(Chile_PAC_Res_CoIntReg, replace) 
+graph combine Chile_AC_Res_CoIntReg Chile_PAC_Res_CoIntReg, cols(1) title("Chile: Cointegrating Regression Residuals")
+graph save "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/chile_res.gph"
+
+
+
+
+
+
+
+
+
+
+
+****************************
+* ECM
+****************************
+
 
 * Chile
 varsoc constmanufact constagricult, maxlag(10) /* lag 2 */

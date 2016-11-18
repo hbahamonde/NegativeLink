@@ -42,7 +42,7 @@
 \pagestyle{fancy} % All pages have headers and footers
 \fancyhead{} % Blank out the default header
 \fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Paper 1  $\bullet$ v.1} % Custom header text
+\fancyhead[C]{Paper 2  $\bullet$ v.1} % Custom header text
 \fancyfoot[RO,LE]{\thepage} % Custom footer text
 
 %----------------------------------------------------------------------------------------
@@ -191,8 +191,56 @@ ABSTRACT
 \epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists]}}{Arthur Lewis, 1965 (p. 410)}
 
 
+\begin{table}[h]
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{ c c c c c} 
+\hline
+{\bf Country} & {\bf Sector} & {\bf Augmented Dickey–Fuller}  & Phillips–Perron & Im–Pesaran–Shin & KPSS & {\bf Stationarity} \\
+\hline
+\multirow{2}{4em}{Chile}  & Agriculture & -2.889 &    &  &   &  \\
+                          & Industry    & -2.889 &    &   &  &  \\
+
+\hline
+\multirow{2}{4em}{Venezuela} & Agriculture &    &   &  &  &  \\
+                             & Industry    &    &   &  &  &  \\
+
+\hline
+\multirow{2}{4em}{Peru} & Agriculture &     &   &   &   &  \\
+                        & Industry    &     &   &   &    &  \\                          
+
+\hline
+\multirow{2}{4em}{Nicaragua} & Agriculture &    &   &  &  &  \\
+                             & Industry    &    &   &  &  &  \\  
+
+\hline
+\multirow{2}{4em}{Guatemala} & Agriculture &    &   &   &  &  \\
+                             & Industry    &    &   &   &  &  \\  
+
+\hline
+\multirow{2}{4em}{Ecuador} & Agriculture &    &   &   &   &  \\
+                           & Industry    &    &   &   &   &  \\ 
+
+\hline
+\multirow{2}{4em}{Colombia} & Agriculture &     &   &   &   &  \\
+                            & Industry    &     &   &   &   &  \\ 
+\hline
+\end{tabular}
+\end{scriptsize}
+\caption{Unit Root Tests for Agricultural and Industrial Development}
+\label{unit:root:tests}
+\end{center}
+\end{table}
 
 \newpage
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\maxwidth]{ts_graphs.pdf}
+\caption{Agricultural and Industrial Sectoral Outputs, 1900-2010\label{sectoral:outputs:ts:plot}}
+\end{figure}
+
 
 
 \newpage
@@ -203,4 +251,5 @@ ABSTRACT
 
 
 
+\footnote{I show the 5\% confidence critical value. Both trend and drift were tested for all. Also, all variables were lagged one period.}
 
