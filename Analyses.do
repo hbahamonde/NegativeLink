@@ -2,7 +2,7 @@
 
 
 * ssc install blindschemes, replace all
-* set scheme plotplainblind, permanently
+* set scheme  s1color, permanently
 
 
 ****************************
