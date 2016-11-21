@@ -1,9 +1,8 @@
 * Negative Link Paper
 
 
-* ssc install blindschemes, replace all
-* set scheme  s1color, permanently
-
+set scheme  s1color, permanently
+set more off, permanently
 
 ****************************
 * DESCRIBING THE DATA
@@ -20,18 +19,19 @@ tsset country year, yearly
 
 
 * Plot the data 
-	tsline constagricult constmanufact if country==4, title("Chile") xtitle("") ytitle("") name(Chile_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
-	tsline constagricult constmanufact if country==5, title("Colombia") xtitle("") ytitle("") name(Colombia_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
-	
-	tsline constagricult constmanufact if country==8, title("Ecuador") xtitle("") ytitle("") name(Ecuador_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
-	
-	tsline constagricult constmanufact if country==10, title("Guatemala") xtitle("") ytitle("") name(Guatemala_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
-	
-	tsline constagricult constmanufact if country==14, title("Nicaragua") xtitle("") ytitle("") name(Nicaragua_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
-	
-	tsline constagricult constmanufact if country==17, title("Peru") xtitle("") ytitle("") name(Peru_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	tsline constagricult constmanufact if country==4, title("Chile") xtitle("") ytitle("") name(Chile_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3) 
 
-	tsline constagricult constmanufact if country==20, title("Venezuela") xtitle("") ytitle("") name(Venezuela_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2))
+	tsline constagricult constmanufact if country==5, title("Colombia") xtitle("") ytitle("") name(Colombia_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+	
+	tsline constagricult constmanufact if country==8, title("Ecuador") xtitle("") ytitle("") name(Ecuador_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+	
+	tsline constagricult constmanufact if country==10, title("Guatemala") xtitle("") ytitle("") name(Guatemala_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+	
+	tsline constagricult constmanufact if country==14, title("Nicaragua") xtitle("") ytitle("") name(Nicaragua_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+	
+	tsline constagricult constmanufact if country==17, title("Peru") xtitle("") ytitle("") name(Peru_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+
+	tsline constagricult constmanufact if country==20, title("Venezuela") xtitle("") ytitle("") name(Venezuela_TS, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
 	* combining all ts graphs // install package grc1leg
 	grc1leg Chile_TS Venezuela_TS Peru_TS Nicaragua_TS Guatemala_TS Ecuador_TS Colombia_TS, legendfrom(Chile_TS) cols(3) 
 	graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/ts_graphs.pdf", replace
@@ -116,9 +116,19 @@ pperron constagricult, lag(1) trend // I(1)
 
 
 ************
-* KPSS 
+* KPSS  \\  Kwiatkowski, Phillips, Schmidt, and Shin (KPSS, 1992)
 ************
 
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+** 
+kpss constmanufact // I(1)
+kpss constmanufact, qs auto // I(1)
+// conclusion: I(1)
+
+kpss constagricult // I(1)
+kpss constagricult, qs auto // I(1)
+// conclusion: I(1)
 
 
 
@@ -126,66 +136,69 @@ pperron constagricult, lag(1) trend // I(1)
 ************
 * GLS detrended augmented Dickey–Fuller test // See Elliott et al. (1996)
 ************
+
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+
 ** 
-dfgls constmanufact, maxlag(3) // 
-dfgls constmanufact, maxlag(3) trend // 
-// conclusion: 
+dfgls constmanufact, maxlag(3) // I(1)
+dfgls constmanufact, maxlag(3) trend // I(1) 
+// conclusion: I(1)
 
-dfgls constagricult, maxlag(3) // 
-dfgls constagricult, maxlag(3) trend // 
-// conclusion: 
-
-
+dfgls constagricult, maxlag(3) // I(1)
+dfgls constagricult, maxlag(3) trend // I(1)
+// conclusion: I(1)
 
 
-************
+****************************
 * Engle-Granger
-************
+****************************
 
-* Cointegrating Regression
+
+* Cointegrating Regression -- first stage
+reg constmanufact L1.constagricult L1.constmanufact
 capture drop res*
-reg constmanufact L1.constmanufact constagricult
 predict res_Chile, res
-tsline res_Chile, title("Chile") xtitle("") ytitle("") name(Chile_CoIntReg_Res, replace)
+
+* Second Stage
+
+reg D.constmanufact L1D.constagricult L1D.constmanufact L.res_Chile // eq 1
+reg D.constagricult L1D.constmanufact L1D.constagricult L.res_Chile // eq 2
+
+
 
 * Testing Stationarity of Residuals of Cointegrating Regression
+tsline res_Chile, title("Chile") xtitle("") ytitle("") name(Chile_CoIntReg_Res, replace)
+
+** MacKinnon approximate sign. p-value = stationarity
 dfuller res_Chile, reg lag(1) // stationary 
 dfuller res_Chile, reg lag(1) drift // stationary
 dfuller res_Chile, reg lag(1) trend // stationary
 // conclusion: stationary
 
-
-
 // Auto-Correlation Functions for Cointegrating Regression Residuals
-ac res_Chile, xtitle("AC") ytitle("") note("") name(Chile_AC_Res_CoIntReg, replace) 
-pac res_Chile, xtitle("PAC") ytitle("") note("") name(Chile_PAC_Res_CoIntReg, replace) 
+ac res_Chile, xtitle("AC") ytitle("") note("") name(Chile_AC_Res_CoIntReg, replace) ylabel(#3, labsize(vsmall)) ymtick(##3)  
+pac res_Chile, xtitle("PAC") ytitle("") note("") name(Chile_PAC_Res_CoIntReg, replace) ylabel(#3, labsize(vsmall)) ymtick(##3) 
 graph combine Chile_AC_Res_CoIntReg Chile_PAC_Res_CoIntReg, cols(1) title("Chile: Cointegrating Regression Residuals")
 graph save "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/chile_res.gph"
 
 
 
-
-
-
-
-
-
-
-
 ****************************
+* ECM via VAR
+****************************
+
 * ECM
-****************************
+varsoc constmanufact constagricult, maxlag(5) // lag 4 // test for lag lenght
+vecrank constmanufact constagricult, lags(4) max // rank 1: This is the number of cointegrating vectors in the system.
+vec constmanufact constagricult, rank(1) lags(4) 
+// interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
+
+var d.constmanufact d.constagricult, exog(l.res_Chile) lags(1/4)
+// interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
 
 
-* Chile
-varsoc constmanufact constagricult, maxlag(10) /* lag 2 */
-vecrank constmanufact constagricult, lags(2) trend(trend) /* rank 1 */
-vec constmanufact constagricult, rank(1) lags(2) trend(trend)  /* trend(trend) IF I INCLUDE THIS IT WONT COMPUTE NORMALITY TESTS */
 
-
-vecstable // STABLE
-// veclmar, mlag(6) 
-// vecnorm
 
 
 // residuals appear to be normal.

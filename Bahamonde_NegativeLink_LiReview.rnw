@@ -108,6 +108,8 @@ Ghana, and Zimbabwe.
 \citet{Haber2011} study the relationship between natural resource ownership/exploitation and authoritarianism.
 \citet{Sobel2011} study the relationship between persistence and institutional change.
 \citet[489]{Herzer2012}: ``estimate the long-run effect of income inequality on per-capita income.''
+\citet{Blaydes2011} study caloric consumption and regime type
+
 
 % 
 	% The Chow test is used to test for "structural changes"
