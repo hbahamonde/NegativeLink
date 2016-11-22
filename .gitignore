@@ -36,3 +36,5 @@ Resources
 *.fdb_latexmk
 
 .Rhistory
+
+*.irf
