@@ -91,6 +91,10 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 \citet[198-199]{Durr1992}.
 \citet[122]{Sobel2011}. % runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
 
+% VARs and IRF // difficulty to analyze and understand the data
+\citet[159]{Lutkepohl2004}: ``it is often difficult to drawany conclusion from the large number of coefficient estimates in aVARsystem.''
+
+
 
 % Unit roots 
   
