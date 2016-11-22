@@ -35,4 +35,4 @@ Resources
 
 *.fdb_latexmk
 
-*.Rhistory
+.Rhistory
