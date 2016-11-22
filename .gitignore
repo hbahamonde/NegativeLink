@@ -34,3 +34,5 @@ Resources
 *.blg
 
 *.fdb_latexmk
+
+*.Rhistory
