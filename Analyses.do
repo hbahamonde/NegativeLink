@@ -220,8 +220,8 @@ reg D.constagricult L(1/3)D.constmanufact L(1/3)D.constagricult L.res_Chile // e
 
 * 
 varsoc constmanufact constagricult, maxlag(5) // lag 4 // test for lag lenght
-vecrank constmanufact constagricult, lags(3) max // rank 1: This is the number of cointegrating vectors in the system. // report LL and significance level
-vec constmanufact constagricult, rank(1) lags(3)
+vecrank constmanufact constagricult, lags(3) max trend(none) // don't include trend // rank 1: This is the number of cointegrating vectors in the system. // report LL and significance level
+vec constmanufact constagricult, rank(1) lags(3) trend(none)
 // interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
 // interpreation: agr is POSITIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING UP, trying to 'grow even faster.'
 
@@ -600,7 +600,7 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 
 
 ********************************************************************************************************************************************
-* 																	P 	 	E 	  R 	 	 U 
+* 																	P 	 	E 	  R 	 U 
 ********************************************************************************************************************************************
 
 
@@ -719,8 +719,8 @@ reg D.constagricult L(1/3)D.constmanufact L(1/3)D.constagricult L.res_Peru // eq
 
 * 
 varsoc constmanufact constagricult, maxlag(5) // lag 1  // test for lag lenght
-vecrank constmanufact constagricult, lags(1) max // given prior tests, I will not include a trend term // rank 1: This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
-vec constmanufact constagricult, rank(1) lags(1) // given prior tests, I will not include a trend term
+vecrank constmanufact constagricult, lags(1) max trend(none) // given prior tests, I will not include a trend term // rank 1: This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
+vec constmanufact constagricult, rank(1) lags(1) trend(none) // given prior tests, I will not include a trend term
 // restricted constant in which there is no linear or quadratic trend in the undifferenced data fits the data best. see graph below.
 // interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
 // interpreation: agr is POSITIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING UP, trying to 'grow even faster.'
@@ -880,7 +880,7 @@ reg D.constagricult L(1/3)D.constmanufact L(1/3)D.constagricult L.res_Nicaragua 
 
 * 
 varsoc constmanufact constagricult, maxlag(5) // lag 2 // test for lag lenght
-vecrank constmanufact constagricult, lags(2) max // given prior tests, I will include a trend term // I included all kinds of trends, and all of them gave me rank = 0 // rank 1: This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
+vecrank constmanufact constagricult, lags(2) max  // given prior tests, I will include a trend term // I included all kinds of trends, and all of them gave me rank = 0 // rank 1: This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
 // vec constmanufact constagricult, rank(0) lags(2) // WILL NOT FIT, SINCE THERE ARE ZERO COINTEGRATED VECTORS.
 // restricted constant in which there is no linear or quadratic trend in the undifferenced data fits the data best. see graph below.
 // interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
@@ -1043,7 +1043,7 @@ reg D.constagricult L(1/2) D.constmanufact L(1/2) D.constagricult L.res_Guatemal
 
 * 
 varsoc constmanufact constagricult, maxlag(5) // lag 3 // test for lag lenght
-vecrank constmanufact constagricult, lags(3) max // given prior tests, I will not include a trend term // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
+vecrank constmanufact constagricult, lags(3) max trend(none) // given prior tests, I will not include a trend term // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
 // vec constmanufact constagricult, rank(0) lags(2) // WILL NOT FIT, SINCE THERE ARE ZERO COINTEGRATED VECTORS.
 // restricted constant in which there is no linear or quadratic trend in the undifferenced data fits the data best. see graph below.
 // interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
@@ -1081,3 +1081,340 @@ irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note(""
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Guatemala_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
 gr combine irf_ce_Guatemala_Man_Agr.gph  irf_ce_Guatemala_Agr_Man.gph, col(2) saving(Guatemala_irf, replace) title("Guatemala")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Guatemala_irf.pdf", replace
+
+
+
+
+
+
+********************************************************************************************************************************************
+* 															N	 I 	 C 	 A 	 R 	 A 	 G 	 U 	 A
+********************************************************************************************************************************************
+
+
+
+
+****************************
+* UNIT ROOT TESTS
+****************************
+
+* NICARAGUA
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==14
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+
+************
+* ADF
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+dfuller constmanufact, lag(1) reg // I(1)
+dfuller constmanufact, lag(1) reg drift // I(1)
+dfuller constmanufact, lag(1) reg trend // I(1) // trend is significant at 10% // 
+// conclusion: I(1)
+
+dfuller constagricult, lag(1) reg // I(1)
+dfuller constagricult, lag(1) reg drift // I(1)
+dfuller constagricult, lag(1) reg trend // I(1) // trend IS significant // 
+// conclusion: I(1)
+
+
+************
+* Phillips–Perron // See Phillips (1987) and Phillips and Perron (1988)
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+pperron constmanufact, lag(1) reg // I(1)
+pperron constmanufact, lag(1) reg trend // I(1)  // trend IS significant @ 10%.
+// conclusion: I(1)
+
+pperron constagricult, lag(1) reg // I(1)
+pperron constagricult, lag(1) reg trend //  // trend IS significant @ 10%.
+// conclusion: I(1)
+
+
+
+************
+* KPSS  \\  Kwiatkowski, Phillips, Schmidt, and Shin (KPSS, 1992)
+************
+
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+** 
+// search kpss ado
+kpss constmanufact // I(1)
+kpss constmanufact, qs auto // I(1)
+// conclusion: I(1)
+
+kpss constagricult // I(1)
+kpss constagricult, qs auto // I(1)
+// conclusion: I(1)
+
+
+
+
+************
+* GLS detrended augmented Dickey–Fuller test // See Elliott et al. (1996)
+************
+
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+
+** 
+// search dfgls ado
+dfgls constmanufact, maxlag(3) // I(1)
+dfgls constmanufact, maxlag(3) trend //  I(1)
+// conclusion: I(1)
+
+dfgls constagricult, maxlag(3) // I(1)
+dfgls constagricult, maxlag(3) trend // I(1)
+// conclusion: I(1)
+
+
+****************************
+* ECM // Engle-Granger via OLS
+****************************
+
+** Cointegrating Regression -- First stage
+reg constmanufact constagricult // averiguar bien como se hace esta etapa: mande un mail a Janet Box-St. Nov 21st. 2016.
+capture drop res*
+predict res_Nicaragua, res
+
+// testing stationarity of cointegrating vector: Janet Box-St.'s book, p. 161, eq. 6.11 // 
+reg d.res_Nicaragua l.res_Nicaragua // p-value no sign: no cointegration // it is integrated
+
+** Second Stage
+reg D.constmanufact L(1/3)D.constagricult L(1/3)D.constmanufact L.res_Nicaragua // eq 1
+reg D.constagricult L(1/3)D.constmanufact L(1/3)D.constagricult L.res_Nicaragua // eq 2
+
+
+
+****************************
+*  ECM // via Johansen's MLE procedure.
+****************************
+
+* 
+varsoc constmanufact constagricult, maxlag(5) // lag 2 // test for lag lenght
+vecrank constmanufact constagricult, lags(2) max // given prior tests, I will include a trend term // I included all kinds of trend specifications, however, all of them gave me a rank == 0. Mode to Var // This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
+
+// vec constmanufact constagricult, rank(1) lags(2) //
+// restricted constant in which there is no linear or quadratic trend in the undifferenced data fits the data best. see graph below.
+// interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
+// interpreation: agr is POSITIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING UP, trying to 'grow even faster.'
+
+
+// Disequilibria graph
+// residuals appear to be normal ?
+// capture drop ce1_Nicaragua 
+// predict ce1_Nicaragua, ce equation(_ce1)
+// tsline ce1_Nicaragua, yline(0) ytitle("Disequilibria")
+
+
+****************************
+* VAR
+****************************
+
+* 
+var D.constmanufact D.constagricult, lags(1/2) // put the differenced variables (as the STATA manual does). // put this in appendix
+vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // this is the main finding: AGR does NOT cause IND, IND causes AGR.
+
+// var d.constmanufact d.constagricult, exog(l.res_Venezuela) lags(1/3)
+// We can test for the absence of Granger causality by estimating a VAR model
+// interpreation: both are Granger causes by the other, no real conflict exists. 
+
+****************************
+* IMPULSE RESPONSE FUNCTIONS from VAR
+****************************
+
+* create IRF "object"
+irf create Nicaragua, step(3) set(Nicaragua, replace)
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
+gr combine irf_ce_Nicaragua_Man_Agr.gph  irf_ce_Nicaragua_Agr_Man.gph, col(2) saving(Nicaragua_irf, replace) title("Nicaragua")
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Nicaragua_irf.pdf", replace
+
+
+
+********************************************************************************************************************************************
+* 																	E	C 	U 	A 	D 	O 	R
+********************************************************************************************************************************************
+
+
+
+
+****************************
+* UNIT ROOT TESTS
+****************************
+
+* ECUADOR
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==8
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+
+************
+* ADF
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+dfuller constmanufact, lag(1) reg // I(1)
+dfuller constmanufact, lag(1) reg drift // I(1)
+dfuller constmanufact, lag(1) reg trend // I(1) // trend IS significant // 
+// conclusion: I(1)
+
+dfuller constagricult, lag(1) reg // I(1)
+dfuller constagricult, lag(1) reg drift // I(1)
+dfuller constagricult, lag(1) reg trend // I(1)  // trend is NOT significant // 
+// conclusion: I(1)
+
+
+************
+* Phillips–Perron // See Phillips (1987) and Phillips and Perron (1988)
+************
+
+** MacKinnon approximate sign. p-value = stationarity
+
+** 
+pperron constmanufact, lag(1) reg // I(1)
+pperron constmanufact, lag(1) reg trend // I(1)   // trend IS significant
+// conclusion: I(1)
+
+pperron constagricult, lag(1) reg // I(1)
+pperron constagricult, lag(1) reg trend // I(1)  // trend is NOT significant
+// conclusion: I(1)
+
+
+
+************
+* KPSS  \\  Kwiatkowski, Phillips, Schmidt, and Shin (KPSS, 1992)
+************
+
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+** 
+// search kpss ado
+kpss constmanufact // I(1)
+kpss constmanufact, qs auto // I(1)
+// conclusion: I(1)
+
+kpss constagricult // I(1)
+kpss constagricult, qs auto // I(1)
+// conclusion: I(1)
+
+
+
+
+************
+* GLS detrended augmented Dickey–Fuller test // See Elliott et al. (1996)
+************
+
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+
+
+** 
+// search dfgls ado
+dfgls constmanufact, maxlag(3) // I(1)
+dfgls constmanufact, maxlag(3) trend //  I(1)
+// conclusion: I(1)
+
+dfgls constagricult, maxlag(3) // I(1)
+dfgls constagricult, maxlag(3) trend // I(1)
+// conclusion: I(1)
+
+
+****************************
+* ECM // Engle-Granger via OLS
+****************************
+
+** Cointegrating Regression -- First stage
+reg constmanufact constagricult // averiguar bien como se hace esta etapa: mande un mail a Janet Box-St. Nov 21st. 2016.
+capture drop res*
+predict res_Ecuador, res
+
+tsline res_Ecuador
+
+
+// testing stationarity of cointegrating vector: Janet Box-St.'s book, p. 161, eq. 6.11 // 
+reg d.res_Ecuador l.res_Ecuador // p-value no sign: no cointegration // it is NOT integrated
+
+** Second Stage
+reg D.constmanufact L(1/2) D.constagricult L(1/2) D.constmanufact L.res_Ecuador // eq 1
+reg D.constagricult L(1/2) D.constmanufact L(1/2) D.constagricult L.res_Ecuador // eq 2
+
+
+
+****************************
+*  ECM // via Johansen's MLE procedure.
+****************************
+
+* 
+varsoc constmanufact constagricult, maxlag(10) // lag 2 // test for lag lenght
+vecrank constmanufact constagricult, lags(2) max trend(none) // given prior tests, I will not include a trend term // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
+vec constmanufact constagricult, rank(1) lags(2) //
+// restricted constant in which there is no linear or quadratic trend in the undifferenced data fits the data best. see graph below.
+// interpreation: agr is NEGATIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING DOWN, not 'growing even faster.'
+// interpreation: agr is POSITIVE and SIGNIFICANT, that is, when the industrial sector grows, the agr sector catches up GOING UP, trying to 'grow even faster.'
+
+
+// Disequilibria graph
+// residuals appear to be normal ?
+capture drop ce1_Ecuador 
+predict ce1_Ecuador, ce equation(_ce1)
+tsline ce1_Ecuador, yline(0) ytitle("Disequilibria")
+
+
+// irf from ECM
+irf create Ecuador, step(3) set(Ecuador, replace)
+// 'simple' IRF
+irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
+irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
+gr combine irf_ce_Ecuador_Man_Agr.gph  irf_ce_Ecuador_Agr_Man.gph, col(2) saving(Ecuador_irf, replace) title("Ecuador")
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Ecuador_irf.pdf", replace
+// interpreation: Both are the same. My interpreation is that the industrial sector is not strong enough to challenge the agricultural sector and borrow labor from the traditional sector. It is in a very early stage of industrialization.
+
+****************************
+* VAR
+****************************
+
+* 
+var D.constmanufact D.constagricult, lags(1/2) // put the differenced variables (as the STATA manual does). // put this in appendix
+vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // this is the main finding: AGR does NOT cause IND, IND causes AGR.
+
+// var d.constmanufact d.constagricult, exog(l.res_Guatemala) lags(1/3)
+// We can test for the absence of Granger causality by estimating a VAR model
+// interpreation: both are Granger causes by the other, no real conflict exists. 
+
+****************************
+* IMPULSE RESPONSE FUNCTIONS from VAR
+****************************
+
+* create IRF "object"
+irf create Ecuador, step(3) set(Ecuador, replace)
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) ytitle(Impulse Response) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
+gr combine irf_ce_Ecuador_Man_Agr.gph  irf_ce_Ecuador_Agr_Man.gph, col(2) saving(Ecuador_irf, replace) title("Ecuador")
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Ecuador_irf.pdf", replace
+// interpretation: I think that it does not show a clear pattern. In Fact, once each series is shocked, both react in the same way. This explanation NOT contradictory with the IRF from the ECM.
