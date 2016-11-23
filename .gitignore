@@ -11,6 +11,8 @@ xtwest.do
 
 Resources/kellyenns_mood.do
 
+Resources
+
 .DS_Store
 
 *.webloc
@@ -32,3 +34,7 @@ Resources/kellyenns_mood.do
 *.blg
 
 *.fdb_latexmk
+
+.Rhistory
+
+*.irf
