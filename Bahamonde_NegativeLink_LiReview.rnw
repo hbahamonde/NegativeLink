@@ -2,9 +2,15 @@
 % Methods
 
 	% lags
-	\citet[14]{Landon-Lane2003}: ``Caselli, Esquivel and Lefort (1996). They concentrate on the growth regressions and note that when the dependant variable is a growth rate, and a lagged level of the dependent variable appears as a regressor, there is a correlation between the error term and the regressors, and so OLS is inconsistent.''
+	\citet[14]{Landon-Lane2003}: ``Caselli, Esquivel and Lefort (1996). They concentrate on the growth regressions and note that when the dependent variable is a growth rate, and a lagged level of the dependent variable appears as a regressor, there is a correlation between the error term and the regressors, and so OLS is inconsistent.''
 
 % Co integration // methods // measurement
+
+	% why it's important to include time `trends'
+	Because some variables grow with time, like economic growth (\citet[129]{Box-Steffensmeier:2014fe})
+	``If a series has a deterministic trend, it will likely appear to grow (or decline) steadily over time. That is, the increase (or decrease) in the value of the series will be a direct function of time, rather than the previous values of the variable itself.''
+	The case of growth seems to be `a stochastic trend,' these series ``wander'' up and down, yet never revert to a given mean. (p. 129, their wording).
+	\citet[sec. 5.7]{Johansen1995} specified five types of trend specifications. % consider to write down the equation for the type of trend.
 
 
 	% why is it important to correct for cointegration

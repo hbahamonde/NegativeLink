@@ -386,7 +386,7 @@ Both \texttt{Industrial Output} and \texttt{Agricultural Output} are differenced
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=\maxwidth]{ts_graphs.pdf}
+\includegraphics[width=\maxwidth]{ts_graphs}
 \caption{Agricultural and Industrial Sectoral Outputs, 1900-2010\label{sectoral:outputs:ts:plot}}
 \end{figure}
 
