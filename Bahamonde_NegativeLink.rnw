@@ -356,6 +356,11 @@ and the $\lambda_{\text{Max}}$ statistic as,
 
 \newpage
 
+% from stata manual
+% VECMs are used to model the stationary relationships between multiple time series that contain unit roots. vec implements Johansen’s approach for estimating the parameters of a VECM. [TS]
+
+% sacar formulas de stata manual p. 856 and here http://www.stata.com/manuals13/tsvecintro.pdf
+
 
 \subsection{Engle-Granger Regressions and Error Correction Models}
 
@@ -382,7 +387,7 @@ Both \texttt{Industrial Output} and \texttt{Agricultural Output} are differenced
 
 
 
-
+% VARs are a difference equation system
 
 \begin{figure}[h]
 \centering
