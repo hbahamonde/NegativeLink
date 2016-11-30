@@ -225,7 +225,7 @@ vec constmanufact constagricult, alpha rank(1) lags(5)  trend(trend)
 // interpreation: in the IND equation, the error correction term is NEG and SIGN, meaning that as the growth differentials 'drift appart the IND sector slows down a bit (as the size of the change is not tha big).' this confirms the inter-sectoral dependence: as both sectors drift appart, food prices rise, limiting the expansion of the IND sector. Also, in the AGR equation, as both sectors drif appart, the AGR sector speeds up a little bit (as the size of the effect is not that big). I took this interpretation from Box's book p. 168.
 
 // post-estimation
-<<<<<<< HEAD
+
 	// veclmar // won't compute.
 
 	// vecnorm // won't compute.
@@ -241,8 +241,8 @@ vec constmanufact constagricult, alpha rank(1) lags(5)  trend(trend)
 // irf create Chile, step(10) set(Chile, replace)
 
 // 'simple' IRF
-// irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
-// irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
+// irf graph oirf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
+// irf graph oirf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
 // gr combine irf_ce_Chile_Man_Agr.gph  irf_ce_Chile_Agr_Man.gph, col(2) saving(Chile_irf_ECM, replace) title("Chile")
 // graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_irf_ECM.pdf", replace
 
@@ -274,8 +274,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Chile, step(5) set(Chile, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-1(.1)2)) xscale(range(0(1)5)) 
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace) title("") subtitle("Response of Industry to Agriculture")  xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-1(.1)2)) xscale(range(0(1)5)) 
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-500(250)1000)) xscale(range(0(1)5)) 
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace) title("") subtitle("Response of Industry to Agriculture")  xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-500(250)1000)) xscale(range(0(1)5)) 
 gr combine irf_ce_Chile_Man_Agr.gph  irf_ce_Chile_Agr_Man.gph, col(2) saving(Chile_irf_VAR, replace) title("Chile")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_irf_VAR.pdf", replace
 
@@ -294,7 +294,7 @@ graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_i
 // However, the plot does show that once agriculture 
 
 // orthogonalized IRF's
-// irf graph irf, impulse(constmanufact) response(constagricult) saving(oirf_ce_Chile_Man_Agr, replace) title("Chile: Response of Agriculture")
+// irf graph oirf, impulse(constmanufact) response(constagricult) saving(oirf_ce_Chile_Man_Agr, replace) title("Chile: Response of Agriculture")
 // irf graph oirf, impulse(constagricult) response(constmanufact) saving(oirf_ce_Chile_Agr_Man, replace) title("Chile: Response of Manufacture")
 // gr combine oirf_ce_Chile_Man_Agr.gph  oirf_ce_Chile_Agr_Man.gph, col(2) saving(oirf, replace) title("OIRF")
 
@@ -614,8 +614,8 @@ tsline ce1_Venezuela, yline(0) ytitle("Disequilibria")
 irf create Venezuela, step(10) set(Venezuela, replace)
 
 // 'simple' IRF
-// irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Venezuela_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
-// irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Venezuela_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
+// irf graph oirf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Venezuela_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
+// irf graph oirf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Venezuela_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
 // gr combine irf_ce_Venezuela_Man_Agr.gph  irf_ce_Venezuela_Agr_Man.gph, col(2) saving(Venezuela_irf_ECM, replace) title("Venezuela")
 // graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Venezuela_irf_ECM.pdf", replace
 
@@ -645,8 +645,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Venezuela, step(5) set(Venezuela, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-2(.1)2)) xscale(range(0(1)5))
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-2(.1)2)) xscale(range(0(1)5))
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-200(50)200)) xscale(range(0(1)5))
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-200(50)200)) xscale(range(0(1)5))
 gr combine irf_ce_Venezuela_Man_Agr.gph  irf_ce_Venezuela_Agr_Man.gph, col(2) saving(Venezuela_irf_VAR, replace) title("Venezuela")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Venezuela_irf_VAR.pdf", replace
 
@@ -802,8 +802,8 @@ tsline ce1_Peru, yline(0) ytitle("Disequilibria")
 // irf create Peru, step(5) set(Peru, replace)
 
 // 'simple' IRF
-// irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years)  saving(// irf_ce_Peru_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
-// irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
+// irf graph oirf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years)  saving(// irf_ce_Peru_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry")
+// irf graph oirf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("")
 // gr combine irf_ce_Peru_Man_Agr.gph  irf_ce_Peru_Agr_Man.gph, col(2) saving(Peru_irf_VEC, replace) title("Peru")
 // graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Peru_irf_VEC.pdf", replace
 
@@ -835,8 +835,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Peru, step(5) set(Peru, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Peru_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ylabel(#4) ytick(#4) ymtick(#4) yscale(range(-.5(.1).5)) xscale(range(0(1)5))
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ylabel(#4) ytick(#4) ymtick(#4) yscale(range(-.5(.1).5)) xscale(range(0(1)5))
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Peru_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ylabel(#4) ytick(#4) ymtick(#4) yscale(range(-2000(500)2000)) xscale(range(0(1)5))
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ylabel(#4) ytick(#4) ymtick(#4) yscale(range(-2000(500)2000)) xscale(range(0(1)5))
 gr combine irf_ce_Peru_Man_Agr.gph  irf_ce_Peru_Agr_Man.gph, col(2) saving(Peru_irf_VAR, replace) title("Peru")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Peru_irf_VAR.pdf", replace
 
@@ -1013,8 +1013,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Nicaragua, step(3) set(Nicaragua, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.1)1)) xscale(range(0(1)3))
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.1)1)) xscale(range(0(1)3))
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-60(20)60)) xscale(range(0(1)3))
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-60(20)60)) xscale(range(0(1)3))
 gr combine irf_ce_Nicaragua_Man_Agr.gph  irf_ce_Nicaragua_Agr_Man.gph, col(2) saving(Nicaragua_irf_VAR, replace) title("Nicaragua")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Nicaragua_irf_VAR.pdf", replace
 
@@ -1195,8 +1195,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Guatemala, step(5) set(Guatemala, replace)
 * HERE
 // 'simple' IRF // 
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Guatemala_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") ymtick(#3) xmtick(#3) xlabel(#5)  yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Guatemala_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") ymtick(#3) xmtick(#3) xlabel(#5) yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Guatemala_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") ymtick(#3) xmtick(#3) xlabel(#5)  yscale(range(-10(5)20)) xscale(range(0(1)5)) 
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Guatemala_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") ymtick(#3) xmtick(#3) xlabel(#5) yscale(range(-10(5)20)) xscale(range(0(1)5)) 
 gr combine irf_ce_Guatemala_Man_Agr.gph  irf_ce_Guatemala_Agr_Man.gph, col(2) saving(Guatemala_irf_VAR, replace) title("Guatemala")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Guatemala_irf_VAR.pdf", replace
 
@@ -1351,8 +1351,8 @@ vec constmanufact constagricult, alpha rank(1) lags(2) trend(n) //
 // irf from ECM
 // irf create Ecuador, step(3) set(Ecuador, replace)
 // 'simple' IRF
-// irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
-// irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
+// irf graph oirf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
+// irf graph oirf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
 // gr combine irf_ce_Ecuador_Man_Agr.gph  irf_ce_Ecuador_Agr_Man.gph, col(2) saving(Ecuador_irf_ECM, replace) title("Ecuador")
 // graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Ecuador_irf_ECM.pdf", replace
 // interpreation: Both are the same. My interpreation is that the industrial sector is not strong enough to challenge the agricultural sector and borrow labor from the traditional sector. It is in a very early stage of industrialization.
@@ -1387,8 +1387,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Ecuador, step(5) set(Ecuador, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5))  
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5)) 
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5))  
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5)) 
 gr combine irf_ce_Ecuador_Man_Agr.gph  irf_ce_Ecuador_Agr_Man.gph, col(2) saving(Ecuador_irf_VAR, replace) title("Ecuador")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Ecuador_irf_VAR.pdf", replace
 // interpretation: I think that it does not show a clear pattern. In Fact, once each series is shocked, both react in the same way. This explanation NOT contradictory with the IRF from the ECM.
@@ -1543,8 +1543,8 @@ vec constmanufact constagricult, alpha rank(1) lags(2) //
 // irf from ECM
 // irf create Colombia, step(3) set(Colombia, replace)
 // 'simple' IRF
-// irf graph irf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
-// irf graph irf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
+// irf graph oirf, impulse(constmanufact) response(constagricult) byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci
+// irf graph oirf, impulse(constagricult) response(constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci
 // gr combine irf_ce_Colombia_Man_Agr.gph  irf_ce_Colombia_Agr_Man.gph, col(2) saving(Colombia_irf_ECM, replace) title("Colombia")
 // graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Colombia_irf_ECM.pdf", replace
 // interpreation: both sectors respond the same when shocked, meaning that the industrial sector is not strong enough to gain superiority.
@@ -1579,8 +1579,8 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Colombia, step(5) set(Colombia, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5))  
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5))  
+irf graph oirf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-500(250)1000)) xscale(range(0(1)5))  
+irf graph oirf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(#3) xlabel(#5) ytick(#5) ymtick(#3) yscale(range(-500(250)1000)) xscale(range(0(1)5))  
 gr combine irf_ce_Colombia_Man_Agr.gph  irf_ce_Colombia_Agr_Man.gph, col(2) saving(Colombia_irf_VAR, replace) title("Colombia")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Colombia_irf_VAR.pdf", replace
 // interpretation: the industrial sector does react positively when the agricultural sector grows, but then it decays. it complements with the IRF (ECM) above: it is not strong enough to gain superiority or to sustain growth. // use this one.
