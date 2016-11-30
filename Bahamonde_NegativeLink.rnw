@@ -387,7 +387,10 @@ Both \texttt{Industrial Output} and \texttt{Agricultural Output} are differenced
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 % VARs are a difference equation system
 
 \begin{figure}[h]

@@ -225,9 +225,15 @@ vec constmanufact constagricult, alpha rank(1) lags(5)  trend(trend)
 // interpreation: in the IND equation, the error correction term is NEG and SIGN, meaning that as the growth differentials 'drift appart the IND sector slows down a bit (as the size of the change is not tha big).' this confirms the inter-sectoral dependence: as both sectors drift appart, food prices rise, limiting the expansion of the IND sector. Also, in the AGR equation, as both sectors drif appart, the AGR sector speeds up a little bit (as the size of the effect is not that big). I took this interpretation from Box's book p. 168.
 
 // post-estimation
+<<<<<<< HEAD
 	// veclmar // won't compute.
 
 	// vecnorm // won't compute.
+=======
+	veclmar // won't compute.
+
+	vecnorm // won't compute.
+>>>>>>> master
 
 	vecstable, graph // results: alright.
 
@@ -258,8 +264,11 @@ var d.constmanufact d.constagricult, lags(1/3) // put the differenced variables 
 
 	varnorm // Compute Jarque–Bera, skewness, and kurtosis statistics to test the null hypothesis that the residuals are normally distributed // sign p-value = non normal residuals. // results: non normal residuals
 
+<<<<<<< HEAD
 		varstable, graph // results: alright.
 
+=======
+>>>>>>> master
 
 vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // this is the main finding
 
@@ -270,11 +279,19 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 ****************************
 
 * create IRF "object"
+<<<<<<< HEAD
 irf create Chile, step(5) set(Chile, replace)
 
 // 'simple' IRF
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry") xmtick(##10) xmtick(##5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-1(.1)2)) xscale(range(0(1)5)) 
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace) title("") subtitle("Response of Industry to Agriculture")  xmtick(##10) xmtick(##5) ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-1(.1)2)) xscale(range(0(1)5)) 
+=======
+irf create Chile, step(10) set(Chile, replace)
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Man_Agr, replace) title("") subtitle("Response of Agriculture to Industry") noci xmtick(##10) ymtick(##5) 
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Chile_Agr_Man, replace) title("") subtitle("Response of Industry to Agriculture")  noci xmtick(##10) ymtick(##5)
+>>>>>>> master
 gr combine irf_ce_Chile_Man_Agr.gph  irf_ce_Chile_Agr_Man.gph, col(2) saving(Chile_irf_VAR, replace) title("Chile")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_irf_VAR.pdf", replace
 
@@ -580,7 +597,11 @@ reg D.constagricult L(1/3)D.constmanufact L(1/3)D.constagricult L.res_Venezuela 
 ****************************
 
 * 
+<<<<<<< HEAD
 varsoc constmanufact constagricult, maxlag(5) // lag 2  // test for lag lenght
+=======
+varsoc constmanufact constagricult, maxlag(10) // lag 2  // test for lag lenght
+>>>>>>> master
 vecrank constmanufact constagricult, lags(2) max trend(rc) // with restricted constant // rank 1: This is the number of cointegrating vectors in the system. // from STATA Manual: "By adding the restriction that gamma = 0, we assume there are no linear time trends in the levels of the data. This specification allows the cointegrating equations to be stationary around a constant mean, but it allows no other trends or constant terms" // report LL and significance level
 vec constmanufact constagricult, alpha rank(1) lags(2) trend(rc)  // this combination gives me good residuals.
 // interpreation: cuando los dos sectores se separan, el sector IND se desacelera mas rapido que el sector AGR. El precio de la comida afecta el supply of food to the industrial sector, limiting its rising.
@@ -631,8 +652,11 @@ var d.constmanufact d.constagricult, lags(1/2) // put the differenced variables 
 
 	varnorm // Compute Jarque–Bera, skewness, and kurtosis statistics to test the null hypothesis that the residuals are normally distributed // sign p-value = non normal residuals. // results: normal residuals
 
+<<<<<<< HEAD
 	varstable
 
+=======
+>>>>>>> master
 vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // this is the main finding: AGR does NOT cause IND, IND causes AGR.
 
 ****************************
@@ -643,8 +667,13 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Venezuela, step(5) set(Venezuela, replace)
 
 // 'simple' IRF
+<<<<<<< HEAD
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-2(.1)2)) xscale(range(0(1)5))
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-2(.1)2)) xscale(range(0(1)5))
+=======
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##5) ymtick(##3)
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Venezuela_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##5) ymtick(##3)
+>>>>>>> master
 gr combine irf_ce_Venezuela_Man_Agr.gph  irf_ce_Venezuela_Agr_Man.gph, col(2) saving(Venezuela_irf_VAR, replace) title("Venezuela")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Venezuela_irf_VAR.pdf", replace
 
@@ -775,9 +804,15 @@ vecrank constmanufact constagricult, lags(5) max // given prior tests, I will no
 vec constmanufact constagricult, alpha rank(1) lags(5) trend(t)  // it does not matter the trend I put, all results are the same.
 
 // post-estimation
+<<<<<<< HEAD
 	// veclmar // results: won't compute.
 
 	// vecnorm // results: won't compute.
+=======
+	veclmar // results: won't compute.
+
+	vecnorm // results: won't compute.
+>>>>>>> master
 
 	vecstable, graph // results: alright.
 
@@ -831,8 +866,13 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Peru, step(5) set(Peru, replace)
 
 // 'simple' IRF
+<<<<<<< HEAD
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Peru_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") ylabel(#4) xmtick(##2) ytick(#4) ymtick(#4) yscale(range(-.5(.1).5)) xscale(range(0(1)5))
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") ylabel(#4) xmtick(##2) ytick(#4) ymtick(#4) yscale(range(-.5(.1).5)) xscale(range(0(1)5))
+=======
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Peru_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##5) ymtick(##3)
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Peru_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##5) ymtick(##3)
+>>>>>>> master
 gr combine irf_ce_Peru_Man_Agr.gph  irf_ce_Peru_Agr_Man.gph, col(2) saving(Peru_irf_VAR, replace) title("Peru")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Peru_irf_VAR.pdf", replace
 
@@ -1009,8 +1049,13 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Nicaragua, step(3) set(Nicaragua, replace)
 
 // 'simple' IRF
+<<<<<<< HEAD
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.1)1)) xscale(range(0(1)3))
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") ylabel(#5) ytick(#5) ymtick(#3) yscale(range(-.5(.1)1)) xscale(range(0(1)3))
+=======
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##5) ymtick(##3)
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) /*ytitle(Impulse Response)*/ saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##5) ymtick(##3)
+>>>>>>> master
 gr combine irf_ce_Nicaragua_Man_Agr.gph  irf_ce_Nicaragua_Agr_Man.gph, col(2) saving(Nicaragua_irf_VAR, replace) title("Nicaragua")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Nicaragua_irf_VAR.pdf", replace
 
@@ -1166,7 +1211,11 @@ vec constmanufact constagricult, alpha rank(1) lags(3) trend(rt) //
 ****************************
 
 * 
+<<<<<<< HEAD
 var D.constmanufact D.constagricult, lags(1)  // put the differenced variables (as the STATA manual does). // put this in appendix
+=======
+var D.constmanufact D.constagricult, lags(2)  // put the differenced variables (as the STATA manual does). // put this in appendix
+>>>>>>> master
 
 // post-estimation
 	varlmar // results: 
@@ -1189,10 +1238,17 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 
 * create IRF "object"
 irf create Guatemala, step(5) set(Guatemala, replace)
+<<<<<<< HEAD
 * HERE
 // 'simple' IRF // 
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Guatemala_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") ymtick(#3) xmtick(#3) xlabel(#5)  yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Guatemala_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") ymtick(#3) xmtick(#3) xlabel(#5) yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
+=======
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Guatemala_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##5) ymtick(##3)
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) byopts(note("") legend(off)) xtitle(Years)  saving(irf_ce_Guatemala_Agr_Man, replace) subtitle("Response of Industry to Agriculture") title("") noci xmtick(##5) ymtick(##3)
+>>>>>>> master
 gr combine irf_ce_Guatemala_Man_Agr.gph  irf_ce_Guatemala_Agr_Man.gph, col(2) saving(Guatemala_irf_VAR, replace) title("Guatemala")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Guatemala_irf_VAR.pdf", replace
 
@@ -1373,8 +1429,13 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 irf create Nicaragua, step(5) set(Nicaragua, replace)
 
 // 'simple' IRF
+<<<<<<< HEAD
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5)) 
+=======
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##5) ymtick(##3)
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Nicaragua_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##5) ymtick(##3)
+>>>>>>> master
 gr combine irf_ce_Nicaragua_Man_Agr.gph  irf_ce_Nicaragua_Agr_Man.gph, col(2) saving(Nicaragua_irf_VAR, replace) title("Nicaragua")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Nicaragua_irf_VAR.pdf", replace
 
@@ -1538,11 +1599,18 @@ vec constmanufact constagricult, alpha rank(1) lags(2) trend(n) //
 ****************************
 
 * 
+<<<<<<< HEAD
 var d.constmanufact d.constagricult, lags(1 2) // put the differenced variables (as the STATA manual does). // put this in appendix
 
 
 // post-estimation
 	varlmar, mlag(15)  // results: ok
+=======
+var D.constmanufact D.constagricult, lags(1) // put the differenced variables (as the STATA manual does). // put this in appendix
+
+// post-estimation
+	varlmar // results: ok
+>>>>>>> master
 
 	varnorm // results: ok 
 
@@ -1560,11 +1628,19 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 ****************************
 
 * create IRF "object"
+<<<<<<< HEAD
 irf create Ecuador, step(5) set(Ecuador, replace)
 
 // 'simple' IRF
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5))  
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.7(.1).7)) xscale(range(0(1)5)) 
+=======
+irf create Ecuador, step(10) set(Ecuador, replace)
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##10) ymtick(##5)  
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Ecuador_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##10) ymtick(##5) 
+>>>>>>> master
 gr combine irf_ce_Ecuador_Man_Agr.gph  irf_ce_Ecuador_Agr_Man.gph, col(2) saving(Ecuador_irf_VAR, replace) title("Ecuador")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Ecuador_irf_VAR.pdf", replace
 // interpretation: I think that it does not show a clear pattern. In Fact, once each series is shocked, both react in the same way. This explanation NOT contradictory with the IRF from the ECM.
@@ -1752,11 +1828,19 @@ vargranger //  Granger causality Wald tests // 'excluded causes 'equation.' // t
 ****************************
 
 * create IRF "object"
+<<<<<<< HEAD
 irf create Colombia, step(5) set(Colombia, replace)
 
 // 'simple' IRF
 irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5))  
 irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") xmtick(##5) ytick(#5) ymtick(#3) yscale(range(-.5(.2)1)) xscale(range(0(1)5))  
+=======
+irf create Colombia, step(10) set(Colombia, replace)
+
+// 'simple' IRF
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr, replace) subtitle("Response of Agriculture to Industry") title("") noci xmtick(##10) ymtick(##5) 
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man, replace)  subtitle("Response of Industry to Agriculture") title("") noci xmtick(##10) ymtick(##5) 
+>>>>>>> master
 gr combine irf_ce_Colombia_Man_Agr.gph  irf_ce_Colombia_Agr_Man.gph, col(2) saving(Colombia_irf_VAR, replace) title("Colombia")
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Colombia_irf_VAR.pdf", replace
 // interpretation: the industrial sector does react positively when the agricultural sector grows, but then it decays. it complements with the IRF (ECM) above: it is not strong enough to gain superiority or to sustain growth. // use this one.
