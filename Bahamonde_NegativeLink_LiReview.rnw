@@ -27,11 +27,13 @@
 		\citet[193]{Durr1992}: ``two or more integrated time-series that never drift very far apart from one another, or, stated another way, that maintain some sort of equilibrium relationship vis-\`a-vis one another.''
 
 		% definition of Granger-causation
-		\citet[196]{Durr1992}: ``a series X is said to Granger cause Y if our capacity to predict the current value of Y is enhanced by the consideration of past values of X in addition to past values of Y.''
+			\citet[196]{Durr1992}: ``a series X is said to Granger cause Y if our capacity to predict the current value of Y is enhanced by the consideration of past values of X in addition to past values of Y.''
 
-		\citet[197]{Durr1992}: ``a standard Granger causality test ought to demonstrate that both lagged changes in X and lagged values of the error correction component cause current changes in Y.''
+			\citet[197]{Durr1992}: ``a standard Granger causality test ought to demonstrate that both lagged changes in X and lagged values of the error correction component cause current changes in Y.''
 
-		\citet[148]{Ostrom1992}: ``The cointegrating regression captures the long-run equilibrium relationship among the variables. When variables are cointegrated, each cointegrating regression can be estimated consistently via OLS without specifying the system's transient dynamics.''
+			\citet[148]{Ostrom1992}: ``The cointegrating regression captures the long-run equilibrium relationship among the variables. When variables are cointegrated, each cointegrating regression can be estimated consistently via OLS without specifying the system's transient dynamics.''
+
+			\citet[42]{Lutkepohl2006}: if variable X forecasts better variable Y (and not the other way around), X is said to Granger-cause Y.
 
 
 % Co Integration // Steps
@@ -98,6 +100,11 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 % model presentation // examples
 \citet[198-199]{Durr1992}.
 \citet[122]{Sobel2011}. % runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
+
+% model specifications // control variable // why bivariate growth regressions.
+
+	% argues that most growth regressions are fragile/not robust, and most of the times the control variables are different measurements/consequences of growth itself.
+	\citet[8]{Mahoney:2010aa}: ``[control] variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''
 
 	
 % IRF
