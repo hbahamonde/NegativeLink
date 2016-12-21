@@ -154,7 +154,8 @@ An index would be something like this:
 	SEE: http://stats.stackexchange.com/questions/40504/how-to-identify-structural-change-using-a-chow-test-on-eviews
 
 	IT IS ESSENTIALLY A STRUCTURAL BREAK ANALYSYS: CHECK ICPSR NOTES.
-	IT ENCOMPASSES A DUMMY VARIABLE: BEFORE AND AFTER THE BREAK.
+	IT ENCOMPASSES A DUMMY VARIABLE: BEFORE AND AFTER THE BREAK. 
+	Math is in STATACorp.2012 p. 183 o 191
 
 	\citet[212]{Temple2006}: ``Structural change is clearly an endogenous process, driven by a variety of economic forces [...] also in the statistical sense.''
 
