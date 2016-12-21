@@ -1,3 +1,5 @@
+set more off, permanently
+set scheme s1color, permanently
 
 
 * Chile // pretax
@@ -94,6 +96,42 @@ graph combine Chile_TS_PRE.gph Chile_TS_POST.gph, rows(2) title("Sectoral Growth
 graph combine Chile_irf_PRE.gph Chile_irf_POST.gph, rows(4) title("IRF") iscale(.6) graphregion(margin(zero)) name(Chile_IRF, replace)
 graph combine Chile_IRF Chile_Sectoral_Growth, cols(3) title("Chile") iscale(.6) graphregion(margin(zero))
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_StructuralBreak.pdf", replace
+
+
+
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==4
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1924) breakvars(constagricult)
+
+
+
+
+* Test for a structural break with an UNKNOWN break date
+
+// cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+// use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+// keep if country==4
+
+* set ts data
+// tsset, clear
+// tsset year, yearly
+
+// reg constmanufact l.constagricult f.constmanufact l.constmanufact
+// estat sbsingle, breakvars(l.constagricult)
+
 
 
 ********************************************************************************************************************************************
@@ -197,6 +235,20 @@ graph combine Colombia_IRF Colombia_Sectoral_Growth, cols(3) title("Colombia") i
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Colombia_StructuralBreak.pdf", replace
 
 
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==5
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1935) breakvars(constagricult)
 
 
 ********************************************************************************************************************************************
@@ -308,6 +360,21 @@ graph combine Argentina_IRF Argentina_Sectoral_Growth, cols(3) title("Argentina"
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Argentina_StructuralBreak.pdf", replace
 
 
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==1
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1933) breakvars(constagricult)
+
 
 ********************************************************************************************************************************************
 *																 M 	E 	X 	I 	C 	O
@@ -414,6 +481,22 @@ graph combine Mexico_IRF Mexico_Sectoral_Growth, cols(3) title("Mexico") iscale(
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Mexico_StructuralBreak.pdf", replace
 
 
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==13
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1965) breakvars(constagricult)
+
+
 ********************************************************************************************************************************************
 * 															N	 I 	 C 	 A 	 R 	 A 	 G 	 U 	 A
 ********************************************************************************************************************************************
@@ -516,6 +599,21 @@ graph combine Nicaragua_IRF Nicaragua_Sectoral_Growth, cols(3) title("Nicaragua"
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Nicaragua_StructuralBreak.pdf", replace
 
 
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==14
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1974) breakvars(constagricult)
+
 ********************************************************************************************************************************************
 * 															G 	U 	A 	T 	E 	M 	A 	L 	A
 ********************************************************************************************************************************************
@@ -616,3 +714,20 @@ graph combine Guatemala_TS_PRE.gph Guatemala_TS_POST.gph, rows(2) title("Sectora
 graph combine Guatemala_irf_PRE.gph Guatemala_irf_POST.gph, rows(4) title("IRF") iscale(.6) graphregion(margin(zero)) name(Guatemala_IRF, replace)
 graph combine Guatemala_IRF Guatemala_Sectoral_Growth, cols(3) title("Guatemala") iscale(.6) graphregion(margin(zero))
 graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Guatemala_StructuralBreak.pdf", replace
+
+
+
+* Test for a structural break with an KNOWN break date
+
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==10
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+reg constmanufact constagricult
+estat sbknown, break(1963) breakvars(constagricult)
