@@ -172,7 +172,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-There is a long-standing debate on the relationship between economic growth and political development. This debate seems to agree in that there is a positive correlation between the two. Most of the explanations focus on institutional constrains (mainly via property rights) and the incentives of the business class to invest in technology and infrastructure. Though this paper recognizes this causal path, it proposes an alternative channel. I argue that 
+There is a long-standing debate on the relationship between economic growth and political development. This debate seems to agree in that there is a positive correlation between the two. Most of the explanations focus on institutional constrains (mainly via property rights) and the incentives of the business class to invest in technology and infrastructure. Though this paper recognizes this mechanism, it proposes an alternative (and not exclusive) channel. I argue that when the adoption of the income tax reflected an inter-elite conflict, it triggered other state-building institutions that promoted economic development. In turn, economic development altered landowners' hegemonic position inherited since the colonial period by introducing a new political elite invested in industry. Time-series and structural break analyses, plus a case study, support this hypothesis.
 \end{abstract}
 
 
@@ -181,10 +181,46 @@ There is a long-standing debate on the relationship between economic growth and 
 % CONTENT
 %----------------------------------------------------------------------------------------
 
+\epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists]}}{Arthur Lewis, 1965 (p. 410)}
+
 
 %\tableofcontents
 
-\epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists]}}{Arthur Lewis, 1965 (p. 410)}
+% 1) Introduction: lit review: Inst. Economics and Development // hook
+% 2) Argument, and introduction of the Dual Economy model.
+% 3) Case Study: Chile case.
+% 4) Econometric Section: theory and models.
+% 5) Concluding Remarks.
+
+
+\section{Introduction}
+
+% Institutional Economics and Development
+The literature on the relationship between political and economic development is vast. Without trying to survey all of it, there seems to be an agreement in that strong institutions cause better economic performance.\footnote{For the geography v. institutional design debate, see \citet{Sachs2003} for an example.} \citet[3]{North:1990vl} argues that ``institutions affect the performance of economies is hardly controversial,'' while \citet[185]{Przeworski2004} argues that this relationship is endogenous.\footnote{``[I]n the end, the motor of history is endogeneity [...] wealth, its distribution, and the institutions that allocate factors and distribute incomes are mutually interdependent and evolve together.''} Most of the explanations focus on institutional constrains,\footnote{\citet{Johnson2016}.} mainly property rights, and the incentives of the business class of investing in technology and infrastructure.\footnote{\citet[]{Leblang1996,Weingast1997,Iyer2005}.} When property rights are secured (via the state\footnote{\citet{DouglassNo}.} or via social norms\footnote{\citet{Greif1994}.}), for example when a patent system allows inventors to perceive a private benefit, there will be incentives to invest in infrastructure, research and development.\footnote{However, see \citet[]{Clark:2009aa} and \citet[]{Mokyr:2016ty}.} This is usually the case when political and military elites are constrained by institutions, for example constitutions and/or parliaments.
+
+
+% Hook and Contribution
+This paper contributes to the literature by adding an alternative channel to the institutional constrains paradigm. Particularly, this paper complements our understanding of the political and economic development literature from the sectoral conflict framework \emph{and} the dual sector economy model. The political development literature has traditionally focused on socio-economic cleavages \emph{between} the ruling elite and a politically excluded society. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most important examples within this tradition. In this paper I focus on political divisions \emph{among} the elite. The sectoral approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite \emph{outsiders} on democratic transitions. \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} argue about the role of economic inequality/equality among the elite on political development, and \citet{Mares2015} argue about the positive impact of divisions among the elite on implementing the income tax. This paper is novel since it brings in the dual sector model, a model of economic development, that as I explain later, altered the inter-sectoral balance of economic and military power.
+
+
+
+
+
+
+
+
+
+\section{Argument}
+
+Following \citet{Llavador2005}, I argue that an elite split along economic interests uses the state to influence certain policies and hence, growth and state building. A key element for my argument is that an elite divided on an economic cleavage is at the same time divided on their political preferences, particularly regarding their attitude towards state centralization
+
+
+
+
+
+
+
+
 
 
 
