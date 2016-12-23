@@ -29,11 +29,11 @@
 		% definition of Granger-causation
 			\citet[196]{Durr1992}: ``a series X is said to Granger cause Y if our capacity to predict the current value of Y is enhanced by the consideration of past values of X in addition to past values of Y.''
 
-			\citet[197]{Durr1992}: ``a standard Granger causality test ought to demonstrate that both lagged changes in X and lagged values of the error correction component cause current changes in Y.''
+			%\citet[197]{Durr1992}: ``a standard Granger causality test ought to demonstrate that both lagged changes in X and lagged values of the error correction component cause current changes in Y.''
 
 			\citet[148]{Ostrom1992}: ``The cointegrating regression captures the long-run equilibrium relationship among the variables. When variables are cointegrated, each cointegrating regression can be estimated consistently via OLS without specifying the system's transient dynamics.''
 
-			\citet[42]{Lutkepohl2006}: if variable X forecasts better variable Y (and not the other way around), X is said to Granger-cause Y.
+			%\citet[42]{Lutkepohl2006}: if variable X forecasts better variable Y (and not the other way around), X is said to Granger-cause Y.
 
 
 % Co Integration // Steps
