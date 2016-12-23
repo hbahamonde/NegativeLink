@@ -14,15 +14,15 @@
 
 
 	% why is it important to correct for cointegration
-	\citet[142-143]{Ostrom1992}: ``when the time-series of interest are integrated processes, because the regression of one random walk on another can lead to the `spurious regression' problem.'' % and differencing (to then run ARIMA/Box-Jenkins) the data is no solution either (\citet[143, 145: bath water example]{Ostrom1992})
+	%\citet[142-143]{Ostrom1992}: ``when the time-series of interest are integrated processes, because the regression of one random walk on another can lead to the `spurious regression' problem.'' % and differencing (to then run ARIMA/Box-Jenkins) the data is no solution either (\citet[143, 145: bath water example]{Ostrom1992})
 
 	% Definition
-		\citet{Engle1987a} introduced and developed the term further. 
+	%\citet{Granger1981} introduced the conept, and \citet{Engle1987} developed it further. 
 
 
-		\citet[p. 571]{Wooldridge2002}: ``The issue of cointegration applies when two series are I(1), but a linear combination of them is I(0); in this case, the regression of one on the other is not spurious, but instead tells us something about the long-run relationship between them. Cointegration between two series also implies a particular kind of model, called an error correction model, for the short-term dynamics.''
+		%\citet[p. 571]{Wooldridge2002}: ``The issue of cointegration applies when two series are I(1), but a linear combination of them is I(0); in this case, the regression of one on the other is not spurious, but instead tells us something about the long-run relationship between them. Cointegration between two series also implies a particular kind of model, called an error correction model, for the short-term dynamics.''
 
-		\citet[253]{Engle1987}: ``co-integration would mean that if the components of xt were all I(1), then the equilibrium error would be I(0).'' or when ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.'' (\citet[193]{Durr1992}).
+		%\citet[253]{Engle1987}: ``co-integration would mean that if the components of xt were all I(1), then the equilibrium error would be I(0).'' or when ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.'' (\citet[193]{Durr1992}).
 
 		\citet[193]{Durr1992}: ``two or more integrated time-series that never drift very far apart from one another, or, stated another way, that maintain some sort of equilibrium relationship vis-\`a-vis one another.''
 
@@ -43,14 +43,14 @@
 \citet[238]{Beck1992} mentions the steps.
 
 	% on sample size
-	\citet[244]{Beck1992} says that with less than 100 observations ``the two-step procedure will not be optimal.''
+	e
 
 \citet[241]{Beck1992}: ``Cointegration Is Not Causal.''
 
 
 \citet[149]{Ostrom1992}: ``before estimating a cointegrating regression, one generally should check to see that all elements of X, are integrated of the same order (usually I[1]).''
 
-\citet[164]{Box-Steffensmeier:2014fe}: there are two approaches to cointegration, ECM and Johansen's method.
+%\citet[164]{Box-Steffensmeier:2014fe}: there are two approaches to cointegration, ECM and Johansen's method.
 
 \citet[161,164]{Box-Steffensmeier:2014fe}: Engle-Granger two step regression approach is ``the most commonly used methodology'' but Johansen's method has a number of advantages, such as being estimated via MLE (\citet[231-232]{Johansen1988}\footnote{``The reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''}) being the the most important one that traditional significance tests ``can be applied to the estimates of the speed of adjustment parameters in the Engle-Granger approach because they are based on estimated data in the two-step process.''
 
@@ -61,7 +61,7 @@
 % ECM
 
 	% ECM is better than EG two-steep procedure.
-	\citet[84]{DeBoef2001}: ``The single-equation GECM is both theoretically appealing and also statistically superior to the two-step estimator in many case. \citet{Banerjee1993} show that dynamic regressions will be asymptotically equivalent to more complex full-information maximum-likelihood and fully modified estimators when the processes are weakly exogenous [...] Importantly, if weak exogeneity is not a reasonable assumption, the single-equation GECM will be both biased and inefficient and \emph{t} tests based on the model parameters will be highly misleading.''
+	%\citet[84]{DeBoef2001}: ``The single-equation GECM is both theoretically appealing and also statistically superior to the two-step estimator in many case. \citet{Banerjee1993} show that dynamic regressions will be asymptotically equivalent to more complex full-information maximum-likelihood and fully modified estimators when the processes are weakly exogenous [...] Importantly, if weak exogeneity is not a reasonable assumption, the single-equation GECM will be both biased and inefficient and \emph{t} tests based on the model parameters will be highly misleading.''
 
 	% definition of exogeneity
 	\citet[188]{Urbain1992}: ``weak exogeneity of right-hand side variables means that no useful information is lost when we condition on these variables without specifying their generating process.''
@@ -79,12 +79,12 @@
 	% use this equation and set-up. 
 		\citet[84]{DeBoef2001} explains the one-step ECM, which is a generalization of an ADL (this statement's from \citet{Banerjee1993}). 
 
-		\citet[264-265]{Fish2007}: explains the two-step Granger process. % use this equations and interpret coefficients as they do.
+		%\citet[264-265]{Fish2007}: explains the two-step Granger process. % use this equations and interpret coefficients as they do.
 
 		\citet[493]{Herzer2012} use country-specific fixed effects and country-specific time trends ``to control for any country-specific omitted factors that are either relatively stable over time or evolve smoothly over time.''
 
 	% ways to identify I(1) processes.
-	\citet[149]{Ostrom1992}: ``The most commonly used unit root tests, the Dickey-Fuller (DF) and augmented Dickey-Fuller (ADF) tests.'' % though he says that it's controversial.
+	%\citet[149]{Ostrom1992}: ``The most commonly used unit root tests, the Dickey-Fuller (DF) and augmented Dickey-Fuller (ADF) tests.'' % though he says that it's controversial.
 
 	\citet[1183-1184]{Krause1997} proposes a Wald test: ``Instead of using the commonly prescribed ADF cointegration test on the residuals [...] a more powerful alternative test set forth by \citet{Banerjee1993} is employed. This test specifically is centered on solving for a static long-run equation generated from a dynamic regression among these nonstationary variables in levels to see whether the long-run coefficients are jointly zero. If the Wald joint-test statistic for the long-run coefficients is significantly different from zero [...] then it can be stated that a cointegrating vector exists and an appropriate error correction mechanism (ECM) that takes into account long-run relationships should be incorporated into each of the model specifications.''
 
@@ -99,7 +99,7 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 
 % model presentation // examples
 \citet[198-199]{Durr1992}.
-\citet[122]{Sobel2011}. % runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
+%\citet[122]{Sobel2011}. % runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
 
 % model specifications // control variable // why bivariate growth regressions.
 
@@ -108,10 +108,10 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 	
 % IRF
 	% VARs and IRF // difficulty to analyze and understand the data
-	\citet[159]{Lutkepohl2004}: ``it is often difficult to draw any conclusion from the large number of coefficient estimates in aVARsystem.''
+	%\citet[159]{Lutkepohl2004}: ``it is often difficult to draw any conclusion from the large number of coefficient estimates in aVARsystem.''
 
 	% Y axis is NOT GROWTH, is response to equilibrium, and hence they ALWAYS come back to zero.
-	\citet[364]{Enders2014}: ``The shape of the impulse response functions [...] indicate [...] the dynamic responses of the variables [and since the variables] are I(0) the impulse responses [...] should converge to zero.''
+	%\citet[364]{Enders2014}: ``The shape of the impulse response functions [...] indicate [...] the dynamic responses of the variables [and since the variables] are I(0) the impulse responses [...] should converge to zero.''
 	% hence, it might me good to show the entire process, till they die out.
 
 
@@ -124,16 +124,15 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 
 % cointegration vectors have been used to study the two-sector model.
 
-\citet{Hatton1991}
-\citet{Ostrom1992} gives a good overview of the study of presidential approval and ECM and cointegration methods.
-\citet{Krause1997} tests whether voters have prospective or retrospective expectations during election times.
-\citet{Blunch2006} studies sectoral growth in Cote d'Ivoire,
-Ghana, and Zimbabwe.
-\citet{Fish2007} study the relationship between democratization and economic liberalization.
-\citet{Haber2011} study the relationship between natural resource ownership/exploitation and authoritarianism.
-\citet{Sobel2011} study the relationship between persistence and institutional change.
-\citet[489]{Herzer2012}: ``estimate the long-run effect of income inequality on per-capita income.''
-\citet{Blaydes2011} study caloric consumption and regime type
+%\citet{Hatton1991}
+%\citet{Ostrom1992} gives a good overview of the study of presidential approval and ECM and cointegration methods.
+%\citet{Krause1997} tests whether voters have prospective or retrospective expectations during election times.
+%\citet{Blunch2006} studies sectoral growth in Cote d'Ivoire, Ghana, and Zimbabwe.
+%\citet{Fish2007} study the relationship between democratization and economic liberalization.
+%\citet{Haber2011} study the relationship between natural resource ownership/exploitation and authoritarianism.
+%\citet{Sobel2011} study the relationship between persistence and institutional change.
+%\citet[489]{Herzer2012}: ``estimate the long-run effect of income inequality on per-capita income.''
+%\citet{Blaydes2011} study caloric consumption and regime type
 
 
 % results of IRF, ECM, VAR models
