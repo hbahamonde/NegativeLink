@@ -873,10 +873,10 @@ State-building scholars emphasize the role of economic development as a prerequi
 		\citet[p. 132]{Harris1970}: ``The standard solution to the problem of an institutionally determined wage that is higher than the equilibrium level is to employ labor in the public sector.''
 
 		% expansion of the urban sector, kills the traditional sector: STRUCTURALLY PROTECTED
-		\citet[p. 134-135]{Harris1970}: ``While the creation of an additional job in the urban area reduces agricultural output through induced migration, additional employment can be generated in the agricultural sector without reducing manufacturing output.''
+		%\citet[p. 134-135]{Harris1970}: ``While the creation of an additional job in the urban area reduces agricultural output through induced migration, additional employment can be generated in the agricultural sector without reducing manufacturing output.''
 
-		\citet[110]{Kelley:1972zl}: ``It is also emphasized in the literature that [differentials in agriculture-industry productivity] may even increase with development.'' 
-		For example, \citet{Serrano2016} find that there has been a declining role of agricultural exports around year 2000. % Though they find that decline in agriculture is not related to national economic development, but to exogenous international forces. However, they do document this decline. 
+		%\citet[110]{Kelley:1972zl}: ``It is also emphasized in the literature that [differentials in agriculture-industry productivity] may even increase with development.'' 
+		%For example, \citet{Serrano2016} find that there has been a declining role of agricultural exports around year 2000. % Though they find that decline in agriculture is not related to national economic development, but to exogenous international forces. However, they do document this decline. 
 
 
 	\citet[LEER]{Brueckner199}: ``consider a version of the Harris-Todaro model in which land rents play an equilibrating role. Migration to the city raises the cost of urban living by driving up rents, and this effect limits the migration response to an improvement in urban productivity'' (in \citet[p. 451]{Temple2005}).
