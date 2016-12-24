@@ -104,7 +104,7 @@ the betas associated to the ECM term, represent the speed of adjustment paramete
 % model specifications // control variable // why bivariate growth regressions.
 
 	% argues that most growth regressions are fragile/not robust, and most of the times the control variables are different measurements/consequences of growth itself.
-	\citet[8]{Mahoney:2010aa}: ``[control] variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''
+	%\citet[8]{Mahoney:2010aa}: ``[control] variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''
 	
 % IRF
 	% VARs and IRF // difficulty to analyze and understand the data
