@@ -305,12 +305,61 @@ Following \citet{Llavador2005}, I argue that an elite split along economic inter
 
 
 
-\section{Time Series Analyses: Vector Auto-Regression Models and Structural Changes}
+\section{Time Series Analyses: Vector Auto-Regression Models and Structural Breaks}
 
 
 % Epigraphs
 \epigraph{\emph{what a sector does is not fully attributable or credited to it but is contingent upon what happens in the other sectors}}{\citet[41]{Kuznets1961a}}
 \epigraph{\emph{Structural change is clearly an endogenous process, driven by a variety of economic forces [...] also in the statistical sense}}{\citet[212]{Temple2006}}
+
+
+% Link the argument with the methods I will use: Structural Break
+\paragraph{Structural Breaks}In order to confirm my hypothesis, the theory should pass a number of tests. First, we should see that the income tax indeed altered the way in which one sector affects the growth rate of the other. Since the income tax was produced by a sectoral conflict, I expect that this is the case. In econometric terms, this is an analysis of a known structural break.\footnote{See \citet{Box1975} for a reference.} This strategy tests whether year $b$ when the income tax was implemented significantly changes the relationship between the two sectors. Essentially, a structural break divides the time-series into two subsamples by specifying a break $b$, before and after the income tax law.
+
+Define the industrial sector as $M$ and the agricultural sector as $A$. Considering the following linear regression,
+
+\begin{equation}\label{str:brk:1}
+M_{t} = \alpha + A_{t}\beta + \epsilon_{t}
+\end{equation}
+
+\paragraph{}where $\alpha$ is a constant and $\epsilon_{t}$ a vector of innovations. A structural break, via a Chow test\footnote{\citet{Chow1960}.} tests whether the coefficients $\beta$ are different over the subsamples defined by break date $b$ (i.e. the year the income tax law was implemented). To do so, a Wald statistic is computed to test whether $\lambda = 0$. More formally, I test,
+
+
+\begin{equation}\label{str:brk:2}
+M_{t} = \left\{
+\begin{array}{l@{,\quad}l}
+\alpha + A_{t}\beta + \epsilon_{t} \; \text{if} \; t \le b \\
+\alpha + A_{t}(\beta + \lambda) + \epsilon_{t} \; \text{if} \; t \ge b
+\end{array}
+\right.
+\end{equation}
+
+% Link the argument with the methods I will use: Granger Causality Test
+Once we determine whether there is a change in which the agricultural sector influences industrial growth, it is necessary to know in which directions this happens. My argument says that the income tax should \emph{reverse} the directionality in which growth is produced. Since the implementation of the income tax was product of a sectoral conflict which altered the inter-sectoral balance of economic (and subsequently) political power, we should see that the income tax should then be associated to a structural transformation, i.e. a situation where instead, agriculture growth causes industrial growth. 
+
+
+ should change the directionality in which growth is produced.  
+
+
+
+an initial stage of development characterized by an economy structured in such way that the flux of factors (mainly labor) and, essentially, growth goes from the industrial sector to the agricultural sector. This directionality would represent a backwards stage of development (as predicted by the dual sector model). Contingent on a strong industrial sector, the income tax was implemented. 
+
+
+
+Since the implementation of the income tax also triggered other state institutions that caused long-term economic growth,
+
+ Second, we should see that the implementation of the income tax \emph{reversed} the directionality of economic development to a new long-term equilibrium where agricultural development `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development (and not the other way around). This reversion would represent a situation where the institutional design, embodied by the income tax as a trigger of other state-institutions (as for the fiscal sociology paradigm argues), generates modern economic growth.
+
+
+% Link the argument with the methods I will use: IRF
+
+
+
+
+% 
+Wald or a likelihood-ratio (LR) test of whether the coefficients in a time-series regression vary over the periods defined by known break dates.
+
+
 
 
 % Introducing co-integration
@@ -320,7 +369,10 @@ The relationship between the two sectoral outputs in endogenous. If this endogen
 Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which can be the Engle-Granger single-equation procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregression method (VAR).\footnote{\citet[164]{Box-Steffensmeier:2014fe}.} \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregression approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE. 
 
 % VAR and Granger Tests and IRFs.
-I am interested in whether the introduction of the income tax as a political institution is associated with a structural change in the economy. In other words, I test whether institutional development is correlated with a secular decline of agriculture and substantial expansion of manufacturing, that is, with modern economic growth (as predicted by the dual sector model). VAR models are well equipped for answering this question. Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} this methodology offers two additional (and complementary) strategies to analyze cointegrated variables. The first one is the Granger-causality test. \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to Granger-cause $Y$.\footnote{\citet[197]{Durr1992} explains that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''} If the theory is right, we should see (1) an initial stage with an economy where the flux of factors (mainly labor) and essentially growth goes from the industrial sector to the agricultural sector. This directionality would represent a backwards stage of development (as for the dual model predicts), and should coincide with the initial political monopoly the landowning elite would have inherited from the colonial period. Contingent on a strong industrial sector, the income tax was product of a sectoral conflict. Consequently we should see that (2) the implementation of the income tax \emph{reversed} the directionality of economic development to a new long-term equilibrium where agricultural development `Granger-causes'\footnote{This notion of causality should not be interpreted as a pure causation. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development (and not the other way around). This reversion would represent a situation where the institutional design, embodied by the income tax as a trigger of other state-institutions (as for the fiscal sociology paradigm argues), generates modern economic growth.
+I am interested in whether the introduction of the income tax as a political institution is associated with a structural change in the economy. In other words, I test whether institutional development is correlated with a secular decline of agriculture and substantial expansion of manufacturing, that is, with modern economic growth (as predicted by the dual sector model). VAR models are well equipped for answering this question. Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} this methodology offers two additional (and complementary) strategies to analyze cointegrated variables. The first one is the Granger-causality test. \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$.\footnote{\citet[197]{Durr1992} explains that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''} 
+
+
+
 
 
 
