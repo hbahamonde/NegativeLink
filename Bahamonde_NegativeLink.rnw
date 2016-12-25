@@ -305,7 +305,7 @@ Following \citet{Llavador2005}, I argue that an elite split along economic inter
 
 
 
-\section{Time Series Analyses: Vector Auto-Regression Models and Structural Breaks}
+\section{Time Series Analyses: Vector Autoregressive Models and Structural Breaks}
 
 
 % Epigraphs
@@ -339,7 +339,7 @@ M_{t} = \left\{
 % Link the argument with the methods I will use: IRF and VARs
 
 %% Introducing co-integration
-\paragraph{VARs and IRFs} Once we determine the directionality of economic (under)development, it is necessary to establish the long-run equilibrium, i.e. what happens to each sector's growth in relationship with the other sector. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods. Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, this is an assumption that I test for in {\color{red}TABLE X}.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), {\color{red}I use others too}}.} Cointegrated vectors are widely common in the social sciences. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type. This paper adds to this literature by studying political and economic development with a focus on sectoral conflicts.
+\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we determine the directionality of economic (under)development, it is necessary to establish the long-run equilibrium, i.e. what happens to each sector's growth in relationship with the other sector. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods. Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, this is an assumption that I test for in {\color{red}TABLE X}.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), {\color{red}I use others too}.} Cointegrated vectors are widely common in the social sciences. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type. This paper adds to this literature by studying political and economic development with a focus on sectoral conflicts.
 
 %% Models for cointegrated vectors.
 Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which can be the Engle-Granger single-equation procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR).\footnote{\citet[164]{Box-Steffensmeier:2014fe}.} \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE.\footnote{\citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} Formally, I will model the next reduced form VAR for each country:\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.}
@@ -351,50 +351,22 @@ Cointegrated time-series need a special method to be estimated. If traditional m
   \end{array}
 \end{equation}
 
-\paragraph{} where both $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of independent variables. Since the number of lags $l$ varies by country, the system of equations in \autoref{var:1} is in standard form. {\color{red}TABLE X} describes the optimal lags specified in each country regression.
+\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of independent variables. Since the number of lags $l$ varies by country, the system of equations in \autoref{var:1} is in standard form. {\color{red}TABLE X} describes the optimal lags specified in each country regression.
 
 % VAR and Granger Tests and IRFs.
-Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions}. 
-
-
-
-
-
-
-
-% VAR and Structural Changes
-
-
-
-Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors, assuming that this error returns to zero in subsequent periods and that all other errors are equal to zero. The implied thought experiment of changing one error while holding the others constant makes most sense when the errors are uncorrelated across equations // Stock2001, 106
-
-
-shows the effect of an unexpected increase of 1 percentage point in the unemployment rate, and the third row shows the corresponding effect for the interest rate. Also plotted are ?1 standard error bands, which yield an approximate 66 percent confidence interval for each of the impulse responses. These estimated impulse responses show patterns of persistent common variation. For example, an unexpected rise in inflation slowly fades away over 24 quarters and is associated with a persistent increase in unemployment and interest rates.
-The
-
-
-
-% Determining the order of integration
-
-
-
-
-  \citet[122]{Sobel2011}. % runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
-
-
-
-  \citet[149]{Ostrom1992}: ``The most commonly used unit root tests, the Dickey-Fuller (DF) and augmented Dickey-Fuller (ADF) tests.'' % though he says that it's controversial.
-
+Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions} (IRFs).\footnote{{\color{red}TABLE X} shows the raw regression tables.} ``Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors.''\footnote{\citet[106]{Stock2001}. See also \citet[51]{Lutkepohl2005}.} In other words, IRFs show what happens with the dependent variables specified on the left-hand-side of the two equations in \autoref{var:1} once the independent variables are `shocked' via a forecasting process. 
 
 
 
 
 \subsection{Results}
+% Determining the order of integration
+  \citet[122]{Sobel2011}. runs the Im, Pesaran, x2 and Shin (2003) W-statistic, the augmented Dickey-Fuller test, and the Maddala and Wu (1999) Phillips-Perron test. // A significant test statistic rejects the null hypothesis that the series has a unit root; thus, significant values indicate that the series is stationary.
+
 
 % IRF
   % VARs and IRF // difficulty to analyze and understand the data
   
-
   % Y axis is NOT GROWTH, is response to equilibrium, and hence they ALWAYS come back to zero.
   \citet[364]{Enders2014}: ``The shape of the impulse response functions [...] indicate [...] the dynamic responses of the variables [and since the variables] are I(0) the impulse responses [...] should converge to zero.''
   % hence, it might me good to show the entire process, till they die out.
