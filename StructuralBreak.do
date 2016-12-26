@@ -81,6 +81,25 @@ vargranger
 // AGR -> IND (.003)
 
 
+* Chile // All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==4
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
+
+
 
 * IRF
 irf create Chile, step(5) set(Chile, replace)
@@ -113,6 +132,7 @@ tsset year, yearly
 
 reg constmanufact constagricult
 estat sbknown, break(1924) breakvars(constagricult)
+
 
 
 
@@ -251,6 +271,25 @@ reg constmanufact constagricult
 estat sbknown, break(1935) breakvars(constagricult)
 
 
+
+* All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==5
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
+
 ********************************************************************************************************************************************
 * 																A 	R 	G 	E 	N 	T 	I 	N 	A
 ********************************************************************************************************************************************
@@ -376,6 +415,23 @@ reg constmanufact constagricult
 estat sbknown, break(1933) breakvars(constagricult)
 
 
+* All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==1
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
 ********************************************************************************************************************************************
 *																 M 	E 	X 	I 	C 	O
 ********************************************************************************************************************************************
@@ -497,6 +553,23 @@ reg constmanufact constagricult
 estat sbknown, break(1965) breakvars(constagricult)
 
 
+* All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==13
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
 ********************************************************************************************************************************************
 * 															N	 I 	 C 	 A 	 R 	 A 	 G 	 U 	 A
 ********************************************************************************************************************************************
@@ -613,6 +686,26 @@ tsset year, yearly
 
 reg constmanufact constagricult
 estat sbknown, break(1974) breakvars(constagricult)
+
+
+
+* All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==14
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
 
 ********************************************************************************************************************************************
 * 															G 	U 	A 	T 	E 	M 	A 	L 	A
@@ -731,3 +824,23 @@ tsset year, yearly
 
 reg constmanufact constagricult
 estat sbknown, break(1963) breakvars(constagricult)
+
+
+
+* All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==10
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
