@@ -464,29 +464,29 @@ and the $\lambda_{\text{Max}}$ statistic as,
 \\                        & \multirow{2}{*}{All}  & Agriculture & 4.256 (1.00) & 5.893 (1.00) &  &   &  \\
 \\                        &                         & Industry    & 1.674 (0.99) & 2.707 (0.99) &  &   &  \\[.2em]\cline{2-8}
 \\\multirow{6}{*}{Argentina}& \multirow{2}{*}{Pre}  & Agriculture & -0.849 (0.80) & -1.201 (0.67) &  &   &  \\
-\\                            &                         & Industry    & -0.495 (0.89) & -0.378 (0.9137) &  &   &  \\ [.2em]\cline{3-8}
+\\                            &                         & Industry    & -0.495 (0.89) & -0.378 (0.91) &  &   &  \\ [.2em]\cline{3-8}
 \\                        & \multirow{2}{*}{Post} & Agriculture & 1.197 (0.99) & 1.093 (0.99) &  &   &  \\ 
 \\                        &                         & Industry    & 0.228 (0.97) & 0.381 (0.98) &  &   &  \\  [.2em]\cline{3-8}                  
 \\                        & \multirow{2}{*}{All}  & Agriculture & 1.484 (0.99)  & 1.401 (0.99) &  &   &  \\
 \\                        &                         & Industry    & 1.007 (0.99) & 1.237 (0.99) &  &   &  \\[.2em]\cline{2-8}
 \\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture & 4.601 (1.00) & 5.552 (1.00)  &  &   &  \\
-\\                        &                         & Industry & 5.803 (1.00) & 10.776 (1.00) &  &   &  \\
+\\                        &                         & Industry & 5.803 (1.00) & 10.776 (1.00) &  &   &  \\[.2em]\cline{3-8}  
 \\                        & \multirow{2}{*}{Post} & Agriculture & 0.599 (0.9876) & 0.497 (0.99)  &  &   &  \\
-\\                        &                         & Industry   & -1.255 (0.65) & -0.982 (0.76) &  &   &  \\                       
+\\                        &                         & Industry   & -1.255 (0.65) & -0.982 (0.76) &  &   &  \\ [.2em]\cline{3-8}                        
 \\                        & \multirow{2}{*}{All}  & Agriculture & 3.431 (1.00) & 3.607 (1.00) &  &   &  \\
 \\                        &                         & Industry  & 0.672 (0.99) & 2.020 (0.99) &  &   &  \\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\                       
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\                       
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &   &  \\
-\\                        &                         & Industry    &  &  &  &   &  \\[.2em]
+\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture & 2.473 (0.99) & 2.355 (0.99) &  &   &  \\
+\\                        &                         & Industry    & 4.958 (1.00) & 9.100 (1.00) &  &   &  \\[.2em]\cline{3-8}  
+\\                        & \multirow{2}{*}{Post} & Agriculture & -0.154 (0.94) & 0.154 (0.97) &  &   &  \\
+\\                        &                         & Industry    & -1.237 (0.6577) & -1.176 (0.68) &  &   &  \\ [.2em]\cline{3-8}                        
+\\                        & \multirow{2}{*}{All}    & Agriculture & 0.636 (0.99) & 0.759 (0.99) &  &   &  \\
+\\                        &                         & Industry    & -0.164 (0.94) & -0.090 (0.95) &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture & -0.393 (0.91) & -0.343 (0.92) &  &   &  \\
+\\                        &                         & Industry    & 1.358 (0.99)  & 1.704 (0.99) &  &   &  \\[.2em]\cline{3-8}  
+\\                        & \multirow{2}{*}{Post} & Agriculture & 1.786 (0.99)  & 1.965 (0.99)  &  &   &  \\
+\\                        &                       & Industry    & -0.998 (0.75) & -1.352 (0.61)  &  &   &  \\ [.2em]\cline{3-8}                        
+\\                        & \multirow{2}{*}{All}  & Agriculture & 3.349 (1.00) & 3.714 (1.00) &  &   &  \\
+\\                        &                       & Industry    & 0.413 (0.98) & 0.017 (0.96) &  &   &  \\[.2em]
 \bottomrule
 \end{tabular}
 \end{tiny}
