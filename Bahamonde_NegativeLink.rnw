@@ -61,7 +61,7 @@
 \usepackage{filecontents}
 \usepackage{color}
 \usepackage{latexsym}
-\usepackage{lscape}       %\begin{landscape} and \end{landscape}
+\usepackage{pdflscape}       %\begin{landscape} and \end{landscape}
 %\usepackage{mathabx}
 \usepackage{wasysym}
 \usepackage{dashrule}
@@ -88,10 +88,10 @@
 % \textquoteright     %apostrofe
 \usepackage{hyperref}     %desactivar para link rojos
 \usepackage{natbib} % style
-\usepackage{graphicx}
+\usepackage[graphicx]{realboxes}
 \usepackage{dcolumn} % for R tables
 \usepackage{csquotes} % For long quotes
-\usepackage{multirow} % For multirow in tables
+\usepackage{multirow}
 
 %----------------------------------------------------------------------------------------
 % Other ADDS-ON
@@ -332,14 +332,265 @@ M_{t} = \left\{
   \end{array} \right. 
 \end{equation}
 
+% Results
+
+\begin{landscape}
+\begin{table}[!htbp]
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{ c c c c c } 
+\toprule
+\\[.1em] {\bf Country} & {\bf Sample} & {\bf Break Date} & {\bf chi2} & {\bf P-value} \\
+\\[-.5em]
+\midrule
+\\[.1em] Chile  & 1900 - 2009 &  1924 & 5.26** & 0.022 \\
+\\[-.5em]
+\hline
+\\[.1em] Colombia & 1900 - 2009 &  1935 & 7.26** &  0.01 \\
+\\[-.5em]
+\hline
+\\[.1em] Argentina & 1900 - 2010 & 1933 & 4.21** & 0.04 \\
+\\[-.5em]
+\hline
+\\[.1em] Mexico & 1900 - 2009 & 1965 & 14.20*** &  0.00 \\
+\\[-.5em]
+\hline
+\\[.1em] Nicaragua & 1920 - 2009 & 1974 & 0.01 & 0.93 \\
+\\[-.5em]
+\hline
+\\[.1em] Guatemala & 1920 - 2009 & 1963 & 13.54*** & 0.00 \\
+\\[-.5em]
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\caption{Wald Test For A Structural Break}
+\label{str:brk:tab:1}
+\end{center}
+\end{table}
+\end{landscape}
+
+
+
+{\color{red}comment results here: \autoref{str:brk:tab:1} suggests that...}
+
 % Link the argument with the methods I will use: Granger Causality Test
 \paragraph{Granger-causality Tests} Once we determine that there was a structural change, it is necessary to know in which direction this happened. My argument says that the income tax should \emph{reverse} the directionality in which growth is produced, from a backwards equilibrium to a path of development characterized by secular decline of agriculture and substantial expansion of manufacturing (as predicted by the dual sector model). In a backwards development context, the flux of factors (labor) should go \emph{from} the industrial sector \emph{to} the agricultural sector. Since the implementation of the income tax also triggered other state institutions that caused long-term economic growth, we should see that the implementation of the income tax \emph{reversed} the backwards directionality of economic development, producing a macroeconomic structural change where agricultural development `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development (and not the other way around). \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$. This idea of `causation' is based on the idea that ``that the future cannot cause the past.''\footnote{\citet[349]{Granger1980}.} For simplicity, it suffices to say that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''\footnote{\citet[197]{Durr1992}. For the formula, refer to \citet[41-51]{Lutkepohl2005}.}
 
 
+\begin{landscape}
+\begin{table}[!htbp]
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{ c c c c c c } 
+\toprule
+{\bf Country} & {\bf Pre/Post Income Tax } & {\bf Sample} & {\bf Directionality} & {\bf chi2}  & {\bf P-value} \\
+\midrule
+\\\multirow{4}{*}{Chile} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1905 - 1924} & Agriculture $\rightarrow$ Industry & 3.55 & 0.47\\
+\\                       &                       &                              & Industry $\rightarrow$ Agriculture & 12.13** & 0.02 \\ [.2em]\cline{2-6}
+\\                       & \multirow{2}{*}{Post} & \multirow{2}{*}{1928 - 2009} & Agriculture $\rightarrow$ Industry & 11.92*** & 0.00 \\
+\\                       &                       &                              & Industry $\rightarrow$ Agriculture & 5.37$^{+}$ & 0.07 \\
+\hline
+\\\multirow{4}{*}{Colombia} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1935} & Agriculture $\rightarrow$ Industry & 4.96** & 0.03 \\
+\\                          &                       &                              & Industry $\rightarrow$ Agriculture & 10.44*** & 0.00 \\ [.2em]\cline{2-6}
+\\                          & \multirow{2}{*}{Post} & \multirow{2}{*}{1938 - 2009} & Agriculture $\rightarrow$ Industry & 4.32** & 0.04 \\
+\\                          &                       &                              & Industry $\rightarrow$ Agriculture & 1.63 & 0.20 \\
+\hline
+\\\multirow{4}{*}{Argentina}  & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1903 - 1933}  & Agriculture $\rightarrow$ Industry & 4.19 & 0.12 \\
+\\                            &                       &                               & Industry $\rightarrow$ Agriculture & .42 & 0.81 \\ [.2em]\cline{2-6}
+\\                            & \multirow{2}{*}{Post} & \multirow{2}{*}{1937 - 2010}  & Agriculture $\rightarrow$ Industry & .18 & 0.91 \\
+\\                            &                       &                               & Industry $\rightarrow$ Agriculture & 1.37 & 0.50 \\
+\hline
+\\\multirow{4}{*}{Mexico} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1965}  & Agriculture $\rightarrow$ Industry & .73 & 0.39 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 11.57*** & 0.00 \\ [.2em]\cline{2-6}
+\\                        & \multirow{2}{*}{Post} & \multirow{2}{*}{1969 - 2009}  & Agriculture $\rightarrow$ Industry & 5.56**  & 0.06 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 1.32 &  0.52 \\
+\hline
+\\\multirow{4}{*}{Nicaragua}  & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1923 - 1974}  & Agriculture $\rightarrow$ Industry & .48 & 0.79 \\
+\\                            &                       &                               & Industry $\rightarrow$ Agriculture & 6.83 & 0.03 \\ [.2em]\cline{2-6}
+\\                       & \multirow{2}{*}{Post}      & \multirow{2}{*}{1977 - 2009}  & Agriculture $\rightarrow$ Industry & .014 & 0.91 \\
+\\                       &                            &                               & Industry $\rightarrow$ Agriculture & 4.96 & 0.03 \\
+\hline
+\\\multirow{4}{*}{Guatemala}  & \multirow{2}{*}{Pre} & \multirow{2}{*}{1924 - 1963} & Agriculture $\rightarrow$ Industry & 2.18 & 0.54 \\
+\\                            &                      &                              & Industry $\rightarrow$ Agriculture & 6.72 & 0.08 \\ [.2em]\cline{2-6}
+\\                            & \multirow{2}{*}{Post}& \multirow{2}{*}{1966 - 2009} & Agriculture $\rightarrow$ Industry & .58 & 0.45 \\
+\\                            &                      &                              & Industry $\rightarrow$ Agriculture &  6.05 & 0.01 \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\caption{Granger Causality Wald Tests}
+\label{granger:table}
+\end{center}
+\end{table}
+\end{landscape}
+
+{\color{red}comment results here: \autoref{granger:table} suggests that }
+
 % Link the argument with the methods I will use: IRF and VARs
 
 %% Introducing co-integration
-\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we determine the directionality of economic (under)development, it is necessary to establish the long-run equilibrium, i.e. what happens to each sector's growth in relationship with the other sector. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods. Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, this is an assumption that I test for in {\color{red}TABLE X}.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), {\color{red}I use others too}.} Cointegrated vectors are widely common in the social sciences. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type. This paper adds to this literature by studying political and economic development with a focus on sectoral conflicts.
+\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we determine the directionality of economic (under)development, it is necessary to establish the long-run equilibrium, i.e. what happens to each sector's growth in relationship with the other sector. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods.\footnote{Cointegrated vectors are widely common in the social sciences. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type. This paper adds to this literature by studying political and economic development with a focus on sectoral conflicts.} Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, both integration and cointegration are assumptions that should be tested.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), I use additional tests since all of them are low-powered tests.} In \autoref{unit:root:tests} I use different unit root tests both prior and after of the implementation of the income tax law as well as for the whole sample. {\color{red}I find that SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.} In \autoref{johansen:tests} I test for the order of cointegration of each pair of series. Following \citet[92-93]{Johansen1995}, I define the $\lambda_{\text{Trace}}$ statistic as,
+
+\begin{equation}
+\lambda_{\text{Trace}} = -T\sum^{n}_{i=r+1}ln(1-\hat\lambda_{i})
+\end{equation}
+
+and the $\lambda_{\text{Max}}$ statistic as,
+
+\begin{equation}
+\lambda_{\text{Max}} = -T(ln(1-\hat\lambda_{r+1}))
+\end{equation}
+
+\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The \texttt{Trace} statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. The \texttt{Max} statistic tests that the number of cointegrating vectors is equal to $r$, rather than $r+1$.\footnote{\citet[165]{Box-Steffensmeier:2014fe} explain that it is $r-1$, however, it is actually $r+1$ (see \citet[401]{Becketti2013} and \citet[119]{Lutkepohl2004}).} Using these two tests, I am able to infer how many cointegrating relationships there are in the system. I expect to find $\lambda_{\text{Trace}}=1$, while for the $\lambda_{\text{Max}}$ test I expect to find null results. In other words, the system should exhibit just one cointegrating relationship, and no more than that. {\color{red}\autoref{johansen:tests} suggests that  SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.} 
+
+
+\begin{landscape}
+\begin{table}[!htbp]
+\begin{center}
+\begin{tiny}
+\begin{tabular}{ c c c c c c c c} 
+\toprule
+{\bf Country} & Time Frame & {\bf Sector} & {\bf Augmented Dickey-Fuller}  & {\bf Phillips-Perron} & {\bf Im-Pesaran-Shin} & {\bf KPSS} & {\bf Stationarity} \\
+\midrule
+\\\multirow{6}{*}{Chile}& \multirow{2}{*}{Pre}  & Agriculture & -1.185 (0.68) & -1.241 (0.66) &  &   &  \\
+\\                        &                         & Industry    & 2.310 (0.99) & 2.556 (0.99) &  &   &  \\[.2em]\cline{3-8}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 4.557 (1.00) & 5.40 (1.00) &  &   &  \\
+\\                        &                         & Industry    & 0.908 (0.99) & 1.458 (0.99) &  &   &  \\ [.2em]\cline{3-8}                     
+\\                        & \multirow{2}{*}{All}  & Agriculture & 5.521 (1.00) & 6.722 (1.00) &  &   &  \\
+\\                        &                         & Industry    & 1.582 (0.99) & 2.305 (0.99) &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Colombia}& \multirow{2}{*}{Pre}  & Agriculture & 2.709 (0.99) & 2.414 (0.99)   &  &   &  \\
+\\                        &                         & Industry    &  2.103 (0.99) & 3.257 (1.00) &  &   &  \\[.2em]\cline{3-8}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 2.392 (0.99) & 3.156 (1.00) &  &   &  \\
+\\                        &                         & Industry    & 0.520 (0.98) & 1.044 (0.99) &  &   &  \\ [.2em]\cline{3-8}                      
+\\                        & \multirow{2}{*}{All}  & Agriculture & 4.256 (1.00) & 5.893 (1.00) &  &   &  \\
+\\                        &                         & Industry    & 1.674 (0.99) & 2.707 (0.99) &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Argentina}& \multirow{2}{*}{Pre}  & Agriculture & -0.849 (0.80) & -1.201 (0.67) &  &   &  \\
+\\                            &                         & Industry    & -0.495 (0.89) & -0.378 (0.9137) &  &   &  \\ [.2em]\cline{3-8}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 1.197 (0.99) & 1.093 (0.99) &  &   &  \\ 
+\\                        &                         & Industry    & 0.228 (0.97) & 0.381 (0.98) &  &   &  \\  [.2em]\cline{3-8}                  
+\\                        & \multirow{2}{*}{All}  & Agriculture & 1.484 (0.99)  & 1.401 (0.99) &  &   &  \\
+\\                        &                         & Industry    & 1.007 (0.99) & 1.237 (0.99) &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\
+\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\                       
+\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\
+\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\                       
+\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\[.2em]\cline{2-8}
+\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\
+\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\                       
+\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &   &  \\
+\\                        &                         & Industry    &  &  &  &   &  \\[.2em]
+\bottomrule
+\end{tabular}
+\end{tiny}
+\caption{Unit Root Tests for Agricultural and Industrial Development}
+\label{unit:root:tests}
+\end{center}
+\end{table}
+\end{landscape}
+
+{\color{red}INSERT THIS}\footnote{I show the test statistic and its associated MacKinnon approximate p-value in parenthesis. Both trend and drift were tested in all tests, when applicable. All variables were lagged one period. When applicable, all tests that work based on lagged levels, I show the statistic associated when the variable is lagged one period. {\color{red}Be specific and write down what's the null hypothesis of each test here.}}
+
+
+\begin{landscape}
+\begin{table}[!htbp]
+\begin{center}
+\begin{scriptsize}
+\begin{tabular}{ c c c c c} 
+\toprule
+{\bf Country} & & & {\bf 95\% Critical Value} & {\bf Conclusion}  \\
+
+\midrule
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Chile}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Venezuela}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Peru}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Nicaragua}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Guatemala}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Ecuador}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\hline
+%
+\hline
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
+& & & & \\
+\multirow{5}{*}{Colombia}  & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion \\ 
+& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
+& & & & \\
+                          & r=0 & NUMBER & NUMBER & conclusion \\
+                          & r=1 & NUMBER & NUMBER & conclusion  \\
+\bottomrule
+\end{tabular}
+\end{scriptsize}
+\caption{Johansen Tests for Cointegration}
+\label{johansen:tests}
+\end{center}
+\end{table}
+\end{landscape}
+
 
 %% Models for cointegrated vectors.
 Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which can be the Engle-Granger single-equation procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR).\footnote{\citet[164]{Box-Steffensmeier:2014fe}.} \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE.\footnote{\citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} Formally, I will model the next reduced form VAR for each country:\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.}
@@ -383,159 +634,13 @@ Given that ``it is often difficult to draw any conclusion from the large number 
 
 
 
-\begin{table}[h]
-\begin{center}
-\begin{scriptsize}
-\begin{tabular}{ c c c c c c c} 
-\hline
-{\bf Country} & {\bf Sector} & {\bf Augmented Dickey-Fuller}  & {\bf Phillips-Perron} & {\bf Im-Pesaran-Shin} & {\bf KPSS} & {\bf Stationarity} \\
-\hline
-\multirow{2}{4em}{Chile}  & Agriculture & -2.889 &    &  &   &  \\
-                          & Industry    & -2.889 &    &   &  &  \\
-
-\hline
-\multirow{2}{4em}{Venezuela} & Agriculture &    &   &  &  &  \\
-                             & Industry    &    &   &  &  &  \\
-
-\hline
-\multirow{2}{4em}{Peru} & Agriculture &     &   &   &   &  \\
-                        & Industry    &     &   &   &    &  \\                          
-
-\hline
-\multirow{2}{4em}{Nicaragua} & Agriculture &    &   &  &  &  \\
-                             & Industry    &    &   &  &  &  \\  
-
-\hline
-\multirow{2}{4em}{Guatemala} & Agriculture &    &   &   &  &  \\
-                             & Industry    &    &   &   &  &  \\  
-
-\hline
-\multirow{2}{4em}{Ecuador} & Agriculture &    &   &   &   &  \\
-                           & Industry    &    &   &   &   &  \\ 
-
-\hline
-\multirow{2}{4em}{Colombia} & Agriculture &     &   &   &   &  \\
-                            & Industry    &     &   &   &   &  \\ 
-\hline
-\end{tabular}
-\end{scriptsize}
-\caption{Unit Root Tests for Agricultural and Industrial Development}
-\label{unit:root:tests}
-\end{center}
-\end{table}
-
-
-{\color{red}INSERT THIS}\footnote{I show the 5\% confidence critical value for all tests. Both trend and drift were tested for all tests, when applicable. All variables were lagged one period. When applicable, all tests that work based on lagged levels, I show the statistic associated when the variable is lagged one period.}
-
 
 \newpage
 
 
-Following \citet[92-93]{Johansen1995}, I define the $\lambda_{\text{Trace}}$ statistic as,
-
-\begin{equation}
-\lambda_{\text{Trace}} = -T\sum^{n}_{i=r+1}ln(1-\hat\lambda_{i})
-\end{equation}
-
-and the $\lambda_{\text{Max}}$ statistic as,
-
-\begin{equation}
-\lambda_{\text{Max}} = -T(ln(1-\hat\lambda_{r+1}))
-\end{equation}
-
-\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The \texttt{Trace} statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. The \texttt{Max} statistic tests that the number of cointegrating vectors is equal to $r$, rather than $r+1$.\footnote{\citet[165]{Box-Steffensmeier:2014fe} explain that it is $r-1$, however, it is actually $r+1$ (see \citet[401]{Becketti2013} and \citet[119]{Lutkepohl2004}).} Using these two tests, I am able to infer how many cointegrating relationships there are in the system. I expect to find $\lambda_{\text{Trace}}=1$, while for the $\lambda_{\text{Max}}$ test I expect to find null results. In other words, the system should exhibit just one cointegrating relationship, and no more than that. 
 
 
 
-\begin{table}[h]
-\begin{center}
-\begin{tiny}
-\begin{tabular}{ c c c c c} 
-\hline
-{\bf Country} & & & {\bf 95\% Critical Value} & {\bf Conclusion}  \\
-
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Chile}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Venezuela}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Peru}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Nicaragua}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Guatemala}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Ecuador}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-%
-\hline
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Trace}}$}} \\
-& & & & \\
-\multirow{5}{4em}{Colombia}  & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion \\ 
-& & \multicolumn{3}{c}{\underline{$\lambda_{\text{Max}}$}} \\
-& & & & \\
-                          & r=0 & NUMBER & NUMBER & conclusion \\
-                          & r=1 & NUMBER & NUMBER & conclusion  \\
-\hline
-\end{tabular}
-\end{tiny}
-\caption{Johansen Tests for Cointegration}
-\label{johansen:tests}
-\end{center}
-\end{table}
 
 
 \newpage
