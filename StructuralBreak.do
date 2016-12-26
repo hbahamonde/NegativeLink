@@ -21,9 +21,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+*  Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 
 var d.constmanufact d.constagricult, lags(1/4)
@@ -65,10 +68,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/2)
 
@@ -98,6 +103,9 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 
 
@@ -179,10 +187,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
 
@@ -222,10 +232,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
 
@@ -289,7 +301,9 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 ********************************************************************************************************************************************
 * 																A 	R 	G 	E 	N 	T 	I 	N 	A
 ********************************************************************************************************************************************
@@ -323,10 +337,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/2)
 
@@ -366,10 +382,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/2)
 
@@ -432,6 +450,9 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 ********************************************************************************************************************************************
 *																 M 	E 	X 	I 	C 	O
 ********************************************************************************************************************************************
@@ -461,10 +482,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
 
@@ -504,10 +527,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/2)
 
@@ -570,6 +595,9 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 ********************************************************************************************************************************************
 * 															N	 I 	 C 	 A 	 R 	 A 	 G 	 U 	 A
 ********************************************************************************************************************************************
@@ -596,10 +624,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/2)
 
@@ -639,10 +669,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
 
@@ -705,7 +737,10 @@ dfuller constmanufact, lag(1) reg
 dfuller constagricult, lag(1) reg 
 *
 pperron constmanufact, lag(1) 
-pperron constagricult, lag(1) 
+pperron constagricult, lag(1)
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto 
 
 ********************************************************************************************************************************************
 * 															G 	U 	A 	T 	E 	M 	A 	L 	A
@@ -733,10 +768,12 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1/3)
 
@@ -776,10 +813,12 @@ tsline constagricult constmanufact, subtitle("Post Income Tax") xtitle("") ytitl
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
 dfuller constagricult, lag(1) reg // I(1)
-*
+* Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
 
@@ -844,3 +883,6 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
