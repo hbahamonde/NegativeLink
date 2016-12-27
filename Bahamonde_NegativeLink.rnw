@@ -440,7 +440,10 @@ M_{t} = \left\{
 % Link the argument with the methods I will use: IRF and VARs
 
 %% Introducing co-integration
-\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we have determined that the directionality of economic (under)development is associated with the imposition of the income tax law, it is necessary to establish the inter-sectoral long-run economic equilibrium. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept of co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods.\footnote{Cointegrated vectors are widely common in political science too. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type.} Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, both integration and cointegration are assumptions that should be tested.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), I use additional tests since all of them are low-powered tests.} In \autoref{unit:root:tests}, besides showing the ADF test, I also compute the Phillips-Perron\footnote{See \citet{Phillips1987,Phillips1988}.} and KPSS unit root tests\footnote{See \citet{Kwiatkowski1992}.} for both before and after of the implementation of the income tax law as well as for the whole sample.\footnote{I show the test statistic and its associated MacKinnon approximate p-value in parenthesis for the ADF and Phillips-Perron tests. Both trend and drift were tested in all tests. As I did not find any differences, I show the test statistic with no trend nor drift and one lag. The lags in the KPSS test were selected via an automatic procedure. The critical values are 10\%: 0.119; 5\%: 0.146; 2.5\%: 0.176; 1\%: 0.216. ``$+$'' indicates that the test is barely significant or non-significant. The null hypotheses are the following: for the KPSS, the series are trend stationary. {\color{red}Be specific and write down what's the null hypothesis of each test here.}} {\color{red}I find that SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.} 
+\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we have determined the directionality of economic (under)development is associated with the imposition of the income tax law, it is necessary to establish the inter-sectoral long-run economic equilibrium. Finding evidence supporting the reversion of the initial underdevelopment trap after the imposition of the income tax law implies that the income tax triggered other state institutions that \emph{in the long run} caused economic growth. The relationship between agricultural and industrial outputs is an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated. `Unit root' or `integrated' (denoted by `I(1)') vectors\footnote{The order of integration can be higher than 1. However, for simplicity sake, I restrict my analyses to I(1) processes, which is the most common strategy in applied econometric analyses of time series.} are time-series that ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} Moreover, two integrated vectors that are mutually endogenous imply a `cointegrated' relationship, imposing additional statistical restrictions. \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept of co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods.\footnote{Cointegrated vectors are widely common in political science too. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type.} Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, both integration and cointegration are assumptions that should be tested.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), I use additional tests since all of them are low-powered tests.} 
+
+% series are individually integrated
+Inter-sectoral long-run economic growth implies that each series are individually integrated. In \autoref{unit:root:tests}, besides showing the ADF test, I also compute the Phillips-Perron\footnote{See \citet{Phillips1987,Phillips1988}.} and KPSS unit root tests\footnote{See \citet{Kwiatkowski1992}.} for both \emph{before} and \emph{after} of the implementation of the income tax law as well as for the whole sample.\footnote{I show the test statistic and its associated MacKinnon approximate p-value in parenthesis for the ADF and Phillips-Perron tests. Both trend and drift were tested in all tests, when applicable. As I did not find any differences, I show the test statistic with no trend nor drift and one lag. The lags in the KPSS test were selected via an automatic procedure. The critical values are 10\%: 0.119; 5\%: 0.146; 2.5\%: 0.176; 1\%: 0.216. ``$+$'' indicates that the test is barely significant or non-significant. The null hypotheses are the following: for the KPSS, the series are trend stationary. {\color{red}Be specific and write down what's the null hypothesis of each test here.}} {\color{red} \autoref{unit:root:tests} indicates that all variables, periods, sectors and countries have I(1) processes. This is crucial as the analyses of cointegrated vectors require having integrated series of the same order\footnote{\citet{Keele2016}.} I find that SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.} 
 
 \afterpage{
 \begin{table}[ph!]
@@ -450,42 +453,42 @@ M_{t} = \left\{
 \toprule
 {\bf Country} & Time Frame & {\bf Sector} & {\bf Augmented Dickey-Fuller}  & {\bf Phillips-Perron} & {\bf KPSS} & {\bf Conclusion} \\
 \midrule
-\\\multirow{6}{*}{Chile}& \multirow{2}{*}{Pre}  & Agriculture & -1.185 (0.68) & -1.241 (0.66)   & .107$^{+}$ &  Integrated\\
-\\                        &                         & Industry    & 2.310 (0.99) & 2.556 (0.99) & .113$^{+}$ &  Integrated\\[.2em]\cline{3-7}
-\\                        & \multirow{2}{*}{Post} & Agriculture & 4.557 (1.00) & 5.40 (1.00)    & .289 &  Integrated\\
-\\                        &                         & Industry    & 0.908 (0.99) & 1.458 (0.99) & .249 &  Integrated\\ [.2em]\cline{3-7}                     
-\\                        & \multirow{2}{*}{All}  & Agriculture & 5.521 (1.00) & 6.722 (1.00)   & .31  &  Integrated\\
-\\                        &                         & Industry    & 1.582 (0.99) & 2.305 (0.99) & .314 &  Integrated\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Colombia}& \multirow{2}{*}{Pre}  & Agriculture & 2.709 (0.99) & 2.414 (0.99)  & .204 &  Integrated\\
-\\                        &                         & Industry    &  2.103 (0.99) & 3.257 (1.00)& .183 &  Integrated\\[.2em]\cline{3-7}
-\\                        & \multirow{2}{*}{Post} & Agriculture & 2.392 (0.99) & 3.156 (1.00)   & .282 &  Integrated\\
-\\                        &                         & Industry    & 0.520 (0.98) & 1.044 (0.99) & .241 &  Integrated\\ [.2em]\cline{3-7}                      
-\\                        & \multirow{2}{*}{All}  & Agriculture & 4.256 (1.00) & 5.893 (1.00)   & .372 &  Integrated\\
-\\                        &                         & Industry    & 1.674 (0.99) & 2.707 (0.99) & .374 &  Integrated\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Argentina}& \multirow{2}{*}{Pre}  & Agriculture & -0.849 (0.80) & -1.201 (0.67) & .0801$^{+}$ &  Integrated\\
-\\                        &                         & Industry    & -0.495 (0.89) & -0.378 (0.91) & .115$^{+}$ &  Integrated\\[.2em]\cline{3-7}
-\\                        & \multirow{2}{*}{Post} & Agriculture & 1.197 (0.99) & 1.093 (0.99) & .277 &  Integrated\\
-\\                        &                         & Industry    & 0.228 (0.97) & 0.381 (0.98) & .0901$^{+}$ & Integrated\\[.2em]\cline{3-7}                  
-\\                        & \multirow{2}{*}{All}  & Agriculture & 1.484 (0.99)  & 1.401 (0.99) & .332 & Integrated\\
-\\                        &                         & Industry    & 1.007 (0.99) & 1.237 (0.99) & .183 & Integrated\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture & 4.601 (1.00) & 5.552 (1.00) & .288 & Integrated\\
-\\                        &                         & Industry & 5.803 (1.00) & 10.776 (1.00) & .29 & Integrated\\[.2em]\cline{3-7}  
-\\                        & \multirow{2}{*}{Post} & Agriculture & 0.599 (0.9876) & 0.497 (0.99) & .109$^{+}$ & Integrated\\
-\\                        &                         & Industry   & -1.255 (0.65) & -0.982 (0.76) & .113$^{+}$ & Integrated\\[.2em]\cline{3-7}                        
-\\                        & \multirow{2}{*}{All}  & Agriculture & 3.431 (1.00) & 3.607 (1.00) & .341 & Integrated\\
-\\                        &                         & Industry  & 0.672 (0.99) & 2.020 (0.99) & .367 & Integrated\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture & 2.473 (0.99) & 2.355 (0.99) & .25 & Integrated\\
-\\                        &                         & Industry    & 4.958 (1.00) & 9.100 (1.00) & .244 & Integrated\\[.2em]\cline{3-7}  
-\\                        & \multirow{2}{*}{Post} & Agriculture & -0.154 (0.94) & 0.154 (0.97) & .2 & Integrated\\
-\\                        &                         & Industry    & -1.237 (0.6577) & -1.176 (0.68) & .189 & Integrated\\[.2em]\cline{3-7}                        
-\\                        & \multirow{2}{*}{All}    & Agriculture & 0.636 (0.99) & 0.759 (0.99) & .116$^{+}$ & Integrated\\
-\\                        &                         & Industry    & -0.164 (0.94) & -0.090 (0.95) & .123 & Integrated\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture & -0.393 (0.91) & -0.343 (0.92) & .0639$^{+}$ & Integrated\\
-\\                        &                         & Industry    & 1.358 (0.99)  & 1.704 (0.99) & .199 & Integrated\\[.2em]\cline{3-7}  
-\\                        & \multirow{2}{*}{Post} & Agriculture & 1.786 (0.99)  & 1.965 (0.99) & .162 & Integrated\\
-\\                        &                       & Industry    & -0.998 (0.75) & -1.352 (0.61) & .0915$^{+}$ & Integrated\\[.2em]\cline{3-7}                        
-\\                        & \multirow{2}{*}{All}  & Agriculture & 3.349 (1.00) & 3.714 (1.00) & .321 & Integrated\\
-\\                        &                       & Industry    & 0.413 (0.98) & 0.017 (0.96) & .288 & Integrated\\[.2em]
+\\\multirow{6}{*}{Chile}& \multirow{2}{*}{Pre}  & Agriculture & -1.185 (0.68) & -1.241 (0.66)   & .107$^{+}$ &  I(1)\\
+\\                        &                         & Industry    & 2.310 (0.99) & 2.556 (0.99) & .113$^{+}$ &  I(1)\\[.2em]\cline{3-7}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 4.557 (1.00) & 5.40 (1.00)    & .289 &  I(1)\\
+\\                        &                         & Industry    & 0.908 (0.99) & 1.458 (0.99) & .249 &  I(1)\\ [.2em]\cline{3-7}                     
+\\                        & \multirow{2}{*}{All}  & Agriculture & 5.521 (1.00) & 6.722 (1.00)   & .31  &  I(1)\\
+\\                        &                         & Industry    & 1.582 (0.99) & 2.305 (0.99) & .314 &  I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Colombia}& \multirow{2}{*}{Pre}  & Agriculture & 2.709 (0.99) & 2.414 (0.99)  & .204 &  I(1)\\
+\\                        &                         & Industry    &  2.103 (0.99) & 3.257 (1.00)& .183 &  I(1)\\[.2em]\cline{3-7}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 2.392 (0.99) & 3.156 (1.00)   & .282 &  I(1)\\
+\\                        &                         & Industry    & 0.520 (0.98) & 1.044 (0.99) & .241 &  I(1)\\ [.2em]\cline{3-7}                      
+\\                        & \multirow{2}{*}{All}  & Agriculture & 4.256 (1.00) & 5.893 (1.00)   & .372 &  I(1)\\
+\\                        &                         & Industry    & 1.674 (0.99) & 2.707 (0.99) & .374 &  I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Argentina}& \multirow{2}{*}{Pre}  & Agriculture & -0.849 (0.80) & -1.201 (0.67) & .0801$^{+}$ &  I(1)\\
+\\                        &                         & Industry    & -0.495 (0.89) & -0.378 (0.91) & .115$^{+}$ &  I(1)\\[.2em]\cline{3-7}
+\\                        & \multirow{2}{*}{Post} & Agriculture & 1.197 (0.99) & 1.093 (0.99) & .277 &  I(1)\\
+\\                        &                         & Industry    & 0.228 (0.97) & 0.381 (0.98) & .0901$^{+}$ & I(1)\\[.2em]\cline{3-7}                  
+\\                        & \multirow{2}{*}{All}  & Agriculture & 1.484 (0.99)  & 1.401 (0.99) & .332 & I(1)\\
+\\                        &                         & Industry    & 1.007 (0.99) & 1.237 (0.99) & .183 & I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture & 4.601 (1.00) & 5.552 (1.00) & .288 & I(1)\\
+\\                        &                         & Industry & 5.803 (1.00) & 10.776 (1.00) & .29 & I(1)\\[.2em]\cline{3-7}  
+\\                        & \multirow{2}{*}{Post} & Agriculture & 0.599 (0.9876) & 0.497 (0.99) & .109$^{+}$ & I(1)\\
+\\                        &                         & Industry   & -1.255 (0.65) & -0.982 (0.76) & .113$^{+}$ & I(1)\\[.2em]\cline{3-7}                        
+\\                        & \multirow{2}{*}{All}  & Agriculture & 3.431 (1.00) & 3.607 (1.00) & .341 & I(1)\\
+\\                        &                         & Industry  & 0.672 (0.99) & 2.020 (0.99) & .367 & I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture & 2.473 (0.99) & 2.355 (0.99) & .25 & I(1)\\
+\\                        &                         & Industry    & 4.958 (1.00) & 9.100 (1.00) & .244 & I(1)\\[.2em]\cline{3-7}  
+\\                        & \multirow{2}{*}{Post} & Agriculture & -0.154 (0.94) & 0.154 (0.97) & .2 & I(1)\\
+\\                        &                         & Industry    & -1.237 (0.6577) & -1.176 (0.68) & .189 & I(1)\\[.2em]\cline{3-7}                        
+\\                        & \multirow{2}{*}{All}    & Agriculture & 0.636 (0.99) & 0.759 (0.99) & .116$^{+}$ & I(1)\\
+\\                        &                         & Industry    & -0.164 (0.94) & -0.090 (0.95) & .123 & I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture & -0.393 (0.91) & -0.343 (0.92) & .0639$^{+}$ & I(1)\\
+\\                        &                         & Industry    & 1.358 (0.99)  & 1.704 (0.99) & .199 & I(1)\\[.2em]\cline{3-7}  
+\\                        & \multirow{2}{*}{Post} & Agriculture & 1.786 (0.99)  & 1.965 (0.99) & .162 & I(1)\\
+\\                        &                       & Industry    & -0.998 (0.75) & -1.352 (0.61) & .0915$^{+}$ & I(1)\\[.2em]\cline{3-7}                        
+\\                        & \multirow{2}{*}{All}  & Agriculture & 3.349 (1.00) & 3.714 (1.00) & .321 & I(1)\\
+\\                        &                       & Industry    & 0.413 (0.98) & 0.017 (0.96) & .288 & I(1)\\[.2em]
 \bottomrule
 \end{tabular}
 \end{tiny}
@@ -495,17 +498,50 @@ M_{t} = \left\{
 \end{table}
 }
 
+% series are jointly cointegrated
+Inter-sectoral long-run economic growth also implies that the series are mutually cointegrated. This assumption is usually tested via two procedures, the \texttt{trace} and \texttt{max} statistics. Since \autoref{var:1} has only two equations, should we find evidence of cointegration, the maximum number of cointegrated vectors is given by $n-1$, being $n$ the number of equations. Since the maximum cannot be larger than 1, I focus on the \texttt{trace} statistic which calculates the \emph{minimum} number of cointegrated relationships. Define the \texttt{trace} statistic as follows:
+
+\begin{equation} 
+\lambda_{\text{Trace}} = -T\sum^{n}_{i=r+1}ln(1-\hat\lambda_{i}) 
+\end{equation} 
+ 
+\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. I expect to find just one cointegrated vector for the cases where there was a macroeconomic structural transformation while the lack of cointegration should be interpreted as the absence of a mutual sectoral inter-dependence leading to long-run economic growth. Since I am interested in the long-run inter-sectoral relationship \emph{overall}, I do not split the sample by the implementation of the income tax law. {\color{red}\autoref{johansen:tests:tab} suggests that  SUMMARIZE TABLR WITH THE Johansen Tests for Cointegration.} 
+
+
+\afterpage{
+\begin{table}[ph!]
+\begin{center} 
+\begin{scriptsize}
+\begin{tabular}{ c c c c c }
+\toprule 
+{\bf Country} & {\bf Number of Cointegrated Vectors (rank)} & {\bf Lags} & {\bf Log-Likelihood} & {\bf Trace} \\[-.1em] 
+\midrule 
+Chile & & & & \\[.2em] 
+Colombia & & & & \\[.2em] 
+Argentina & & & & \\[.2em] 
+Mexico & & & & \\[.2em] 
+Nicaragua & & & & \\[.2em] 
+Guatemala & & & & \\[.2em] 
+\bottomrule 
+\end{tabular} 
+\caption{Johansen Tests for Cointegration} 
+\label{johansen:tests:tab} 
+\end{scriptsize}
+\end{center} 
+\end{table}
+}
+
 %% Models for cointegrated vectors.
-Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which could be the Engle-Granger procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR). \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE. One such advantage is that VAR models do not need to specify the number of cointegrated vectors as opposed to error correction models.\footnote{\citet[164]{Box-Steffensmeier:2014fe}. \citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} Formally, I will model the next reduced\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.} form VAR for each country:
+Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which could be the Engle-Granger procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR). \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE.\footnote{\citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} One such advantage is that VAR models do not need to specify the number of cointegrated vectors as opposed to error correction models.\footnote{\citet[164]{Box-Steffensmeier:2014fe}.} Formally, I will model the next reduced\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.} form VAR for each country:
 
 \begin{equation}\label{var:1}
   \begin{array}{ll}
-    M_{t_{m}} = & \alpha_{m} + \beta_{m} M_{t-l} + \beta_{m} A_{t-l} + \epsilon_{t_{m}} \\
-    A_{t_{a}} = & \alpha_{a} + \beta_{a} M_{t-l} + \beta_{a} A_{t-l} + \epsilon_{t_{a}}
+    \bigtriangleup M_{t_{m}} = & \alpha_{m} + \beta_{m}  \bigtriangleup M_{t-l} + \beta_{m} \bigtriangleup A_{t-l} + \epsilon_{t_{m}} \\
+    \bigtriangleup A_{t_{a}} = & \alpha_{a} + \beta_{a}  \bigtriangleup M_{t-l} + \beta_{a} \bigtriangleup A_{t-l} + \epsilon_{t_{a}}
   \end{array}
 \end{equation}
 
-\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system, which is an advantage since if one equation is shocked, the other one should respond to such shock.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of independent variables. Since the number of lags $l$ varies by country, the system of equations in \autoref{var:1} is in standard form. {\color{red}\autoref{post:estimation:lag:lenght:tests}} describes the optimal lags specified in each country regression.\footnote{The next information criteria were used to determine the appropriate lag length: final prediction error, AIC, Schwarz's Bayesian information criterion, Hannan and Quinn criterion as well as the corresponding likelihood-ratio test statistics.} The table shows a summary for different post-estimation tests when the optimum lag length was used, including the Lagrange multiplier (LM) test for autocorrelation in the residuals, different tests for normally distributed disturbances, and the VAR system's stability condition.\footnote{ Detailed results are available upon request. All these tests have a null hypothesis that the are not specification problems. Hence, non-significant statistics suggest that the selected number of lags was the appropriated one.}
+\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system, which is an advantage since if one equation is shocked, the other one should respond to such shock.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of lagged independent variables. Since the number of lags $l$ varies by country \emph{and} time-span (i.e. before/after the income tax law), the system of equations in \autoref{var:1} is in standard form. Since all variables are nonstationary, I take the first difference (i.e. $\bigtriangleup$). \autoref{post:estimation:lag:lenght:tests} describes the optimal lags specified in each country regression.\footnote{The next information criteria were used to determine the appropriate lag length: final prediction error, AIC, Schwarz's Bayesian information criterion, Hannan and Quinn criterion as well as the corresponding likelihood-ratio test statistics.} The table shows a summary for different post-estimation tests when the optimum lag length specified in the table was used, including the Lagrange multiplier (LM) test for autocorrelation in the residuals, different tests for normally distributed disturbances, and a test for the VAR system's stability condition.\footnote{Detailed results are available upon request.} A check mark indicates that the tests was passed successfully, a check-minus mark indicates that the test was passed somewhat successfully, and a cross mark denotes failure to reject specification problems. {\color{red}COMMENT RESULTS OF \autoref{post:estimation:lag:lenght:tests} HERE.}
 
 % defines a checkmark and x mark symbols
 \newcommand{\cmark}{\ding{51}}%
@@ -536,7 +572,7 @@ Cointegrated time-series need a special method to be estimated. If traditional m
 \bottomrule
 \end{tabular}
 \end{tiny}
-\caption{Lang Length and Post-Estimation Results}
+\caption{Lag Length and Post-Estimation Results}
 \label{post:estimation:lag:lenght:tests}
 \end{center}
 \end{table}
@@ -544,7 +580,7 @@ Cointegrated time-series need a special method to be estimated. If traditional m
 
 
 % VAR and Granger Tests and IRFs.
-Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions} (IRFs), which are derived from the VAR analyses.\footnote{{\color{red}TABLE X} shows the raw regression tables.} ``Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors.''\footnote{\citet[106]{Stock2001}. See also \citet[51]{Lutkepohl2005}.} In other words, IRFs show what happens with the dependent variable of one of the equations in \autoref{var:1} once the independent variables of the other equation are `shocked' via a forecasting process. 
+Given that ``it is often difficult to draw any conclusionS from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions} (IRFs), which are derived from VAR analyses.\footnote{{\color{red}TABLE X} shows the raw regression tables.} ``Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors.''\footnote{\citet[106]{Stock2001}. See also \citet[51]{Lutkepohl2005}.} In other words, IRFs show what happens with the dependent variable of one of the equations in \autoref{var:1} once the independent variables of the other equation are `shocked' via a forecasting process. After solving \autoref{var:1} via VAR analyses, I computed and plotted in \autoref{irf:fig:1} country-specific IRF both before and after the imposition of the income tax law. {\color{red}COMMENT RESULTS OF IRF HERE.}
 
 
 \afterpage{
@@ -593,10 +629,6 @@ Given that ``it is often difficult to draw any conclusion from the large number 
 
 \newpage
 
-% from stata manual
-% VECMs are used to model the stationary relationships between multiple time-series that contain unit roots. vec implements Johansen’s approach for estimating the parameters of a VECM. [TS]
-
-% sacar formulas de stata manual 856 and here http://www.stata.com/manuals13/tsvecintro.pdf
 
 
 \subsection{Engle-Granger Regressions and Error Correction Models}

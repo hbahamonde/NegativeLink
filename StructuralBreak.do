@@ -90,28 +90,6 @@ vargranger
 // AGR -> IND (.003)
 
 
-* Chile // All periods
-cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
-use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
-
-* Keeping one country
-keep if country==4
-
-* set ts data
-tsset, clear
-tsset year, yearly
-
-** MacKinnon approximate sign. p-value = stationarity
-dfuller constmanufact, lag(1) reg 
-dfuller constagricult, lag(1) reg 
-*
-pperron constmanufact, lag(1) 
-pperron constagricult, lag(1) 
-* kpss
-kpss constagricult, auto
-kpss constmanufact, auto
-
-
 
 * IRF
 irf create Chile, step(5) set(Chile, replace)
@@ -146,6 +124,30 @@ reg constmanufact constagricult
 estat sbknown, break(1924) breakvars(constagricult)
 
 
+* Chile // All periods
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==4
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+** MacKinnon approximate sign. p-value = stationarity
+dfuller constmanufact, lag(1) reg 
+dfuller constagricult, lag(1) reg 
+*
+pperron constmanufact, lag(1) 
+pperron constagricult, lag(1) 
+* kpss
+kpss constagricult, auto
+kpss constmanufact, auto
+
+*  Johansen tests for cointegration
+varsoc constmanufact constagricult, maxlag(5) // lag 3 // test for lag lenght
+vecrank constmanufact constagricult, lags(5) max // rank 1: This is the number of cointegrating vectors in the system. // report LL and significance level
 
 
 
