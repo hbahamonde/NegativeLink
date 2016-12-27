@@ -92,6 +92,7 @@
 \usepackage{dcolumn} % for R tables
 \usepackage{csquotes} % For long quotes
 \usepackage{multirow}
+\usepackage{pifont}
 
 %----------------------------------------------------------------------------------------
 % Other ADDS-ON
@@ -314,7 +315,17 @@ Following \citet{Llavador2005}, I argue that an elite split along economic inter
 
 
 % Link the argument with the methods I will use: Structural Break
-\paragraph{Structural Breaks}In order to confirm my hypothesis, the theory should pass a number of tests. First, we should see that the income tax indeed altered the way in which one sector affected the other sector's growth rate. Since the income tax was produced by a sectoral conflict, I expect that this is the case. In econometric terms, this is an analysis of structural breaks.\footnote{See \citet{Box1975} for a reference.} Essentially, a structural break divides the time-series into - in this case - two subsamples by specifying a break $b$, before and after the income tax law. This strategy tests whether $b$ significantly changes the relationship between the two sectors. 
+\paragraph{Structural Breaks}In order to confirm my hypothesis, the theory should pass a number of tests. First, we should see that the income tax indeed altered the way in which one sector affected the other sector's growth rate. In econometric terms, this is an analysis of structural breaks.\footnote{See \citet{Box1975} for a reference.} Essentially, a structural break divides the time-series into - in this case - two subsamples by specifying a break $b$, before and after the income tax law. This strategy tests whether $b$ significantly changes the relationship between the two sectors. Since the income tax was produced by a sectoral conflict, I expect that this is the case.
+
+\afterpage{
+\begin{figure}[ph!]
+\begin{centering}
+  \includegraphics[width=1.0\textwidth]{Structural_Breaks_Paper.pdf}
+\end{centering}
+\caption{Structural Breaks: Sectoral Growths Before and After the Implementation of the Income Tax Law}
+\label{str:brk:fig:1}
+\end{figure}
+}
 
 Define the industrial sector growth as $M$ and the agricultural sector growth as $A$. Considering the following linear regression,
 
@@ -322,7 +333,7 @@ Define the industrial sector growth as $M$ and the agricultural sector growth as
   M_{t} = \alpha + A_{t}\beta + \epsilon_{t}
 \end{equation}
 
-\paragraph{}where $\alpha$ is a constant, $t$ is a given year and $\epsilon_{t}$ a vector of innovations, I test whether the coefficients $\beta$ are different over the subsamples defined by break date $b$. This is done country-by-country via a Chow test\footnote{\citet{Chow1960}.} which is essentially a Wald test. More formally, in \autoref{str:brk:2} I test if $\lambda = 0$, but expect $\lambda \;\ne\; 0$ and its Wald test significant.
+\paragraph{}where $\alpha$ is a constant, $t$ is a given year and $\epsilon_{t}$ a vector of innovations, I test whether the coefficients $\beta$ are different over the subsamples defined by break date $b$. This is done country-by-country via a Chow test\footnote{\citet{Chow1960}.} which is essentially a Wald test. More formally, I test in \autoref{str:brk:2} if $\lambda = 0$. Given this paper's argument, I expect $\lambda \;\ne\; 0$ and its Wald test significant.
 
 \begin{equation}\label{str:brk:2}
 M_{t} = \left\{ 
@@ -336,13 +347,15 @@ M_{t} = \left\{
 {\color{red}comment results here: \autoref{str:brk:tab:1} suggests that...}
 
 
-\begin{landscape}
-\begin{table}[!htbp]
+
+
+\afterpage{
+\begin{table}[ph!]
 \begin{center}
 \begin{scriptsize}
 \begin{tabular}{ c c c c c } 
 \toprule
-\\[.1em] {\bf Country} & {\bf Sample} & {\bf Break Date} & {\bf chi2} & {\bf P-value} \\
+\\[.1em] {\bf Country} & {\bf Sample} & {\bf Year Income Tax} & {\bf chi2} & {\bf P-value} \\
 \\[-.5em]
 \midrule
 \\[.1em] Chile  & 1900 - 2009 &  1924 & 5.26** & 0.022 \\
@@ -369,18 +382,17 @@ M_{t} = \left\{
 \label{str:brk:tab:1}
 \end{center}
 \end{table}
-\end{landscape}
-
+}
 
 
 % Link the argument with the methods I will use: Granger Causality Test
-\paragraph{Granger-causality Tests} Once we determine that there was a structural change, it is necessary to know in which direction this happened. My argument says that the income tax should \emph{reverse} the directionality in which growth is produced, from a backwards equilibrium to a path of development characterized by secular decline of agriculture and substantial expansion of manufacturing (as predicted by the dual sector model). In a backwards development context, the flux of factors (labor) should go \emph{from} the industrial sector \emph{to} the agricultural sector. Since the implementation of the income tax also triggered other state institutions that caused long-term economic growth, we should see that the implementation of the income tax \emph{reversed} the backwards directionality of economic development, producing a macroeconomic structural change where agricultural development `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development (and not the other way around). \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$. This idea of `causation' is based on the idea that ``that the future cannot cause the past.''\footnote{\citet[349]{Granger1980}.} For simplicity, it suffices to say that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''\footnote{\citet[197]{Durr1992}. For the formula, refer to \citet[41-51]{Lutkepohl2005}.}
+\paragraph{Granger-causality Tests} Once we determine that there was a structural change, it is necessary to know in which direction this happened. My argument says that the income tax should \emph{reverse} the directionality in which growth was produced, from a backwards equilibrium to a path of development characterized by secular decline of agriculture and substantial expansion of manufacturing (as predicted by the dual sector model). In a backwards development context, the flux of factors (labor) should go \emph{from} the industrial sector \emph{to} the agricultural sector. Since the implementation of the income tax also triggered other state institutions that caused long-term economic growth, we should see that the implementation of the income tax should be associated with the \emph{reversion} of this backwards path of economic underdevelopment, and hence with a macroeconomic structural change characterized by the emergence of the industrial sector that grew \emph{at the expenses} of the agricultural sector. In econometric terms, we should see that the agricultural sector `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development, \emph{and not the other way around}. \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$. According to \citet[349]{Granger1980}, this concept of `causation' is based on the idea ``that the future cannot cause the past.'' For simplicity sake, I do not show the derivation of this methodology, and it suffices to say that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''\footnote{\citet[197]{Durr1992}. For the formula, refer to \citet[41-51]{Lutkepohl2005}.}
 
 {\color{red}comment results here: \autoref{granger:table} suggests that }
 
 
-\begin{landscape}
-\begin{table}[!htbp]
+\afterpage{
+\begin{table}[ph!]
 \begin{center}
 \begin{scriptsize}
 \begin{tabular}{ c c c c c c } 
@@ -423,16 +435,15 @@ M_{t} = \left\{
 \label{granger:table}
 \end{center}
 \end{table}
-\end{landscape}
+}
 
 % Link the argument with the methods I will use: IRF and VARs
 
 %% Introducing co-integration
-\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we determine the directionality of economic (under)development, it is necessary to establish the long-run equilibrium, i.e. what happens to each sector's growth in relationship with the other sector. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept of co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods.\footnote{Cointegrated vectors are widely common in the social sciences. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type.} Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, both integration and cointegration are assumptions that should be tested.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), I use additional tests since all of them are low-powered tests.} In \autoref{unit:root:tests}, besides showing the ADF test, I also compute the Phillips-Perron\footnote{See \citet{Phillips1987,Phillips1988}.} and KPSS unit root tests\footnote{See \citet{Kwiatkowski1992}.} for both before and after of the implementation of the income tax law as well as for the whole sample.\footnote{I show the test statistic and its associated MacKinnon approximate p-value in parenthesis for the ADF and Phillips-Perron tests. Both trend and drift were tested in all tests. As I did not find any differences, I show the test statistic with no trend nor drift and one lag. The lags in the KPSS test were selected via an automatic procedure. The critical values are 10\%: 0.119; 5\%: 0.146; 2.5\%: 0.176; 1\%: 0.216. ``$+$'' indicates that the test is barely significant or non-significant. The null hypotheses are the following: for the KPSS, the series are trend stationary. {\color{red}Be specific and write down what's the null hypothesis of each test here.}} {\color{red}I find that SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.}
+\paragraph{Vector Autoregressive Models (VARs) and Impulse Response Analysis (IRFs)} Once we have determined that the directionality of economic (under)development is associated with the imposition of the income tax law, it is necessary to establish the inter-sectoral long-run economic equilibrium. This relationship in an endogenous one.\footnote{\citet[8]{Mahoney:2010aa} argues that ``variables that are robustly related to growth rates are small in number and closely tied to the phenomenon of development itself.''} If this endogeneity is not accounted for, the error term and the regressors will be correlated, and so OLS will be inconsistent. Additionally, growth rates are usually integrated, that is when a time-series ``wander'' up and down, yet they never revert to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} \citet{Granger1981} introduced (and further developed in \citet{Engle1987}) the concept of co-integration which means ``that if the components of $x_{t}$ were all I(1), then the equilibrium error would be I(0).'' In simple, a ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series.''\footnote{\citet[193]{Durr1992}.} The economic literature generally coincides in that growth is an I(1) process. For example, \citet{Hatton1991} and \citet{Blunch2006} study sectoral growth using co-integration methods.\footnote{Cointegrated vectors are widely common in political science too. \citet{Ostrom1992} study presidential approval, \citet{Krause1997} tests whether voters have prospective or retrospective expectations, \citet{Fish2007} study the relationship between democratization and economic liberalization, \citet{Haber2011} study the relationship between natural resource ownership and authoritarianism, \citet{Sobel2011} study the relationship between persistence and institutional change, \citet[489]{Herzer2012} ``estimate the long-run effect of income inequality on per-capita income,'' and \citet{Blaydes2011} study caloric consumption and regime type.} Consequently, I expect both industrial and agricultural growth to be \emph{individually} integrated but also expect them to be \emph{jointly} cointegrated (as predicted by the dual sector model). However, both integration and cointegration are assumptions that should be tested.\footnote{Formal statistical tests are required to determine the order of integration and cointegration. In this paper I do not get into the \emph{fractional} (co)integration debate (see \citet{Lebo2000} and \citet{Grant2016}). Though the most commonly used unit root tests are the Dickey-Fuller and its augmented version (\citet[149]{Ostrom1992}), I use additional tests since all of them are low-powered tests.} In \autoref{unit:root:tests}, besides showing the ADF test, I also compute the Phillips-Perron\footnote{See \citet{Phillips1987,Phillips1988}.} and KPSS unit root tests\footnote{See \citet{Kwiatkowski1992}.} for both before and after of the implementation of the income tax law as well as for the whole sample.\footnote{I show the test statistic and its associated MacKinnon approximate p-value in parenthesis for the ADF and Phillips-Perron tests. Both trend and drift were tested in all tests. As I did not find any differences, I show the test statistic with no trend nor drift and one lag. The lags in the KPSS test were selected via an automatic procedure. The critical values are 10\%: 0.119; 5\%: 0.146; 2.5\%: 0.176; 1\%: 0.216. ``$+$'' indicates that the test is barely significant or non-significant. The null hypotheses are the following: for the KPSS, the series are trend stationary. {\color{red}Be specific and write down what's the null hypothesis of each test here.}} {\color{red}I find that SUMMARIZE THE RESULTS OF THE UNIT ROOT TESTS HERE.} 
 
-
-\begin{landscape}
-\begin{table}[!htbp]
+\afterpage{
+\begin{table}[ph!]
 \begin{center}
 \begin{tiny}
 \begin{tabular}{ c c c c c c c } 
@@ -478,86 +489,14 @@ M_{t} = \left\{
 \bottomrule
 \end{tabular}
 \end{tiny}
-\caption{Unit Root Tests for Agricultural and Industrial Development}
+\caption{Unit Root Tests for Agricultural and Industrial Growth}
 \label{unit:root:tests}
 \end{center}
 \end{table}
-\end{landscape}
-
-In \autoref{johansen:tests}  I test for cointegration on each pair of series, before and after the income tax law was passed as well as for the whole sample. Following \citet[92-93]{Johansen1995}, I define the $\lambda_{\text{Trace}}$ statistic as,
-
-\begin{equation}
-\lambda_{\text{Trace}} = -T\sum^{n}_{i=r+1}ln(1-\hat\lambda_{i})
-\end{equation}
-
-and the $\lambda_{\text{Max}}$ statistic as,
-
-\begin{equation}
-\lambda_{\text{Max}} = -T(ln(1-\hat\lambda_{r+1}))
-\end{equation}
-
-\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The \texttt{Trace} statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. The \texttt{Max} statistic tests that the number of cointegrating vectors is equal to $r$, rather than $r+1$.\footnote{\citet[165]{Box-Steffensmeier:2014fe} explain that it is $r-1$, however, it is actually $r+1$ (see \citet[401]{Becketti2013} and \citet[119]{Lutkepohl2004}).} Using these two tests, I am able to infer how many cointegrating relationships there are in the system. I expect to find $\lambda_{\text{Trace}}=1$, while for the $\lambda_{\text{Max}}$ test I expect to find null results. In other words, the system should exhibit just one cointegrating relationship, and no more than that. {\color{red}\autoref{johansen:tests} suggests that  SUMMARIZE THE RESULTS OF cointegration TESTS HERE.} 
-
-\begin{landscape}
-\begin{table}[!htbp]
-\begin{center}
-\begin{tiny}
-\begin{tabular}{ c c c c c c c c} 
-\toprule
-{\bf Country} & Time Frame & {\bf Sector} & \multicolumn{2}{c}{\bf $\lambda_{\text{Trace}}$} & \multicolumn{2}{c}{\bf $\lambda_{\text{Max}}$} & {\bf Conclusion} \\
-\\[-.1em]
-              &            &              & r = 0   &   r =1              & r = 0   &   r =1           & \\
-\midrule
-\\\multirow{6}{*}{Chile}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry &  &  &  &  &\\[.2em]\cline{3-8}
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry &  &  &  &  &\\ [.2em]\cline{3-8}                     
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Colombia}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry   &  &  &  &  &\\[.2em]\cline{3-8}
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\ [.2em]\cline{3-8}                      
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Argentina}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry    &  &  &  &  &\\[.2em]\cline{3-8}
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{3-8}                  
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry &  &  &  &  &\\[.2em]\cline{3-8}  
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{3-8}                        
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry    &  &  &  &  &\\[.2em]\cline{3-8}  
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry  &  &  &  &  &\\[.2em]\cline{3-8}                        
-\\                        & \multirow{2}{*}{All}    & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry    &  &  &  &  &\\[.2em]\cline{2-8}
-\\\multirow{6}{*}{Guatemala}& \multirow{2}{*}{Pre}  & Agriculture &  &  &  &  &\\
-\\                        &                         & Industry    &  &  &  &  &\\[.2em]\cline{3-8}  
-\\                        & \multirow{2}{*}{Post} & Agriculture &  &  &  &  &\\
-\\                        &                       & Industry    &  &  &  &  &\\[.2em]\cline{3-8}                        
-\\                        & \multirow{2}{*}{All}  & Agriculture &  &  &  &  &\\
-\\                        &                       & Industry    &  &  &  &  &\\[.2em]
-\bottomrule
-\end{tabular}
-\end{tiny}
-\caption{Johansen Tests for Cointegration}
-\label{johansen:tests}
-\end{center}
-\end{table}
-\end{landscape}
-
-
-
+}
 
 %% Models for cointegrated vectors.
-Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which can be the Engle-Granger single-equation procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR).\footnote{\citet[164]{Box-Steffensmeier:2014fe}.} \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE.\footnote{\citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} Formally, I will model the next reduced form VAR for each country:\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.}
+Cointegrated time-series need a special method to be estimated. If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results can be affected by the `spurious regression' problem.\footnote{\citet[142-143]{Ostrom1992}.} Cointegration necessarily ``implies a particular kind of model,''\footnote{\citet[p. 571]{Wooldridge2002}.} which could be the Engle-Granger procedure\footnote{Or alternatively the two step regression error correction model (ECMs) - see \citet[264-265]{Fish2007}. For a comparison between the one and two-steep procedure, see \citet[84]{DeBoef2001} and \citet{Banerjee1993}.} or the Johansen's vector-autoregressive method (VAR). \citet[244]{Beck1992} argues that with less than 100 observations ``the two-step procedure will not be optimal.'' Consequently, I will estimate the time-series using the vector-autoregressive approach (VAR) specified in \citet[]{Johansen1988} which among several advantages, it is estimated via MLE. One such advantage is that VAR models do not need to specify the number of cointegrated vectors as opposed to error correction models.\footnote{\citet[164]{Box-Steffensmeier:2014fe}. \citet[231-232]{Johansen1988} explains that the ``reason for expecting the estimators to behave better than the regression estimates is that they take into account the error structure of the underlying process, which the regression estimates do not.''} Formally, I will model the next reduced\footnote{``A reduced form VAR expresses each variable as a linear function of its own past values, the past values of all other variables being considered and a serially uncorrelated error term.'' In \citet[102]{Stock2001}.} form VAR for each country:
 
 \begin{equation}\label{var:1}
   \begin{array}{ll}
@@ -566,12 +505,57 @@ Cointegrated time-series need a special method to be estimated. If traditional m
   \end{array}
 \end{equation}
 
-\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system., which is an advantage since if one equation is chocked, the other one should respond\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of independent variables. Since the number of lags $l$ varies by country, the system of equations in \autoref{var:1} is in standard form. {\color{red}TABLE X} describes the optimal lags specified in each country regression.
+\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system, which is an advantage since if one equation is shocked, the other one should respond to such shock.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of independent variables. Since the number of lags $l$ varies by country, the system of equations in \autoref{var:1} is in standard form. {\color{red}\autoref{post:estimation:lag:lenght:tests}} describes the optimal lags specified in each country regression.\footnote{The next information criteria were used to determine the appropriate lag length: final prediction error, AIC, Schwarz's Bayesian information criterion, Hannan and Quinn criterion as well as the corresponding likelihood-ratio test statistics.} The table shows a summary for different post-estimation tests when the optimum lag length was used, including the Lagrange multiplier (LM) test for autocorrelation in the residuals, different tests for normally distributed disturbances, and the VAR system's stability condition.\footnote{ Detailed results are available upon request. All these tests have a null hypothesis that the are not specification problems. Hence, non-significant statistics suggest that the selected number of lags was the appropriated one.}
+
+% defines a checkmark and x mark symbols
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+
+\afterpage{
+\begin{table}[ph!]
+\begin{center}
+\begin{tiny}
+\begin{tabular}{ c c c c c c c c } 
+\toprule
+{\bf Country} & {\bf Time Frame} & {\bf Number of Lags} & {\bf LM} & \multicolumn{3}{c}{{\bf Normally Tests}}  & {\bf Stability Condition}\\
+              &                  &                      &          & \emph{Jarque-Bera} &  \emph{Skewness} &  \emph{Kurtosis}    & \\
+\midrule
+\\\multirow{2}{*}{Chile}  & Pre   & 4 & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\\                        & Post  & 2 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Colombia}   & Pre   & 1 & \cmark$^{-}$ & \xmark & \xmark & \xmark & \cmark \\
+\\                            & Post  & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Argentina}  & Pre   & 2 & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\\                            & Post  & 2 & \cmark & \cmark$^{-}$ & \cmark & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Mexico} & Pre   & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
+\\                        & Post  & 2 & \cmark & \cmark & \cmark & \cmark & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Nicaragua}  & Pre   & 2 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
+\\                            & Post  & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Guatemala}  & Pre   & 3 & \cmark & \xmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
+\\                            & Post  & 1 & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
+\bottomrule
+\end{tabular}
+\end{tiny}
+\caption{Lang Length and Post-Estimation Results}
+\label{post:estimation:lag:lenght:tests}
+\end{center}
+\end{table}
+}
+
 
 % VAR and Granger Tests and IRFs.
-Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions} (IRFs).\footnote{{\color{red}TABLE X} shows the raw regression tables.} ``Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors.''\footnote{\citet[106]{Stock2001}. See also \citet[51]{Lutkepohl2005}.} In other words, IRFs show what happens with the dependent variables specified on the left-hand-side of the two equations in \autoref{var:1} once the independent variables are `shocked' via a forecasting process. 
+Given that ``it is often difficult to draw any conclusion from the large number of coefficient estimates in a VAR system,''\footnote{\citet[159]{Lutkepohl2004}.} econometricians usually turn to analyses of \emph{impulse response functions} (IRFs), which are derived from the VAR analyses.\footnote{{\color{red}TABLE X} shows the raw regression tables.} ``Impulse responses trace out the response of current and future values of each of the variables to a one-unit increase in the current value of one of the VAR errors.''\footnote{\citet[106]{Stock2001}. See also \citet[51]{Lutkepohl2005}.} In other words, IRFs show what happens with the dependent variable of one of the equations in \autoref{var:1} once the independent variables of the other equation are `shocked' via a forecasting process. 
 
 
+\afterpage{
+\begin{figure}[ph!]
+\begin{centering}
+  \includegraphics[width=1.0\textwidth]{IRF_Paper.pdf}
+\end{centering}
+\caption{VAR Impulse Response Functions: Sectoral Responses to Each Other's Growths}
+\label{irf:fig:1}
+\end{figure}
+}
 
 
 \subsection{Results}

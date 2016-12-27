@@ -16,7 +16,7 @@ tsset, clear
 tsset year, yearly
 
 * plot
-tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle("") saving(Chile_TS_PRE.gph, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)
+tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle("") saving(Chile_TS_PRE.gph, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3) legend(size(small))
 
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
@@ -27,6 +27,10 @@ pperron constagricult, lag(1) // I(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+
+* lags
+varsoc constmanufact constagricult, maxlag(5) // lag 3 // test for lag lenght
+
 
 
 var d.constmanufact d.constagricult, lags(1/4)
@@ -886,3 +890,53 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+
+
+
+******************************************************************************************************************************************** Structural Breaks Graph
+*******************************************************************************************************************************************
+
+net install grc1leg, replace
+
+** this below is just to create a fake Chile plot with a smaller legend.
+clear all
+cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
+use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
+
+* Keeping one country
+keep if country==4 & year<=1924
+
+* set ts data
+tsset, clear
+tsset year, yearly
+
+tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle("") saving(Chile_TS_PRE_legend.gph, replace) legend(label(1 "Agriculture") label(2 "Industry")) legend(cols(2)) ylabel(#3, labsize(vsmall)) ymtick(##3)  legend(size(tiny))
+
+** now I combine different graphs to plot the final one that will go to the paper.
+grc1leg Chile_TS_PRE_legend.gph Chile_TS_POST.gph, legendfrom(Chile_TS_PRE_legend.gph) col(2) title("Chile") iscale(.6) graphregion(margin(zero)) saving(Chile_Sectoral_Growth_Paper.gph, replace)
+
+
+grc1leg Colombia_TS_PRE.gph Colombia_TS_POST.gph, legendfrom(Colombia_TS_PRE.gph) col(2) title("Colombia") iscale(.6) graphregion(margin(zero)) saving(Colombia_Sectoral_Growth_Paper.gph, replace)
+grc1leg Argentina_TS_PRE.gph Argentina_TS_POST.gph, legendfrom(Argentina_TS_PRE.gph) col(2) title("Argentina") iscale(.6) graphregion(margin(zero)) saving(Argentina_Sectoral_Growth_Paper.gph, replace)
+grc1leg Mexico_TS_PRE.gph Mexico_TS_POST.gph, legendfrom(Mexico_TS_PRE.gph) col(2) title("Mexico") iscale(.6) graphregion(margin(zero)) saving(Mexico_Sectoral_Growth_Paper.gph, replace)
+grc1leg Nicaragua_TS_PRE.gph Nicaragua_TS_POST.gph, legendfrom(Nicaragua_TS_PRE.gph) col(2) title("Nicaragua") iscale(.6) graphregion(margin(zero)) saving(Nicaragua_Sectoral_Growth_Paper.gph, replace)
+grc1leg Guatemala_TS_PRE.gph Guatemala_TS_POST.gph, legendfrom(Guatemala_TS_PRE.gph) col(2) title("Guatemala") iscale(.6) graphregion(margin(zero)) saving(Guatemala_Sectoral_Growth_Paper.gph, replace)
+
+grc1leg Chile_Sectoral_Growth_Paper.gph Colombia_Sectoral_Growth_Paper.gph Argentina_Sectoral_Growth_Paper.gph Mexico_Sectoral_Growth_Paper.gph Nicaragua_Sectoral_Growth_Paper.gph Guatemala_Sectoral_Growth_Paper.gph, legendfrom(Chile_Sectoral_Growth_Paper.gph) col(2) iscale(.6) graphregion(margin(zero)) name(Structural_Breaks_Paper, replace)
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Structural_Breaks_Paper.pdf", replace
+
+
+******************************************************************************************************************************************** IRF Graph
+*******************************************************************************************************************************************
+
+
+graph combine Chile_irf_PRE.gph Chile_irf_POST.gph, rows(2) title("Chile") iscale(.6) graphregion(margin(zero)) saving(Chile_IRF_paper.gph, replace)
+graph combine Colombia_irf_PRE.gph Colombia_irf_POST.gph, rows(2) title("Colombia") iscale(.6) graphregion(margin(zero)) saving(Colombia_IRF_paper.gph, replace)
+graph combine Argentina_irf_PRE.gph Argentina_irf_POST.gph, rows(2) title("Argentina") iscale(.6) graphregion(margin(zero)) saving(Argentina_IRF_paper.gph, replace)
+graph combine Mexico_irf_PRE.gph Mexico_irf_POST.gph, rows(2) title("Mexico") iscale(.6) graphregion(margin(zero)) saving(Mexico_IRF_paper.gph, replace)
+graph combine Nicaragua_irf_PRE.gph Nicaragua_irf_POST.gph, rows(2) title("Nicaragua") iscale(.6) graphregion(margin(zero)) saving(Nicaragua_IRF_paper.gph, replace)
+graph combine Guatemala_irf_PRE.gph Guatemala_irf_POST.gph, rows(2) title("Guatemala") iscale(.6) graphregion(margin(zero)) saving(Guatemala_IRF_paper.gph, replace)
+
+graph combine Chile_IRF_paper.gph Colombia_IRF_paper.gph Argentina_IRF_paper.gph Mexico_IRF_paper.gph Nicaragua_IRF_paper.gph Guatemala_IRF_paper.gph, iscale(.6) graphregion(margin(zero)) name(IRF_paper, replace)
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/IRF_Paper.pdf", replace
+
