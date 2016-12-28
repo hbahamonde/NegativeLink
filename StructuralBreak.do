@@ -310,6 +310,9 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+* Johansen's Test
+varsoc constmanufact constagricult, maxlag(5) // lag 2 // test for lag lenght
+vecrank constmanufact constagricult, lags(2) max trend(rt) // given prior tests, I will not include a trend term // from STATA Manual: "By 
 ********************************************************************************************************************************************
 * 																A 	R 	G 	E 	N 	T 	I 	N 	A
 ********************************************************************************************************************************************
@@ -395,7 +398,9 @@ pperron constagricult, lag(1) // I(1)
 kpss constagricult, auto
 kpss constmanufact, auto
 
-var d.constmanufact d.constagricult, lags(1/2)
+
+varsoc constmanufact constagricult, maxlag(10)
+var d.constmanufact d.constagricult, lags(1/2) 
 
 	varlmar, mlag(5)
 	varnorm
@@ -459,6 +464,10 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+
+* Johansen's Test
+varsoc constmanufact constagricult, maxlag(10) // lag 3  // test for lag lenght
+vecrank constmanufact constagricult, lags(3) /*trend(rc)*/ // with restricted constant // rank 1: This is the number of cointegrating 
 ********************************************************************************************************************************************
 *																 M 	E 	X 	I 	C 	O
 ********************************************************************************************************************************************
@@ -604,6 +613,9 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+* Johansen's test
+varsoc constmanufact constagricult, maxlag(5) // lag 2 // test for lag lenght
+vecrank constmanufact constagricult, lags(4) max // given prior tests, I will not include a trend term // from STATA Manual: "By 
 ********************************************************************************************************************************************
 * 															N	 I 	 C 	 A 	 R 	 A 	 G 	 U 	 A
 ********************************************************************************************************************************************
@@ -747,7 +759,9 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto 
-
+* Johansen's Test
+varsoc constmanufact constagricult, maxlag(5) // lag 2 // test for lag lenght
+ 
 ********************************************************************************************************************************************
 * 															G 	U 	A 	T 	E 	M 	A 	L 	A
 ********************************************************************************************************************************************
@@ -892,6 +906,9 @@ pperron constagricult, lag(1)
 * kpss
 kpss constagricult, auto
 kpss constmanufact, auto
+* Johansen's Test
+varsoc constmanufact constagricult, maxlag(5) // lag 3 // test for lag lenght
+vecrank constmanufact constagricult, lags(3) max trend(t) // report LL and significance level
 
 
 
