@@ -208,22 +208,21 @@ The literature on the relationship between political and economic development is
 
 
 % Hook and Contribution
-This paper contributes to the literature by adding an alternative channel that explain political and economic development. Particularly, it complements our understanding of development from the sectoral conflict framework by introducing the \emph{dual sector economy model}. The political development literature has traditionally focused on socio-economic cleavages and potential alliances \emph{between} the ruling elite and politically excluded segments of the society. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples within this tradition. In this paper I focus on political divisions \emph{among} the elite. The sectoral approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite \emph{outsiders} on democratic transitions. \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} argue about the role of economic inequality/equality among the elite on political development, and \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. Though the relevance of different economic and social sectors has already been recognized, this paper complements this literature by bringing in the \emph{dual sector model} (a model of economic development). The dual economy model, as ``a model of structural transformation provides a useful theory of both why industrialization occurs [...] and why it proceeds slowly.''\footnote{\citet[p. 160]{Gollin2002}.} 
+This paper contributes to this literature by adding an alternative channel to explain political and economic development. Particularly, it complements our understanding of political and economic development from the sectoral conflict framework, specifically by introducing the \emph{dual sector economy model}. The political development literature has traditionally focused on socio-economic cleavages and potential alliances \emph{between} the ruling elite and politically excluded segments of the society. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples within this tradition. In this paper I focus on political divisions \emph{among} the elite. The sectoral approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite \emph{outsiders} on democratic transitions. \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} argue about the role of economic inequality/equality among the elite on political development, and \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. Though the relevance of different economic and social sectors has already been recognized, this paper complements this literature by bringing in the \emph{dual sector model} (a model of economic development). The dual economy model, as ``a model of structural transformation provides a useful theory of both why industrialization occurs [...] and why it proceeds slowly.''\footnote{\citet[p. 160]{Gollin2002}.} I link this economic structural transformation which led to long-run economic growth with the emergence of a new political elite, namely, the industrial class, which via sectoral conflicts was able to challenge the incumbent landowning class causing political development and institutional investments.
 
 % Argument
-My argument is that the emergence of an efficient and productive industrial sector altered not only the structure of the economy but the inter-sectoral balance of political power, making unsustainable the political monopoly run by the landed elite and inherited from the colonial period. The economic structural transformation, i.e. ``a secular decline of agriculture and substantial expansion of manufacturing,''\footnote{\citet[567]{Johnston1961}.} gave newcomers industrialists the necessary leverage that forced incumbent landowning political elites to make political and economic compromises. {\color{red}Somewhere else},\footnote{{\color{red}I don't know how else frame my argument without being repetitive. Hence I will cite myself. However, I am not sure this the right way to do it - most journals don't allow this?}} I have argued that the implementation of the income tax law in the 19th century Latin America was the keystone of these political conflicts and compromises, which triggered a series of other `state institutions.' In this paper, I expand on this idea by arguing that these `state institutions' caused long-term economic growth. In this sense, the paper provides an alternative explanation for why political and economic development happened together, emphasizing the impact the structural economic transformation had on promoting sectoral compromises that eventually lead to long-term economic growth. Next section introduces the \emph{dual sector model} and explains the mechanics of the structural transformation. Then, I explain my argument in detail. Later, I show evidence of different vector autoregressive (VAR) and structural breaks models for a subset of Latin American countries, which I complement with an in-depth case study of Chile.
+My argument is that the emergence of an efficient and productive industrial sector altered not only the structure of the economy but the inter-sectoral balance of political power, making unsustainable the political monopoly run by the landed elites and inherited from the colonial period. The economic structural transformation, i.e. ``a secular decline of agriculture and substantial expansion of manufacturing,''\footnote{\citet[567]{Johnston1961}.} gave newcomers industrialists the necessary leverage that forced incumbent landowning political elites to make political and economic concessions. {\color{red}Somewhere else},\footnote{{\color{red}I don't know how else frame my argument without being repetitive. Hence I will cite myself. However, I am not sure this the right way to do it - most journals don't allow this?}} I have argued that the implementation of the income tax law in the 19th century Latin America was the keystone of these political conflicts and compromises, which triggered a series of other `state institutions.' In this paper, I expand on this idea by arguing that these `state institutions' caused long-run economic growth. In this sense, the paper provides an alternative explanation for why political and economic development happened together, emphasizing the impact the structural economic transformation had on promoting sectoral compromises that eventually lead to long-run economic growth. Next section introduces the \emph{dual sector model} and explains the mechanics of the structural transformation. Then, I explain my argument in detail. Later, I show evidence of different vector autoregressive (VAR), Granger-causality tests and structural breaks models for a subset of Latin American countries, which I complement with an in-depth case study of Chile.
 
 
 \section{Structural Transformations and the Dual/Balanced Sector Economy Model}
 
 \epigraph{\emph{When by the improvement and cultivation of land [...] the labour of half the society becomes sufficient to provide food for the whole, the other half [...] can be employed [...] in satisfying the other wants and fancies of mankind}}{\citet[I.11.59]{Smith:1904aa}}
 
-
 % Define/Introduce the Dual Sector Model.
-19th-century German-American economist Friedrich List in his \emph{Nationale System der politischen Oeckonomie} was the first to make ``the case for balanced national growth.''\footnote{\citet[167]{Streeten1959}.} The dual sector (or \emph{balanced growth}) model argues that the economic system is divided into two sectors ``the advanced or modern sector, which we will call, somewhat inaccurately, the manufacturing sector,'' and the ``backward or traditional sector, which may be suggestively denoted agriculture.''\footnote{\citet[311]{Jorgenson1961}. Importantly, I follow \citet[87]{Kuznets:1967aa} in that ``mining is combined with [...] industry because of the large scale of its productive unit, its close connection with manufacturing, and the distinctive trend in its share in product and resources.''} The basic intuition of this paradigm is that in order for the industrial sector to develop, it needs first an efficient and strong agricultural sector. Contingent on efficient agricultural productivity, the emergence of the industrial sector goes from a low production sector eventually surpassing the agricultural sector. However, if the agricultural sector lacks economic efficiency, the industrial sector will hardly develop, leaving the country in an economic (and as I explain later, a \emph{political}) trap (too). 
+19th-century German-American economist Friedrich List in his \emph{Nationale System der politischen Oeckonomie} was the first to make ``the case for balanced national growth.''\footnote{\citet[167]{Streeten1959}.} The dual sector (or \emph{balanced growth}) model argues that the economic system is divided into two sectors ``the advanced or modern sector, which we will call, somewhat inaccurately, the manufacturing sector,'' and the ``backward or traditional sector, which may be suggestively denoted agriculture.''\footnote{\citet[311]{Jorgenson1961}. Importantly, I follow \citet[87]{Kuznets:1967aa} in that ``mining is combined with [...] industry because of the large scale of its productive unit, its close connection with manufacturing, and the distinctive trend in its share in product and resources.'' Similarly, \citet[237]{Debowicz2014} includes mining within the industrial sector.} The basic intuition of this paradigm is that in order for the industrial sector to develop, it needs \emph{first} an efficient and strong agricultural sector. Contingent on efficient agricultural productivity, the emergence of the industrial sector goes from a low production sector eventually surpassing the agricultural sector. However, if the agricultural sector lacks economic efficiency, the industrial sector will hardly develop, leaving the country in an economic (and as I explain later, a \emph{political}) trap (too). 
 
 % Shortcomings of the Dual Sector Model: Why Two Sectors, and the Third Sector
-The intuition behind the dual sector model suggests that economic development involves a \emph{balanced} sectoral growth, i.e. \emph{both} sectors need to develop for the whole economy to develop. This idea counts with considerable support. \citet[151]{Lewis:1965nr} argues that ``[t]he secret of most development problems is to maintain a proper balance between sectors.'' Consequently, ``balanced growth is almost axiomatic as a desirable objective, for both developed and under-developed countries.''\footnote{\citet[169]{Streeten1959}.} The dual nature of the balanced growth model has been widely accepted too and forms part of ``a long tradition in development economics.''\footnote{\citet[8]{Kelley:1972zl}.} In fact, \citet[354]{Lindert1985} explain that the dual-sector model ``has become the dominant paradigm used by Third World observers.'' Though dualistic economies might sound as too much of an oversimplification, I follow \citet[325]{Dixit:1973aa} in that the dual economy model provides a significantly better description of the economy because ``it reflects several vital social and economic distinctions.'' \citet[280]{Johnston1966} also explain that ``[t]he reality found in most underdeveloped countries approximates this dichotomy between agriculture and non-agriculture sufficiently.'' \citet[326, ch. 15]{Dixit:1973aa} is right in that a ``major drawback of dualistic theories [...] is the total neglect of the service sector.''\footnote{He continues: ``As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis.''} However the literature is consistent in that the third sector necessarily develops \emph{after} the industrial sector is developed. In other words, industrialization is just halfway down the path to development. For example, \citet[506-507, 513]{Galenson1963} argues that ``countries in which manufacturing output grew most rapidly also experienced the largest increases in tertiary employment.'' This is also true for the Latin American case. \citet[95-96]{Baer1966} explain that the textile industry in Latin America went through a process of automation freeing labor to other sectors.
+Economic growth depends on inter-sectoral \emph{balanced} development characterized by a mutual inter-sectoral development. It was \citet[151]{Lewis:1965nr} who popularized the idea that ``[t]he secret of most development problems is to maintain a proper balance between sectors.'' In fact, ``balanced growth is almost axiomatic as a desirable objective, for both developed and under-developed countries.''\footnote{\citet[169]{Streeten1959}.} The dual nature of the balanced growth model has been widely accepted too and forms part of ``a long tradition in development economics.''\footnote{\citet[8]{Kelley:1972zl}.} For example \citet[354]{Lindert1985} explain that the dual-sector model ``has become the dominant paradigm used by Third World observers.'' Though dualistic economies might sound as too much of an oversimplification, I follow \citet[325]{Dixit:1973aa} in that the dual economy model provides a significantly better description of the economy because ``it reflects several vital social and economic distinctions.'' \citet[280]{Johnston1966} also explain that ``[t]he reality found in most underdeveloped countries approximates this dichotomy between agriculture and non-agriculture sufficiently.'' \citet[326]{Dixit:1973aa} is right in that a ``major drawback of dualistic theories [...] is the total neglect of the service sector.''\footnote{He continues: ``As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis.''} However the literature is consistent in that the third sector necessarily develops \emph{after} the industrial sector is developed. In other words, industrialization is just halfway down the path to development. For example, \citet[506-507, 513]{Galenson1963} argues that ``countries in which manufacturing output grew most rapidly also experienced the largest increases in tertiary employment.'' This is also true for the Latin American case. \citet[95-96]{Baer1966} explain that the textile industry in Latin America went through a process of automation freeing labor to other sectors.
 
 % Mechanics of Development: Importance on the Development of the Agricultural Sector // Growth
 Economic development depends on the emergence of the industrial sector which in turn depends on the development of a productive agricultural sector.\footnote{\citet[567]{Johnston1961} argue that this process ``seems to be a necessary condition for cumulative and self-sustaining growth.''} As \citet[59]{Kuznets1961a} puts it, ``economic growth is \emph{impossible} unless there is a substantial rise in product per worker in the agricultural sector.''\footnote{Emphasis is mine.} This insight is shared by many other development economists. \citet[105]{Hayami1969} for example argue that ``[i]ndustrialization and modern economic growth are basically \emph{conditioned} by the level of agricultural productivity.''\footnote{Emphasis is mine.} There are two main reasons for why agricultural development is a prerequisite of industrial development: efficient agricultures are more likely to supply the industrial sector cheap food and cheap labor. In \citet[498]{Johnston1951}'s words, ``[e]xpanded agricultural productivity releases people from the land for employment in industry [and] provides food for the growing population which is a characteristic of the industrialization process.'' This structural transformation is the key of economic growth. In fact \citet[2]{Landon-Lane2003} find that an important source of growth in developing economies is ``derived through the reallocation of resources [particularly] by drawing labour moving out of traditional sector employment into the modern sector where it is more productive.''
@@ -249,6 +248,8 @@ Finally, the long-run sectoral equilibrium between two \emph{efficient} sectors 
 \epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists}}{\citet[410]{Lewis:1965nr}}
 
 
+Since that in order for the industrial sector to develop, it needs first an efficient and strong agricultural sector (from above) ... it follows the agricultural sector needs to be a strong and consolidated elite 
+
 The size of the industrial sector imposes tight constraints on the way politics is run by the incumbent landowning class.
 
 
@@ -261,51 +262,6 @@ Following \citet{Llavador2005}, I argue that an elite split along economic inter
 
 
 
-
-
-\section{Case Study}
-
-
-``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[511]{Robles-Ortiz2009}).
-
-
-``Mechanisation had a crucial impact on the agricultural sector. It released labour from agriculture and, at the same time, contributed to economic growth. Indeed, a defining element of Chile’s agrarian expansion was the gradual reduction in the number of agricultural workers, from 412,568 in 1885 to 353,808 in 1930. Despite this, the agricultural sector expanded in terms of cultivated area and production and also saw a remarkable increase in labour productivity, which can be illustrated with data for the main crops, cereals. In the case of wheat alone, by far the most important crop, the cultivated area grew from 473,429 hectares in 1885 to 773,253 in 1930, while in the same period production rose from 428,422 to 912,437 metric tons. If we consider wheat along with other cereals, the value of output per worker grew from $216 in 1885 to $492 in 1930 (in real pesos of 1910/1914), while the physical output per worker increased from 1,030 to 2,579 kilograms'' (\citet[511]{Robles-Ortiz2009}).
-
-\citet[43]{Kirsch:1977aa}: ``The SFF's journal for 1884 and the following years is filled with numerous examples of the association's gestures before congress, the ministries, and various state agencies in behalf of industrial interests, both individual and collective. In 1884, the society had 305 members, of whom a third were in local councils in other cities. The editorial of the \emph{El Heraldo}, Valpara\'iso, August 23, 1892, summarized all of the obstacles which the SFF would have to overcome in order to increase industrial activity. Among the most important were the lack of skilled labor, the need to import capital equipment and raw material which was subjected to import duty, and insufficient tariff protection.'' % Foot note number 43. // this is regarding Chile.
-
-
-\citet[18]{Segall1962}: ``Con el auge de la miner\'ia, todos los desocupados del campo y de la ciudad emigraron al desierto de Atacama. Lo hicieron los campesinos pobres, los jornaleros y los inquilinos. “El Ej\'ercito de Reserva del Trabajo” desapareci\'o. Los terratenientes, sin brazos baratos, comenzaron a presionar. Y lo har\'an durante todo el siglo. Due\~nos de gran parte del poder, con el pretexto de impedir la “vagancia”, obtuvieron de sus representantes pol\'iticos, un decreto dr\'astico emitido el 16 de agosto de 1843. Entregando al criterio policial el reclutamiento forzado de los individuos sin ocupaci\'on contratada, para su utilizaci\'on en las actividades agr\'icolas.''
-
-
-``In the period of agrarian expansion landowners also used inquilinaje and sharecropping to secure a dependable workforce because it was then, especially in the 1870s with the onset of the nitrate economy, that thousands of men left the countryside and alarmed landowners discussed possible solutions for the ‘rural exodus’. Yet, along with repeatedly complaining about the ‘shortage of hands’, landowners elaborated on their preference for inquilinaje by contrasting it with the risks posed by the ‘floating masses’ of peons'' (\citet[499]{Robles-Ortiz2009})
-
-``In the long term migration reduced the size of the agricultural labour force and the supply of labour, and also integrated the rural areas into the nationwide labour market created by Chile’s economic modernisation, leaving haciendas exposed to competition from other activities such as mining in the northern provinces. In the short term migration caused ‘labour shortages’ in the summer, when the demand for labour reached its peak because a large pool of labourers was necessary for harvesting'' (\citet[503]{Robles-Ortiz2009})
-
-``In 1873 an article in the SNA’s Boletı´n explained the spread of the mechanical reaper by noting that ‘as a conse- quence of the shortage of hands’, in many places it was necessary to pay a peon ‘at least 60 cents’ for reaping one ‘task’ (tarea), namely the area planted with wheat that one man could cut in a day. That wage was twice as much as peons earned in the winter''. (\citet[503]{Robles-Ortiz2009}) 
-
-\citet[231]{Keller1931}: There exsited in Chile a ``falta de conocimientos t\'ecnico-cient\'ificos'' in the agricultural sector.
-
-
-\citet[41]{Kirsch:1977aa}: ``The final component of the background to industrialization is that of the state of tension created by the awareness of the incongruence between the actual exploitation of economic forces and the potential that could be extracted from them through industrialization. Identification of this condition in Chile prior to World War I may be had by way of certain publications of the era, the organization of and participation in industrial exhibitions both in Chile and abroad and the founding of the Sociedad de Fomento Fabril and its activities from 1883''
-
-
-% Japan and UK had similar processes: high agricultural productivity, helped the industrial sector
-\citet[507]{Johnston1951}: ``The increase of labor productivity in British agriculture played the same significant role which has been noted in the case of Japan - making available an abundant supply of cheap labor for the growing manufacturing industries.'' In the U.S.S.R. agriculture also helped to develop the industrial sector (508).
-
-
-% in the US
-\citet[3]{Landon-Lane2003}: ``in 1870 the USA had seventy percent of its labour force employed in agriculture. By 1900 this had halved, and by 1998, the proportion was just three percent.''
-
-% in bolivia
-\citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on.''
-
-% colombia
-\citet[8]{Bash1986}: ``Colombia's two traditional political parties crystallized in the 1840's and reflected in many respects the dual nature of the Colombian economy''.
-
-
-
-
-
 \section{Time Series Analyses: Vector Autoregressive Models and Structural Breaks}
 
 
@@ -313,6 +269,7 @@ Following \citet{Llavador2005}, I argue that an elite split along economic inter
 \epigraph{\emph{what a sector does is not fully attributable or credited to it but is contingent upon what happens in the other sectors}}{\citet[41]{Kuznets1961a}}
 \epigraph{\emph{Structural change is clearly an endogenous process, driven by a variety of economic forces [...] also in the statistical sense}}{\citet[212]{Temple2006}}
 
+\paragraph{Data}
 
 % Link the argument with the methods I will use: Structural Break
 \paragraph{Structural Breaks}In order to confirm my hypothesis, the theory should pass a number of tests. First, we should see that the income tax indeed altered the way in which one sector affected the other sector's growth rate. In econometric terms, this is an analysis of structural breaks.\footnote{See \citet{Box1975} for a reference.} Essentially, a structural break divides the time-series into - in this case - two subsamples by specifying a break $b$, before and after the income tax law. This strategy tests whether $b$ significantly changes the relationship between the two sectors. Since the income tax was produced by a sectoral conflict, I expect that this will be the case.
@@ -386,7 +343,7 @@ M_{t} = \left\{
 
 
 % Link the argument with the methods I will use: Granger Causality Test
-\paragraph{Granger-causality Tests} Once we determine that there was a structural change, it is necessary to know in which direction this happened. My argument says that the income tax should \emph{reverse} the directionality in which growth was produced, from a backwards equilibrium to a path of development characterized by secular decline of agriculture and substantial expansion of manufacturing (as predicted by the dual sector model). In a backwards development context, the flux of factors should go \emph{from} the industrial sector \emph{to} the agricultural sector. Since the implementation of the income tax also triggered other state institutions that caused long-term economic growth, we should see that the implementation of the income tax should be associated with the \emph{reversion} of this backwards path of economic underdevelopment, and hence with a macroeconomic structural change characterized by the emergence of the industrial sector that grew \emph{at the expenses} of the agricultural sector. In econometric terms, we should see that the agricultural sector `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development, \emph{and not the other way around}. \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$. According to \citet[349]{Granger1980}, this concept of `causation' is based on the idea ``that the future cannot cause the past.'' For simplicity sake, I do not show the derivation of this methodology, but it suffices to say that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''\footnote{\citet[197]{Durr1992}. For the formula, refer to \citet[41-51]{Lutkepohl2005}.}
+\paragraph{Granger-causality Tests} Once we determine that there was a structural change, it is necessary to know in which direction this happened. My argument says that the income tax should \emph{reverse} the directionality in which growth was produced, from a backwards equilibrium to a path of development characterized by secular decline of agriculture and substantial expansion of manufacturing (as predicted by the dual sector model). In a backwards development context, the flux of productive resources should go \emph{from} the industrial sector \emph{to} the agricultural sector. Since the implementation of the income tax also triggered other state institutions that caused long-run economic growth, we should see that the implementation of the income tax should be associated with the \emph{reversion} of this backwards path of economic underdevelopment, and hence with a macroeconomic structural change characterized by the emergence of the industrial sector that grew \emph{at the expenses} of the agricultural sector. In econometric terms, we should see that the agricultural sector `Granger-causes'\footnote{Since this is not an experimental design, `causation' does not mean these kinds of analyses allow us to make proper causal inferences. As \citet[241]{Beck1992} explains, cointegration is not causal.} industrial development, \emph{and not the other way around}. \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not the other way around), $X$ is said to `Granger-cause' $Y$. According to \citet[349]{Granger1980}, this concept of `causation' is based on the idea ``that the future cannot cause the past.'' For simplicity sake, I do not show the derivation of this methodology, but it suffices to say that ``a standard Granger causality test ought to demonstrate that both lagged changes in $X$ and lagged values of the error correction component cause current changes in $Y$.''\footnote{\citet[197]{Durr1992}. For the formula, refer to \citet[41-51]{Lutkepohl2005}.}
 
 {\color{red}comment results here: \autoref{granger:table} suggests that }
 
@@ -505,23 +462,23 @@ Inter-sectoral long-run economic growth also implies that the series are mutuall
 \lambda_{\text{Trace}} = -T\sum^{n}_{i=r+1}ln(1-\hat\lambda_{i}) 
 \end{equation} 
  
-\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. I expect to find just one cointegrated vector for the cases where there was a macroeconomic structural transformation. The lack of cointegration should be interpreted as the absence of a mutual sectoral inter-dependence, and hence to economic backwardness. Since I am interested in the long-run inter-sectoral relationship \emph{overall}, I do not split the sample by the implementation of the income tax law. {\color{red}\autoref{johansen:tests:tab} suggests that  SUMMARIZE TABLR WITH THE Johansen Tests for Cointegration.} 
+\paragraph{}where $r$ is the rank of the system, i.e. the number of cointegrating relationships, $\lambda_{i}$ represents an eigenvalue for each variable in the system and $T$ is the number of usable observations. The statistic tests the hypothesis that the number of cointegrating vectors is less than or equal to $r$. Based on the statistical evidence the different unit root tests (see \autoref{unit:root:tests}), {\color{red}I included different restrictions trends or drifts}, as specified in \citet[]{Johansen1988}. I expect to find just one cointegrated vector for the cases where there was a macroeconomic structural transformation. The lack of cointegration should be interpreted as the absence of a mutual sectoral inter-dependence, and hence to economic backwardness. Since I am interested in the long-run inter-sectoral relationship \emph{overall}, I do not split the sample by the implementation of the income tax law. {\color{red}\autoref{johansen:tests:tab} suggests that  SUMMARIZE TABLR WITH THE Johansen Tests for Cointegration.} 
 
 
 \afterpage{
 \begin{table}[ph!]
 \begin{center} 
 \begin{scriptsize}
-\begin{tabular}{ c c c c c }
+\begin{tabular}{ c c c c c c }
 \toprule 
-{\bf Country} & {\bf Number of Cointegrated Vectors (rank)} & {\bf Lags} & {\bf Log-Likelihood} & {\bf Trace} \\[-.1em] 
+{\bf Country} & {\bf Number of Cointegrated Vectors (rank)} & {\bf Restrictions} & {\bf Lags} & {\bf Log-Likelihood} & {\bf Trace} \\[-.1em] 
 \midrule 
-Chile       & 1 & 5 & -1665.9736 & 0.3799\\[.2em] 
-Argentina   & 0 & 3 & -1805.4194 & 11.0206\\[.2em] 
-Colombia    & 1 & 2 & -1805.6773 & 10.0076\\[.2em] 
-Mexico      & 1 & 4 & -1978.1322 & 1.0274\\[.2em] 
-Nicaragua   & 0 & 2 & -1020.221 & 11.5297 \\[.2em] 
-Guatemala   & 0 & 3 & -859.2802 & 16.5493 \\[.2em] 
+Chile       & at least 1 &  & 5 & -1665.9736 & 0.3799\\[.2em] 
+Argentina   & at least 1 &  & 3 & -1802.292 & 4.7657\\[.2em] 
+Colombia    & at least 1 &  & 2 & -1805.6773 & 10.0076\\[.2em] 
+Mexico      & at least 1 &  & 4 & -1978.1322 & 1.0274\\[.2em] 
+Nicaragua   & at least 0 &  & 2 & -1020.221 & 11.5297 \\[.2em] 
+Guatemala   & at least 0 &  & 3 & -859.2802 & 16.5493 \\[.2em] 
 \bottomrule 
 \end{tabular} 
 \caption{Johansen Tests for Cointegration} 
@@ -542,7 +499,7 @@ Cointegrated time-series need a special method to be estimated. If traditional m
   \end{array}
 \end{equation}
 
-\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system, which is an advantage since if one equation is shocked, the other one should respond to such shock.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of lagged independent variables. Since the number of lags $l$ varies by country \emph{and} time-span (i.e. before/after the income tax law), the system of equations in \autoref{var:1} is in standard form. Since all variables are nonstationary, I take the first difference (i.e. $\bigtriangleup$). \autoref{post:estimation:lag:lenght:tests} describes the optimal lags specified in each country regression.\footnote{The next information criteria were used to determine the appropriate lag length: final prediction error, AIC, Schwarz's Bayesian information criterion, Hannan and Quinn criterion as well as the corresponding likelihood-ratio test statistics. The same criteria is used to compute the lag length in \autoref{johansen:tests:tab}.} The table shows a summary for different post-estimation tests when the optimum lag length specified in the table was used, including the Lagrange multiplier (LM) test for autocorrelation in the residuals, different tests for normally distributed disturbances, and a test for the VAR system's stability condition.\footnote{Detailed results are available upon request.} A check mark indicates that the tests was passed successfully, a check-minus mark indicates that the test was passed somewhat successfully, and a cross mark denotes failure to reject specification problems. {\color{red}COMMENT RESULTS OF \autoref{post:estimation:lag:lenght:tests} HERE.}
+\paragraph{} where $\epsilon_{t_{m}} \;=\; \epsilon_{t_{a}} \;=\; 0$, their variances are time invariant, and each individual term are not serially correlated, however they are in the VAR system, which is an advantage since if one equation is shocked, the other one should respond to such shock.\footnote{\citet[108]{Box-Steffensmeier:2014fe}.} This will be relevant when I discuss impulse response functions. Notice that in both equations the different dependent variables are expressed as a function of the \emph{same} set of lagged independent variables. Since the number of lags $l$ varies by country \emph{and} time-span (i.e. before/after the income tax law), the system of equations in \autoref{var:1} is in standard form. Since all variables are nonstationary, I take the first difference (i.e. $\bigtriangleup$). \autoref{post:estimation:lag:lenght:tests} describes the optimal lags specified in each country regression.\footnote{The next information criteria were used to determine the appropriate lag length: final prediction error, AIC, Schwarz's Bayesian information criterion, Hannan and Quinn criterion as well as the corresponding likelihood-ratio test statistics. The same criteria are used to compute the lag length in \autoref{johansen:tests:tab}.} The table shows a summary for different post-estimation tests when the optimum lag length specified in the table was used, including the Lagrange multiplier (LM) test for autocorrelation in the residuals, different tests for normally distributed disturbances, and a test for the VAR system's stability condition.\footnote{Detailed results are available upon request.} A check mark indicates that the tests was passed successfully, a check-minus mark indicates that the test was passed somewhat successfully, and a cross mark denotes failure to reject specification problems. {\color{red}COMMENT RESULTS OF \autoref{post:estimation:lag:lenght:tests} HERE.}
 
 % defines a checkmark and x mark symbols
 \newcommand{\cmark}{\ding{51}}%
@@ -606,6 +563,86 @@ Given that ``it is often difficult to draw any conclusions from the large number
 }
 
 
+
+
+
+\section{Brief Case Studies: Chile, Argentina and Guatemala}
+
+
+% Chile
+
+  ``the introduction of machines was prompted by labour shortages in the harvests'' (\citet[511]{Robles-Ortiz2009}).
+
+  ``Mechanisation had a crucial impact on the agricultural sector. It released labour from agriculture and, at the same time, contributed to economic growth. Indeed, a defining element of Chile’s agrarian expansion was the gradual reduction in the number of agricultural workers, from 412,568 in 1885 to 353,808 in 1930. Despite this, the agricultural sector expanded in terms of cultivated area and production and also saw a remarkable increase in labour productivity, which can be illustrated with data for the main crops, cereals. In the case of wheat alone, by far the most important crop, the cultivated area grew from 473,429 hectares in 1885 to 773,253 in 1930, while in the same period production rose from 428,422 to 912,437 metric tons. If we consider wheat along with other cereals, the value of output per worker grew from $216 in 1885 to $492 in 1930 (in real pesos of 1910/1914), while the physical output per worker increased from 1,030 to 2,579 kilograms'' (\citet[511]{Robles-Ortiz2009}).
+
+  \citet[43]{Kirsch:1977aa}: ``The SFF's journal for 1884 and the following years is filled with numerous examples of the association's gestures before congress, the ministries, and various state agencies in behalf of industrial interests, both individual and collective. In 1884, the society had 305 members, of whom a third were in local councils in other cities. The editorial of the \emph{El Heraldo}, Valpara\'iso, August 23, 1892, summarized all of the obstacles which the SFF would have to overcome in order to increase industrial activity. Among the most important were the lack of skilled labor, the need to import capital equipment and raw material which was subjected to import duty, and insufficient tariff protection.'' % Foot note number 43. // this is regarding Chile.
+
+  \citet[18]{Segall1962}: ``Con el auge de la miner\'ia, todos los desocupados del campo y de la ciudad emigraron al desierto de Atacama. Lo hicieron los campesinos pobres, los jornaleros y los inquilinos. “El Ej\'ercito de Reserva del Trabajo” desapareci\'o. Los terratenientes, sin brazos baratos, comenzaron a presionar. Y lo har\'an durante todo el siglo. Due\~nos de gran parte del poder, con el pretexto de impedir la “vagancia”, obtuvieron de sus representantes pol\'iticos, un decreto dr\'astico emitido el 16 de agosto de 1843. Entregando al criterio policial el reclutamiento forzado de los individuos sin ocupaci\'on contratada, para su utilizaci\'on en las actividades agr\'icolas.''
+
+  ``In the period of agrarian expansion landowners also used inquilinaje and sharecropping to secure a dependable workforce because it was then, especially in the 1870s with the onset of the nitrate economy, that thousands of men left the countryside and alarmed landowners discussed possible solutions for the ‘rural exodus’. Yet, along with repeatedly complaining about the ‘shortage of hands’, landowners elaborated on their preference for inquilinaje by contrasting it with the risks posed by the ‘floating masses’ of peons'' (\citet[499]{Robles-Ortiz2009})
+
+  ``In the long term migration reduced the size of the agricultural labour force and the supply of labour, and also integrated the rural areas into the nationwide labour market created by Chile’s economic modernisation, leaving haciendas exposed to competition from other activities such as mining in the northern provinces. In the short term migration caused ‘labour shortages’ in the summer, when the demand for labour reached its peak because a large pool of labourers was necessary for harvesting'' (\citet[503]{Robles-Ortiz2009})
+
+  ``In 1873 an article in the SNA’s Boletı´n explained the spread of the mechanical reaper by noting that ‘as a conse- quence of the shortage of hands’, in many places it was necessary to pay a peon ‘at least 60 cents’ for reaping one ‘task’ (tarea), namely the area planted with wheat that one man could cut in a day. That wage was twice as much as peons earned in the winter''. (\citet[503]{Robles-Ortiz2009}) 
+
+  \citet[231]{Keller1931}: There exsited in Chile a ``falta de conocimientos t\'ecnico-cient\'ificos'' in the agricultural sector.
+
+  \citet[41]{Kirsch:1977aa}: ``The final component of the background to industrialization is that of the state of tension created by the awareness of the incongruence between the actual exploitation of economic forces and the potential that could be extracted from them through industrialization. Identification of this condition in Chile prior to World War I may be had by way of certain publications of the era, the organization of and participation in industrial exhibitions both in Chile and abroad and the founding of the Sociedad de Fomento Fabril and its activities from 1883''
+
+
+
+
+% Argentina
+
+\paragraph{Argentina: A Story of Structural Imbalances}
+
+  - It seems that the export/import divide overlaps with the industrial/agricultural cleavage.
+    \citet[23]{Diaz1966}: ``besides analyzing recent Argentine economic history in terms of industry vs. agriculture, it should also be discussed in terms of exportable and importable goods vs. home goods.''
+
+    \citet[25]{Diaz1966}: trade policy //  ``The terms of trade between rural and manufactured goods [refer] more directly, to domestic prices of rural products relative to the domestic prices of manufactured goods.''
+
+    \citet[22]{Diaz1966}: ``The basic problem has not been one of' too much industry', but partly one of too few exports.''
+
+    \citet[231]{Debowicz2014}: the political conflict involved ``conflict between exporting and import-competing sectors of the economy, making the question of industrial protection highly political.''
+
+    \citet[25]{Diaz1966}: ``while the correspondence between exports and rural products, and between imports and manufactured goods has not been perfect during the years under discussion, such correspondence has been quite close.''
+
+  \citet[231]{Debowicz2014}: the ``standard view of the impact of ISI: its effect on relative prices benefitted import-competing manufacturing at the expense of exporting agriculture [causing] a slowdown and relative decline in agriculture.''
+
+  \citet[6]{ODonnell1978}: ``the state was an expression of changing power-relationships between regions directly incorporated in the world market and others marginal to it to a much smaller extent than in the rest of Latin America.''
+
+  % answer: What's the origin of the Argentinean economic backwardness?
+    %There was too much of industry (as opposed to \citet[22]{Diaz1966}). 
+    \citet[157]{Diaz1967}: ``the net effect of public policy was to twist further the domestic terms of trade against the rural sector and to discriminate in favour of 'home' or non-traded goods.''
+
+    %Policy was biased against the industrial sector, endangering all the assumptions of the dual sector mode.
+    \citet[157]{Diaz1967}: ``These policies were implemented using a variety of tools: [...] government controls over marketing of rural produce, a policy of absolute protection for most, but not all, manufactured products [...] \emph{The discrimination against the rural sector was worse than that implied by data on relative prices}; during most of the period under study the rural sector found it very difficult to obtain either domestically or abroad certain types of inputs (fertilizers, tractors, etc.) which could conceivably have allowed it to react to the decline in the real prices for its output by increasing productivity [plus] very weak efforts by the government in the field of agricultural research and extension services.''\footnote{Emphasis is mine.}
+
+    %immigration, and labor movement
+    \citet[158]{Diaz1967}: ``Besides pleasing economic nationalists, such a policy had the additional advantage of generating employment for the urban working class, a political pillar of the regime ruling during 1943-55, while it also encouraged the migration from rural to urban areas which had been taking place since the nine- teen thirties.''
+
+
+
+
+
+
+% Japan and UK had similar processes: high agricultural productivity, helped the industrial sector
+\citet[507]{Johnston1951}: ``The increase of labor productivity in British agriculture played the same significant role which has been noted in the case of Japan - making available an abundant supply of cheap labor for the growing manufacturing industries.'' In the U.S.S.R. agriculture also helped to develop the industrial sector (508).
+
+
+% in the US
+\citet[3]{Landon-Lane2003}: ``in 1870 the USA had seventy percent of its labour force employed in agriculture. By 1900 this had halved, and by 1998, the proportion was just three percent.''
+
+% in bolivia
+\citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on.''
+
+% colombia
+\citet[8]{Bash1986}: ``Colombia's two traditional political parties crystallized in the 1840's and reflected in many respects the dual nature of the Colombian economy''.
+
+
+\section{Discussion}
+
+1. Modernization theory does not help explaining neither political nor economic development since both forces depend on balanced growth // Example of Argentina.
 
 
 
