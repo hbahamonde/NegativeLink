@@ -353,6 +353,8 @@ pperron constagricult, lag(1) // I(1)
 kpss constagricult, auto
 kpss constmanufact, auto
 
+
+varsoc constmanufact constagricult, maxlag(5) 
 var d.constmanufact d.constagricult, lags(1/2)
 
 	varlmar, mlag(5)
@@ -360,8 +362,7 @@ var d.constmanufact d.constagricult, lags(1/2)
 	varstable, graph
 
 vargranger 
-// IND -> AGR (.000)
-// AGR -> IND (.015)
+
 
 * IRF
 irf create Argentina, step(5) set(Argentina, replace)
@@ -399,16 +400,15 @@ kpss constagricult, auto
 kpss constmanufact, auto
 
 
-varsoc constmanufact constagricult, maxlag(10)
-var d.constmanufact d.constagricult, lags(1/2) 
+varsoc constmanufact constagricult, maxlag(5)
+var d.constmanufact d.constagricult, lags(1/2) // working
 
 	varlmar, mlag(5)
 	varnorm
 	varstable
 
 vargranger
-// IND -> AGR (.505)
-// AGR -> IND (.913)
+
 
 
 
@@ -466,8 +466,8 @@ kpss constagricult, auto
 kpss constmanufact, auto
 
 * Johansen's Test
-varsoc constmanufact constagricult, maxlag(10) // lag 3  // test for lag lenght
-vecrank constmanufact constagricult, lags(3) /*trend(rc)*/ // with restricted constant // rank 1: This is the number of cointegrating 
+varsoc constmanufact constagricult, maxlag(5) // lag 3  // test for lag lenght
+vecrank constmanufact constagricult, lags(3) trend(rc) // with restricted constant // rank 1: This is the number of cointegrating 
 ********************************************************************************************************************************************
 *																 M 	E 	X 	I 	C 	O
 ********************************************************************************************************************************************
