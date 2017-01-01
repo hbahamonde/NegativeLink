@@ -158,6 +158,18 @@ An index would be something like this:
 
 	%\citet[212]{Temple2006}: ``Structural change is clearly an endogenous process, driven by a variety of economic forces [...] also in the statistical sense.''
 
+	% standard structural break tests DO NOT WORK under cointegration
+	 - ``In this section we briefly outline the features of the test for structural change proposed by Carrion-i-Sylvestre and Sanso ́ (2006). The test is a supplementary test to the standard tests of the null hypothesis of no cointegration against the alternative hypothesis of cointegration. It is particularly useful in cases where standard cointe- gration tests (that do not allow for breaks) lead to the finding of no cointegration. The problems with standard cointegration tests in the presence of breaks were carefully illustrated by Gregory et al. (1996). A break introduces spurious unit root behaviour in the cointegrating relationship so that the hypothesis of no cointegration is difficult to reject. Carrion-i-Sylvestre and Sanso ́’s test allows for a possible structural change in the parameters of the cointegrating vector, including but not limited to the deter- ministic parts of the vector.'' (https://www.ecb.europa.eu/pub/pdf/scpwps/ecbwp1013.pdf?c5ca54a2021ffc1282eb2887c72fc0b8)
+	 - ``The null hypothesis of a cointegrating relation in the possible presence of one break is tested against the alternative hypothesis of no cointegration (with possibly one break). Therefore, the null hypothesis allows for the possibility that the cointegrating relation shifts from one long-run equilibrium to another one, i.e., for a change in the parameters of the cointegrating vector''
+
+	 lo que voy a hacer es dejar afuera los structural breaks. esencialmente, lo que yo hago, es un `structural break,' pero en el sentido de que el income tax cambia la direccion de Granger-causality test. Si hubiera un structural break, se supone q hay q dejarlo afuera de la serie para tener series correctamente cointegradas CI(1)
+
+
+ % non linear granger tests or toda-yamamoto approach
+ 	 - R code: https://www.christophpfeiffer.org/2012/11/07/toda-yamamoto-implementation-in-r/ // really simple.
+ 	 - Lit review and analyses: http://www.e-jei.org/upload/JEI_31_4_817_854_2013600114.pdf
+
+
 
 % DCC
 Follow \citet{Lebo2008}, and what they do. 
