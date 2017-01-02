@@ -401,7 +401,7 @@ kpss constmanufact, auto
 
 
 varsoc constmanufact constagricult, maxlag(5)
-var d.constmanufact d.constagricult, lags(1/2) // working
+var d.constmanufact d.constagricult, lags(1/2)
 
 	varlmar, mlag(5)
 	varnorm
