@@ -214,8 +214,8 @@ vargranger
 irf create Colombia, step(5) set(Colombia, replace)
 
 // 'simple' IRF
-irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr_SB_PRE, replace) title("") subtitle("Response of Agriculture to Industry") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3)  noci  yscale(range(-1(.25)1))
-irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man_SB_PRE, replace) title("") subtitle("Response of Industry to Agriculture")  xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3)  noci yscale(range(-1(.25)1))
+irf graph irf, impulse(D.constmanufact) response(D.constagricult) byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Man_Agr_SB_PRE, replace) title("") subtitle("Response of Agriculture to Industry") xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3)  noci  yscale(range(0(1)3))
+irf graph irf, impulse(D.constagricult) response(D.constmanufact) note("") byopts(note("") legend(off)) xtitle(Years) saving(irf_ce_Colombia_Agr_Man_SB_PRE, replace) title("") subtitle("Response of Industry to Agriculture")  xmtick(#3) xlabel(#5) ylabel(#5) ytick(#5) ymtick(#3)  noci yscale(range(0(1)3))
 gr combine irf_ce_Colombia_Man_Agr_SB_PRE.gph  irf_ce_Colombia_Agr_Man_SB_PRE.gph, col(2) name(Colombia_irf_PRE, replace) subtitle("Pre Income Tax") saving(Colombia_irf_PRE.gph, replace)
 
 
