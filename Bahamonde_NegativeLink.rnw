@@ -286,7 +286,7 @@ In econometric terms, we should see that the income tax reverted the way in whic
 To measure sectoral outputs, I utilize the \href{http://moxlad-staging.herokuapp.com/home/en?}{MOxLAD} data,\footnote{``These data build on the studies and statistical abstracts of the Economic Commission for Latin America, but also rely on Mitchell's International Historical Statistics, International Monetary Fund's International Financial Statistics, the World Bank's World Development Indicators and a variety of national sources.''} particularly the \emph{agriculture value-added} and \emph{manufacturing value-added} variables.\footnote{The former measures ``the output of the sector net of intermediate inputs and includes the cultivation of crops, livestock production, hunting, forestry and fishing.'' The later ``[r]eports the output of the sector net of intermediate inputs.'' Both of them are expressed in local currency at 1970 constant prices.} The dataset spans from as early as 1900 to as late as 2010.\footnote{According to \citet[790]{Astorga2005}, this dataset provides extended \emph{comparable} sectoral value-added series in constant purchasing power parity prices.} \autoref{sample:data:income:tax:tab} in the Appendix section shows the details. Following \citet[5]{Mahoney:2010aa} I include two advanced economy countries (Chile and Argentina), two intermediate countries (Mexico and Colombia) and two less advanced countries (Guatemala and Nicaragua). \autoref{sectoral:outputs:fig:1} shows sectoral outputs for each country, both before and after the income tax law was implemented. \autoref{sample:data:income:tax:tab} also details the year when the law was implemented, and the source.\footnote{Some countries implemented some kind of income tax before, however the law lacked enforcement, it was weak or not at all followed. In \autoref{sample:data:income:tax:tab} I establish the year that the literature seems to agree for when the law was implemented and properly enforced.}
 
 % comment Granger Tests
-\autoref{granger:table} suggests that the income tax caused a structural transformation in (almost) all `developed' countries, namely Chile, Colombia and Mexico. In all these cases, the income tax reverted the inter-sectoral growth equilibrium. Before the income tax law, industrial development Granger-caused agricultural development (all p-values are significant at the $.05$ level). While after the income tax law, the agricultural sector Granger-caused industrial development. Substantively, these results suggest that the income tax is associated to the overthrowing of the political institutions that permitted the biased development of the landed elite who had inherited its privileges during the colonial period. And that the reversion of the original and backwards macroeconomic structure set in motion a path of long-term economic development. In Nicaragua and Guatemala the tests suggest the exact opposite (all p-values are significant at the $.05$ level).\footnote{Except for the pre income tax period test of Guatemala, which is significant at the $.1$ level.} While the story begins just the same, i.e. agriculture Granger-causes industry, the implementation of the income tax did \emph{not} revert the initial backward macroeconomic equilibrium. These results suggest a supply-demand coordination failure where landowners have not been able to fulfill their role of cheap labor and foodstuff suppliers, while weak industrialists have not been able to absorb the few labor received from the countryside. Substantively, this underdevelopment \emph{economic} trap has perpetuated suboptimal \emph{political} institutions sustained by uncontested agricultural elites, contributing to the political backwardness of these two cases. The Argentinian case is different. The Granger tests are inconclusive, and non significant results were found in either period. This means that the sectoral economic linkage has failed to structure the economy in such way to produce long-run economic growth. Moreover, in this example there was a situation of structural imbalance which begun with ISI policies designed to \emph{harm} the agricultural sector (or `export' sector) permitting \emph{too much} industrialization. As I explain \hyperlink{case:argentina}{later}, `unbalanced' growth was due to the incapacity of a \emph{weak regionally divided} export sector invested in agriculture of putting a stop to the series of biased policies that ended up overheating and eventually decelerating the industrial sector (see \autoref{sectoral:outputs:fig:1}, right after the WWII period). In \autoref{case:studies} I explain some of these details in more depth.
+\autoref{granger:table} suggests that the income tax caused a structural transformation in (almost) all `developed' countries, namely Chile, Colombia and Mexico. In all these cases, the income tax reverted the inter-sectoral growth equilibrium. Before the income tax law, industrial development Granger-caused agricultural development (all p-values are significant at the $.05$ level). While after the income tax law, the agricultural sector Granger-caused industrial development. Substantively, these results suggest that the income tax is associated to the overthrowing of the political institutions that permitted the biased development of the landed elite who had inherited its privileges during the colonial period. And that the reversion of the original and backwards macroeconomic structure set in motion a path of long-term economic development. In Nicaragua and Guatemala the tests suggest the exact opposite (all p-values are significant at the $.05$ level).\footnote{Except for the pre income tax period test of Guatemala, which is significant at the $.1$ level.} While the story begins just the same, i.e. agriculture Granger-causes industry, the implementation of the income tax did \emph{not} revert the initial backward macroeconomic equilibrium. These results suggest a supply-demand coordination failure where landowners have not been able to fulfill their role of cheap labor and foodstuff suppliers, while weak industrialists have not been able to absorb the few labor received from the countryside. Substantively, this underdevelopment \emph{economic} trap has perpetuated suboptimal \emph{political} institutions sustained by uncontested agricultural elites, contributing to the political backwardness of these two cases. The Argentinian case is different. The Granger tests are inconclusive, and non significant results were found in either period. This means that the sectoral economic linkage has failed to structure the economy in such way to produce long-run economic growth. Moreover, in this example there was a situation of structural imbalance which begun with ISI policies designed to \emph{harm} the agricultural sector (or `export' sector) permitting \emph{too much} industrialization. {\color{red}As I explain \hyperlink{case:argentina}{later}, `unbalanced' growth was due to the incapacity of a \emph{weak regionally divided} export sector invested in agriculture of putting a stop to the series of biased policies that ended up overheating and eventually decelerating the industrial sector} (see \autoref{sectoral:outputs:fig:1}, right after the WWII period). In \autoref{case:studies} I explain some of these details in more depth.
 
 \afterpage{
 \begin{table}[ph!]
@@ -408,7 +408,7 @@ Impulse response functions in \autoref{irf:fig:1} suggest that all `developed' c
 \section{Brief Historical References: Chile, Argentina and Guatemala\label{case:studies}}
 
 % Chile
-\paragraph{Chile} Initially, the landed elites were clearly the most advantaged sector. Their economic dominance allowed them to control the political game too. As \citet[106]{Collier:2002db} argue, the ``national government was dominated by [...] owners of large agricultural holdings.''\footnote{See also \citet[15]{McBride:1971fv} who argues that ``Chile's people live on the soil. Her life is agricultural to the core. Her government has always been of farm owners. Her Congress is made up chiefly of rich landlords. Social life is dominated by families whose proudest possession is the ancestral estate.''} Historically, agriculturalists were a hegemonic group protected by norms and institutions that originated in colonial times. Those norms had survived due to institutional inertia, perpetuating their advantaged position. For example, \citet[13]{Zeitlin:1984aa} explains that ``landowners controlled both the vote and the labor power of the agrarian tenants [and] peasants [...] and this was the \emph{sine qua non} of their continuing political hegemony.'' Similarly, \citet[1748]{Baland2008} explain that ``[c]ongressional representation was heavily weighted in favor of rural districts.'' In the presidency also, landowners were the single most represented group.\footnote{\citet[45]{Bauer:2008kx}.} 
+\paragraph{Chile: A Story of Elite Competition and Compromises} Initially, the landed elites were clearly the most advantaged sector. Their economic dominance allowed them to control the political game too. As \citet[106]{Collier:2002db} argue, the ``national government was dominated by [...] owners of large agricultural holdings.''\footnote{See also \citet[15]{McBride:1971fv} who argues that ``Chile's people live on the soil. Her life is agricultural to the core. Her government has always been of farm owners. Her Congress is made up chiefly of rich landlords. Social life is dominated by families whose proudest possession is the ancestral estate.''} Historically, agriculturalists were a hegemonic group protected by norms and institutions that originated in colonial times. Those norms had survived due to institutional inertia, perpetuating their advantaged position. For example, \citet[13]{Zeitlin:1984aa} explains that ``landowners controlled both the vote and the labor power of the agrarian tenants [and] peasants [...] and this was the \emph{sine qua non} of their continuing political hegemony.'' Similarly, \citet[1748]{Baland2008} explain that ``[c]ongressional representation was heavily weighted in favor of rural districts.'' In the presidency also, landowners were the single most represented group.\footnote{\citet[45]{Bauer:2008kx}.} 
 
 While on the one hand the institutional design was biased against industrial elites, on the other, industrial growth incentivized industrial elites to form pressure associations. For example, the little public infrastructure that existed benefited the agricultural sector only. \citet[41]{Zeitlin:1984aa} explains that ``the Montt regime did invest in the construction of Chile's railways but only in the Central Valley and south-central zones [b]ut there was no public investment [...] in railroads built in the Norte Chico mining provinces.'' To revert this situation, industrialists started to ``form trade associations to engage in lobbying and propaganda.''\footnote{\citet[107]{Weaver:1980vn}. \citet[43]{Kirsch:1977aa} explains that ``The SFF's journal for 1884 and the following years is filled with numerous examples of the association's gestures before congress, the ministries, and various state agencies in behalf of industrial interests.'' One of the most important ones was `insufficient tariff protection.'} Eventually, these interests groups turned into political parties. \citet[109]{Collier:2002db} explain that the \emph{Alianza Liberal} was ``the political expression of the new groups that began to emerge in the late 19th century with the expansion of the commerce and industry and [...] mining [eventually emerging] as a political force.'' 
 
@@ -419,58 +419,74 @@ Both sectors were very productive. While some have argued that the agriculture s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-% Argentina // A Story of Structural Imbalances
-\paragraph{Argentina}\hypertarget{case:argentina}{}
+% Argentina 
+\paragraph{Argentina: A Story of Structural Imbalances}\hypertarget{case:argentina}{}
 
-This case is an example of sustained structural imbalances. 
+In Argentina, there were two elites as well. Traditionally, there has been argued that the cleavage was between an export-oriented and an import-oriented sector. However, for practical purposes I relax this divide and exploit the overlapping between the export and agriculture sectors, and the import and industrial sectors. Particularly, I follow \citet[25]{Diaz1966} in that, ``while the correspondence between exports and rural products, and between imports and manufactured goods has not been perfect [...] such correspondence has been quite close.'' 
+
+This case presents an interesting paradox. As opposed to the Chilean case, the industrial sector was weaker relative to the agricultural sector. Also the industrial sector grew faster than the Chilean sector, though it was highly inefficient. As some have argued, there ``is little disagreement among economists that the period from 1875 to the eve of World War I [was] the Golden Age [...] of Argentinean economic history.''\footnote{\citet[209]{Campos2016}.} However, as \citet[136]{Bulmer-Thomas2003} puts it, Argentina ``had a relatively backward industrial structure for a country of its income and wealth. \emph{Indeed, industrial labor productivity was lower than in Chile} [...] \emph{despite Argentina's superior income per head}.''\footnote{Emphases are mine.} 
+ 
+
+This paradox has to do with a weak inter-elite structure, specially a weak industrial elite. Importantly, a weak elite still can produce a decent amount of output. However, the relevant issue is not actual output, but rather how underused economic resources are, or how much faster could grow have been had Argentina had `better' institutions. The literature seems to agree on this point. \citet[188]{Bulmer-Thomas2003} explains that among the factors that explain Argentina's failure was ``a social infrastructure geared to agroexports [\emph{and}] \emph{a powerful rural elite}.'' An excessively powerful traditional sector suffocated the full potential of the modern sector, denying industrialists ``the same status [the] agroexports'' had.\footnote{\citet[143]{Bulmer-Thomas2003}.}  And while the landed elites did promote via protectionism the industrial sector, they did so by imposing ``modest tariff protection''\footnote{\citet[188]{Bulmer-Thomas2003}.} which moreover were ``not always consistent.''\footnote{\citet[143]{Bulmer-Thomas2003}.} As predicted by the dual economy model, the industrial sector was that weak (i.e. did not develop its full potential despite their relative rapid growth) because the agricultural sector was also weak. As others have argued, the landed elites had a hard time ``certain types of inputs (fertilizers, tractors, etc.) which could conceivably have allowed it to react to the decline in the real prices [...] by increasing productivity.''\footnote{\citet[157]{Diaz1967}.} Agricultural research was very limited too.\footnote{\citet{Diaz-Alejandro1970}.}
 
 
 
 
-  - It seems that the export/import divide overlaps with the industrial/agricultural cleavage.
-    \citet[23]{Diaz1966}: ``besides analyzing recent Argentine economic history in terms of industry vs. agriculture, it should also be discussed in terms of exportable and importable goods vs. home goods.''
 
-    \citet[]{Bulmer-Thomas2003}: ``industry and industrialists failed to acquire the same status as agroexports. Policies were adopted to promote industry, but they were not always consistent.''
 
-    \citet[25]{Diaz1966}: trade policy //  ``The terms of trade between rural and manufactured goods [refer] more directly, to domestic prices of rural products relative to the domestic prices of manufactured goods.''
 
-    \citet[22]{Diaz1966}: ``The basic problem has not been one of' too much industry', but partly one of too few exports.''
+% powerful AGR, weak IND.
+  %\citet[143]{Bulmer-Thomas2003}: ``industry and industrialists failed to acquire the same status as agroexports. Policies were adopted to promote industry, but they were not always consistent.''
 
-    \citet[231]{Debowicz2014}: the political conflict involved ``conflict between exporting and import-competing sectors of the economy, making the question of industrial protection highly political.''
+  %\citet[188]{Bulmer-Thomas2003}:  Among the factors that explain Argentina's failure was ``modest tariff protection, a social infrastructure geared to agroexports [and] a powerful rural elite.''
 
-    \citet[25]{Diaz1966}: ``while the correspondence between exports and rural products, and between imports and manufactured goods has not been perfect during the years under discussion, such correspondence has been quite close.''
+  %Policy was biased against the industrial sector, endangering all the assumptions of the dual sector mode.
+  %\citet[157]{Diaz1967}: ``These policies were implemented using a variety of tools: [...] government controls over marketing of rural produce, a policy of absolute protection for most, but not all, manufactured products [...] \emph{The discrimination against the rural sector was worse than that implied by data on relative prices}; during most of the period under study the rural sector found it very difficult to obtain either domestically or abroad certain types of inputs (fertilizers, tractors, etc.) which could conceivably have allowed it to react to the decline in the real prices for its output by increasing productivity [plus] very weak efforts by the government in the field of agricultural research and extension services.''\footnote{Emphasis is mine.}
+
+
+% Argentinean economic backwardness
+% had backwards industrial development.
+  
+
+  %\citet[136]{Bulmer-Thomas2003}: ``The most developed country, Argentina, had a relatively backward industrial structure for a country of its income and wealth. Indeed, industrial labor productivity was lower than in Chile [...] despite Argentina's superior income per head.'' % See Table 5.3 (p. 134), specially value added by worker employed (several countries, Chile, Mexico, Colombia & Argentina).
+
+  %\citet[142]{Bulmer-Thomas2003}: ``Although Argentina was the most industrialized of all the Latin American countries, its manufacturing sector was still smaller than what one might have expected from international comparisons.''
+
+  \citet[188]{Bulmer-Thomas2003}: ``Argentine industry had not been particularly successful in meeting the enormous demand for manufactured goods derived from its rapid export growth.''
+
+  \citet[142]{Bulmer-Thomas2003} ``The outstanding weakness of Argentine industrialization was in the textile and clothing sectors [and hence] highly specific and not due to some conspiracy on the part of the nation's landowners.'' % notice that these two sectors are highly dependent on agricultural raw materials.
+
+
+
+
+% two elites
+  %\citet[231]{Debowicz2014}: the political conflict involved ``conflict between exporting and import-competing sectors of the economy, making the question of industrial protection highly political.''
+
+  %\citet[25]{Diaz1966}: ``while the correspondence between exports and rural products, and between imports and manufactured goods has not been perfect during the years under discussion, such correspondence has been quite close.''
+
+  %\citet[23]{Diaz1966}: ``besides analyzing recent Argentine economic history in terms of industry vs. agriculture, it should also be discussed in terms of exportable and importable goods vs. home goods.''
+
+
+
+% structural imbalances
+  \citet[22]{Diaz1966}: ``The basic problem has not been one of' too much industry', but partly one of too few exports.''
 
   \citet[231]{Debowicz2014}: the ``standard view of the impact of ISI: its effect on relative prices benefitted import-competing manufacturing at the expense of exporting agriculture [causing] a slowdown and relative decline in agriculture.''
 
-  \citet[6]{ODonnell1978}: ``the state was an expression of changing power-relationships between regions directly incorporated in the world market and others marginal to it to a much smaller extent than in the rest of Latin America.''
-
-  % answer: What's the origin of the Argentinean economic backwardness?
-    % had backwards industrial development.
-      \citet[209]{Campos2016}: ``There is little disagreement among economists that the period from 1875 to the eve of World War I is the Golden Age, or the Belle \'Epoque, of Argentinean economic history.''
-
-      \citet[136]{Bulmer-Thomas2003}: ``The most developed country, Argentina, had a relatively backward industrial structure for a country of its income and wealth. Indeed, industrial labor productivity was lower than in Chile [...] despite Argentina's superior income per head.'' % See Table 5.3 (p. 134), specially value added by worker employed (several countries, Chile, Mexico, Colombia & Argentina).
-
-      \citet[188]{Bulmer-Thomas2003}:  Among the factors that explain Argentina's failure was ``modest tariff protection, a social infrastructure geared to agroexports [and] a powerful rural elite.''
-
-      \citet[142]{Bulmer-Thomas2003}: ``Although Argentina was the most industrialized of all the Latin American countries, its manufacturing sector was still smaller than what one might have expected from international comparisons.''
-
-      \citet[188]{Bulmer-Thomas2003}: ``Argentine industry had not been particularly successful in meeting the enormous demand for manufactured goods derived from its rapid export growth.''
-
-      \citet[142]{Bulmer-Thomas2003} ``The outstanding weakness of Argentine industrialization was in the textile and clothing sectors [and hence] highly specific and not due to some conspiracy on the part of the nation's landowners.''
-
-    %There was too much of industry (as opposed to \citet[22]{Diaz1966}). 
-    \citet[157]{Diaz1967}: ``the net effect of public policy was to twist further the domestic terms of trade against the rural sector and to discriminate in favour of 'home' or non-traded goods.''
-
-    \citet[3]{Schmitz1984}: ``since credit for installing machinery was relatively cheap, factories were over-equipped.'' % this is not particularly ABOUT Argentina.
-
-    %Policy was biased against the industrial sector, endangering all the assumptions of the dual sector mode.
-    \citet[157]{Diaz1967}: ``These policies were implemented using a variety of tools: [...] government controls over marketing of rural produce, a policy of absolute protection for most, but not all, manufactured products [...] \emph{The discrimination against the rural sector was worse than that implied by data on relative prices}; during most of the period under study the rural sector found it very difficult to obtain either domestically or abroad certain types of inputs (fertilizers, tractors, etc.) which could conceivably have allowed it to react to the decline in the real prices for its output by increasing productivity [plus] very weak efforts by the government in the field of agricultural research and extension services.''\footnote{Emphasis is mine.}
-
-    %immigration, and labor movement
-    \citet[158]{Diaz1967}: ``Besides pleasing economic nationalists, such a policy had the additional advantage of generating employment for the urban working class, a political pillar of the regime ruling during 1943-55, while it also encouraged the migration from rural to urban areas which had been taking place since the nine- teen thirties.''
+  %There was too much of industry (as opposed to \citet[22]{Diaz1966}). 
+  \citet[157]{Diaz1967}: ``the net effect of public policy was to twist further the domestic terms of trade against the rural sector and to discriminate in favour of 'home' or non-traded goods.''
 
 
 
+
+
+    
+%immigration, and labor movement
+  \citet[158]{Diaz1967}: ``Besides pleasing economic nationalists, such a policy had the additional advantage of generating employment for the urban working class, a political pillar of the regime ruling during 1943-55, while it also encouraged the migration from rural to urban areas which had been taking place since the nine- teen thirties.''
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % general
 
@@ -492,8 +508,7 @@ This case is an example of sustained structural imbalances.
 \citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on.''
 
 
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion}
 
 1. Modernization theory does not help explaining neither political nor economic development since both forces depend on balanced growth // Example of Argentina.
