@@ -1108,3 +1108,71 @@ Dietz, J. L. and J. H. Street. 1987. Latin America's Economic Development. In J.
 
 \citet{Uzawa1961}
 \citet{Takayama1963}
+
+% argentina case
+
+
+  - It seems that the export/import divide overlaps with the industrial/agricultural cleavage.
+    \citet[23]{Diaz1966}: ``besides analyzing recent Argentine economic history in terms of industry vs. agriculture, it should also be discussed in terms of exportable and importable goods vs. home goods.''
+
+    \citet[]{Bulmer-Thomas2003}: ``industry and industrialists failed to acquire the same status as agroexports. Policies were adopted to promote industry, but they were not always consistent.''
+
+    \citet[25]{Diaz1966}: trade policy //  ``The terms of trade between rural and manufactured goods [refer] more directly, to domestic prices of rural products relative to the domestic prices of manufactured goods.''
+
+    \citet[22]{Diaz1966}: ``The basic problem has not been one of' too much industry', but partly one of too few exports.''
+
+    \citet[231]{Debowicz2014}: the political conflict involved ``conflict between exporting and import-competing sectors of the economy, making the question of industrial protection highly political.''
+
+    \citet[25]{Diaz1966}: ``while the correspondence between exports and rural products, and between imports and manufactured goods has not been perfect during the years under discussion, such correspondence has been quite close.''
+
+  \citet[231]{Debowicz2014}: the ``standard view of the impact of ISI: its effect on relative prices benefitted import-competing manufacturing at the expense of exporting agriculture [causing] a slowdown and relative decline in agriculture.''
+
+  \citet[6]{ODonnell1978}: ``the state was an expression of changing power-relationships between regions directly incorporated in the world market and others marginal to it to a much smaller extent than in the rest of Latin America.''
+
+  % answer: What's the origin of the Argentinean economic backwardness?
+    % had backwards industrial development.
+      \citet[209]{Campos2016}: ``There is little disagreement among economists that the period from 1875 to the eve of World War I is the Golden Age, or the Belle \'Epoque, of Argentinean economic history.''
+
+      \citet[136]{Bulmer-Thomas2003}: ``The most developed country, Argentina, had a relatively backward industrial structure for a country of its income and wealth. Indeed, industrial labor productivity was lower than in Chile [...] despite Argentina's superior income per head.'' % See Table 5.3 (p. 134), specially value added by worker employed (several countries, Chile, Mexico, Colombia & Argentina).
+
+      \citet[188]{Bulmer-Thomas2003}:  Among the factors that explain Argentina's failure was ``modest tariff protection, a social infrastructure geared to agroexports [and] a powerful rural elite.''
+
+      \citet[142]{Bulmer-Thomas2003}: ``Although Argentina was the most industrialized of all the Latin American countries, its manufacturing sector was still smaller than what one might have expected from international comparisons.''
+
+      \citet[188]{Bulmer-Thomas2003}: ``Argentine industry had not been particularly successful in meeting the enormous demand for manufactured goods derived from its rapid export growth.''
+
+      \citet[142]{Bulmer-Thomas2003} ``The outstanding weakness of Argentine industrialization was in the textile and clothing sectors [and hence] highly specific and not due to some conspiracy on the part of the nation's landowners.''
+
+    %There was too much of industry (as opposed to \citet[22]{Diaz1966}). 
+    \citet[157]{Diaz1967}: ``the net effect of public policy was to twist further the domestic terms of trade against the rural sector and to discriminate in favour of 'home' or non-traded goods.''
+
+    \citet[3]{Schmitz1984}: ``since credit for installing machinery was relatively cheap, factories were over-equipped.'' % this is not particularly ABOUT Argentina.
+
+    %Policy was biased against the industrial sector, endangering all the assumptions of the dual sector mode.
+    \citet[157]{Diaz1967}: ``These policies were implemented using a variety of tools: [...] government controls over marketing of rural produce, a policy of absolute protection for most, but not all, manufactured products [...] \emph{The discrimination against the rural sector was worse than that implied by data on relative prices}; during most of the period under study the rural sector found it very difficult to obtain either domestically or abroad certain types of inputs (fertilizers, tractors, etc.) which could conceivably have allowed it to react to the decline in the real prices for its output by increasing productivity [plus] very weak efforts by the government in the field of agricultural research and extension services.''\footnote{Emphasis is mine.}
+
+    %immigration, and labor movement
+    \citet[158]{Diaz1967}: ``Besides pleasing economic nationalists, such a policy had the additional advantage of generating employment for the urban working class, a political pillar of the regime ruling during 1943-55, while it also encouraged the migration from rural to urban areas which had been taking place since the nine- teen thirties.''
+
+
+
+
+% general
+
+  % bias against export and agriculture
+  \citet[3]{Schmitz1984}: There was a ``\emph{Bias against exports}. The existence of import restrictions led to a higher exchange rate than would have prevailed under a free trade regime, reducing the relative gains obtained from exporting [and] \emph{Bias against agriculture}. The protection of local industry raised the prices of manufactured goods relative to agricultural products in the home market and the overvalued exchange rate reduced the domestic currency receipts for agricultural exports.''\footnote{Emphasis in original.}
+
+  % bias against utilization of labor
+  \citet[3]{Schmitz1984}: ``resulting in a bias against employment of labour.''
+
+
+% Japan and UK had similar processes: high agricultural productivity, helped the industrial sector
+\citet[507]{Johnston1951}: ``The increase of labor productivity in British agriculture played the same significant role which has been noted in the case of Japan - making available an abundant supply of cheap labor for the growing manufacturing industries.'' In the U.S.S.R. agriculture also helped to develop the industrial sector (508).
+
+
+% in the US
+\citet[3]{Landon-Lane2003}: ``in 1870 the USA had seventy percent of its labour force employed in agriculture. By 1900 this had halved, and by 1998, the proportion was just three percent.''
+
+% in bolivia
+\citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on.''
+
