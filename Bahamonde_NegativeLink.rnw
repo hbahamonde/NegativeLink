@@ -146,7 +146,7 @@
 % TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Economic Growth and State Institutions: Structural Transformations in Latin America, 1900-2010}} % Article title
+\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Structural Transformations and State Institutions in Latin America, 1900-2010}} % Article title
 
 
 \author[1]{
@@ -173,7 +173,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-There is a long-standing debate on the relationship between economic growth and political development. This debate seems to agree in that there is a positive correlation between the two. Most of the explanations focus on institutional constrains (mainly via property rights) and the incentives of the business class to invest in technology and infrastructure. Though this paper recognizes this mechanism, it proposes an alternative (and not exclusive) channel. I argue that when the adoption of the income tax reflected an inter-elite conflict, it triggered other state-building institutions that promoted economic development. In turn, economic development altered landowners' hegemonic position inherited since the colonial period by introducing a new political elite invested in industry. Time-series and structural break analyses, plus three brief case studies support this hypothesis.
+There is a long-standing agreement on that economic growth and political development are mutually related to each other. Most explanations focus on institutional constrains, mainly property rights. While this paper recognizes this channel, it proposes an alternative one for the Latin American cases. Historically, agriculturalists had been a hegemonic group protected by institutions that originated in colonial times. These norms had survived due to institutional inertia, perpetuating their advantaged position. Building on the fiscal sociology and dual sector models I argue that a structural transformation marked by a secular decline of agriculture and substantial expansion of manufacturing caused political development by promoting the emergence of an industrial political elite. Industrialization altered the status quo not by rising incomes (\emph{\'a la} modernization theory) but by rising a political challenger. Importantly, the structural transformation required both sectors to grow in a balanced fashion, leveling both elites in their relative political capacities. I consider a sample of Latin American countries where I use time series analyses (VAR models, impulse response functions and Granger-causality tests) for a dataset spanning approximately 100 years on agricultural and industrial sectoral growths, and two brief case studies to support my theory.
 \end{abstract}
 
 
