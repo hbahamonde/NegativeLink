@@ -40,3 +40,5 @@ cache
 .Rhistory
 
 *.irf
+
+*.runs
