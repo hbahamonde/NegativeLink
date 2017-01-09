@@ -143,7 +143,6 @@
 
 \usepackage[nodayofweek,level]{datetime} % to have date within text
 
-\usepackage{catchfile,atveryend,newfile} % for versioning
 
 %----------------------------------------------------------------------------------------
 % TITLE SECTION
@@ -570,14 +569,11 @@ The paradox can be explained by Argentina's weak inter-elite structure, but part
 \end{table}
 %}
 
-\newpage
 
-\bibliography{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/library,/Users/hectorbahamonde/RU/Bibliografia_PoliSci/Bahamonde_BibTex2013}
-\bibliographystyle{plainnat}
+
 
 
 \newpage
-
 <<wordcount, echo=FALSE, cache=FALSE>>=
 library(knitr)
 
@@ -614,7 +610,12 @@ count <- comma(as.numeric(count)) # add comma
 
 
 
+
 \newpage
+\bibliography{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/library,/Users/hectorbahamonde/RU/Bibliografia_PoliSci/Bahamonde_BibTex2013}
+\bibliographystyle{plainnat}
+
+
 
 \end{document}
 
