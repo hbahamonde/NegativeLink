@@ -1,152 +1,13 @@
-%----------------------------------------------------------------------------------------
-% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
 \documentclass[onesided]{article}
-%\usepackage{lipsum} % Package to generate dummy text throughout this template
-
-% \usepackage[default]{lato} % Use the LATO font
-%\usepackage{pxfonts}
-\usepackage[T1]{fontenc}
-\linespread{1.4} % Line spacing - Palatino needs more space between lines
-\usepackage{microtype} % Slightly tweak font spacing for aesthetics
-
-\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
-%\usepackage{multicol} % Used for the two-column layout of the document
-\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
-\usepackage{booktabs} % Horizontal rules in tables
-\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
-
-\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
-\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
-
-\usepackage{abstract} % Allows abstract customization
-\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
-%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
-
-\usepackage{titlesec} % Allows customization of titles
-\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
-\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
-\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
-\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
-
-\usepackage{fancybox, fancyvrb, calc}
-\usepackage[svgnames]{xcolor}
-\usepackage{epigraph}
+\usepackage{import}
+\subimport{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/}{LaTeX_Paper_Packages_And_Style}
 
 
-%----------------------------------------------------------------------------------------
-% DOCUMENT ID (Department, Professor, Course, etc.) 
-%----------------------------------------------------------------------------------------
 
-\usepackage{fancyhdr} % Headers and footers
-\pagestyle{fancy} % All pages have headers and footers
-\fancyhead{} % Blank out the default header
-\fancyfoot{} % Blank out the default footer
-\fancyhead[C]{Paper 2  $\bullet$ v.1} % Custom header text
-\fancyfoot[RO,LE]{\thepage} % Custom footer text
+% DOCUMENT ID
+\fancyhead[C]{Paper 2 $\bullet$ v.1} % Custom header text
 
-%----------------------------------------------------------------------------------------
-% MY PACKAGES 
-%----------------------------------------------------------------------------------------
-
-\usepackage{amsfonts}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{rotating}
-\usepackage{paracol}
-\usepackage{textcomp}
-\usepackage{caption}
-\usepackage[export]{adjustbox}
-\usepackage{afterpage}
-\usepackage{filecontents}
-\usepackage{color}
-\usepackage{latexsym}
-\usepackage{pdflscape}       %\begin{landscape} and \end{landscape}
-%\usepackage{mathabx}
-\usepackage{wasysym}
-\usepackage{dashrule}
-%\usepackage{txfonts}
-%\usepackage{pgfkeys}
-\usepackage{framed}
-\usepackage{tree-dvips}
-\usepackage{caption}
-\usepackage{fancyvrb}
-\usepackage{pgffor}
-\usepackage{xcolor}
-%\usepackage{pxfonts}
-\usepackage{authblk}
-\usepackage{paracol}
-\usepackage{setspace}
-\usepackage{qtree}
-\usepackage{tree-dvips}
-%\usepackage{sgame}        % shouldn't have neither array nor tabularx packages
-\usepackage{array}
-%\usepackage{tikz}
-\usepackage[latin1]{inputenc}
-%\label{tab:1}    %\autoref{tab:1}  %ocupar para citar.
-% \hyperlik{table1} \hypertarget{table1} 
-% \textquoteright     %apostrofe
-\usepackage{hyperref}     %desactivar para link rojos
-\usepackage{natbib} % style
-\usepackage[graphicx]{realboxes}
-\usepackage{dcolumn} % for R tables
-\usepackage{csquotes} % For long quotes
-\usepackage{multirow}
-\usepackage{pifont}
-\usepackage{moreverb} % for verbatim ouput
-
-%----------------------------------------------------------------------------------------
-% Other ADDS-ON
-%----------------------------------------------------------------------------------------
-
-% independence symbol \independent
-\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
-\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
-
-%\setlength{\intextsep}{-5ex} % remove extra space above and below in-line float
-
-% VERBATIM WITH BACKGROUND COLOR
-\newenvironment{colframe}{%
-  \begin{Sbox}
-    \begin{minipage}
-      {\columnwidth%-\leftmargin-\rightmargin-6pt
-      }
-    }{%
-    \end{minipage}
-  \end{Sbox}
-  \begin{center}
-    \colorbox{LightSteelBlue}{\TheSbox}
-  \end{center}
-}
-
-
-\hypersetup{
-    bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={My title},    % title
-    pdfauthor={Author},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfcreator={Creator},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
-    pdfnewwindow=true,      % links in new window
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=ForestGreen,          % color of internal links (change box color with linkbordercolor)
-    citecolor=ForestGreen,        % color of links to bibliography
-    filecolor=ForestGreen,      % color of file links
-    urlcolor=ForestGreen           % color of external links
-}
-
-\usepackage[nodayofweek,level]{datetime} % to have date within text
-
-
-%----------------------------------------------------------------------------------------
 % TITLE SECTION
-%----------------------------------------------------------------------------------------
 
 \title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Structural Transformations and State Institutions in Latin America, 1900-2010}} % Article title
 
@@ -195,10 +56,10 @@ There is a long-standing agreement on that economic growth and political develop
 The literature on the relationship between political and economic development is vast. Without trying to survey all of it, there seems to be an agreement in that strong institutions cause better economic performance.\footnote{For the geography v. institutional design debate, see \citet{Sachs2003} for an example.} For example \citet[3]{North:1990vl} argues that ``institutions affect the performance of economies is hardly controversial'' while \citet[185]{Przeworski2004} argues that this relationship is endogenous.\footnote{``[I]n the end, the motor of history is endogeneity [...] wealth, its distribution, and the institutions that allocate factors and distribute incomes are mutually interdependent and evolve together.''} Most of the explanations focus on institutional constrains,\footnote{\citet{Johnson2016}.} mainly property rights, and the incentives of the business class to invest in technology and infrastructure.\footnote{\citet[]{Leblang1996,Weingast1997,Iyer2005}.} When property rights are secured (via the state\footnote{\citet{DouglassNo}.} or social norms\footnote{\citet{Greif1994}.}) there will be incentives to invest in infrastructure, research and development.\footnote{However, see \citet[]{Clark:2009aa} and \citet[]{Mokyr:2016ty}.} This is usually the case when political and military elites are constrained by institutions such as constitutions and parliaments.
 
 % Hook and Contribution
-This paper contributes to this literature by adding an alternative channel to explain political and economic development. Particularly, it complements our understanding of political and economic development from the sectoral conflict framework, specifically by (re)introducing the \emph{dual sector economy model}. The political development literature has traditionally focused on socio-economic cleavages and potential alliances \emph{between} a \emph{homogeneous} ruling elite and politically excluded segments of the society. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples supporting this view. In this paper I focus on political divisions \emph{among} the elite. The sectoral approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite \emph{outsiders} on democratic transitions. \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} argue about the role of economic inequality/equality among the elite on political development, and \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. Though the relevance of different economic and social sectors has already been recognized, this paper complements this literature by bringing in the \emph{dual sector model}. The dual economy model is a theory of why industrialization occurs\footnote{\citet[p. 160]{Gollin2002}.} which by emphasizing the importance of macro-structural transformations explains the mechanics of economic growth. I link these transformations with the emergence of a new political elite, namely, the industrial class, whose economic emergence permitted the political challenging of the incumbent landowning class causing both political and institutional development.
+This paper contributes to this literature by adding an alternative channel to explain political and economic development. Particularly, it complements our understanding of political and economic development from the sectoral conflict framework, specifically by (re)introducing the \emph{dual sector economy model}. The political development literature has traditionally focused on socio-economic cleavages and potential alliances \emph{between} a \emph{homogeneous} ruling elite and politically excluded segments of the society. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples supporting this view. In this paper I focus on political divisions \emph{among} the elite. The sectoral approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite \emph{outsiders} on democratic transitions. \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} argue about the role of economic inequality/equality among the elite on political development, \citet{Waldner:1999aa} studies how the formation of a modern state should coincide with the incorporation of lower classes to produce developmental states, \citet[8]{Saylor:2014aa} looks at the ``coalitional basis of state building'' and \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. Though the relevance of different economic and social sectors has already been recognized, this paper complements this literature by bringing in the \emph{dual sector model}. The dual economy model is a theory of why industrialization occurs\footnote{\citet[p. 160]{Gollin2002}.} which by emphasizing the importance of macro-structural transformations explains the mechanics of economic growth. I link these transformations with the emergence of a new political elite, namely, the industrial class, whose economic emergence permitted the political challenging of the incumbent landowning class causing both political and institutional development.
 
 % Argument
-An elite divided on an \emph{economic} cleavage is at the same time divided on their \emph{political} preferences, particularly regarding their attitude towards state centralization.\footnote{See for example \citet{Llavador2005}.} Consequently, an elite split along economic interests will use state power to influence certain policies and hence, growth and state building. The crux of the argument is that economic structural transformation which I define as ``a secular decline of agriculture and substantial expansion of manufacturing''\footnote{\citet[567]{Johnston1961}.} imposed tight constraints on the way politics was run by the incumbent landowning class. I argue that the emergence of an efficient and productive industrial sector altered not only the structure of the economy (causing growth) but also the inter-sectoral balance of \emph{political} power, making unsustainable the political monopoly run by the landed elites inherited from the colonial period.
+An elite divided on an \emph{economic} cleavage is at the same time divided on their \emph{political} preferences, particularly regarding their attitude towards state centralization.\footnote{See for example \citet{Llavador2005}.} Consequently, an elite split along economic interests will use state power to influence certain policies and hence, growth and state building. The crux of the argument is that an economic structural transformation which I define as ``a secular decline of agriculture and substantial expansion of manufacturing''\footnote{\citet[567]{Johnston1961}.} imposed tight constraints on the way politics was run by the incumbent landowning class. I argue that the emergence of an efficient and productive industrial sector altered not only the structure of the economy (causing growth) but also the inter-sectoral balance of \emph{political} power, making unsustainable the political monopoly run by the landed elites inherited from the colonial period.
 
 This paper provides an alternative explanation for why political and economic development happened together, emphasizing the role of structural economic transformations and sectoral compromises. {\color{red}Somewhere else} I have argued that the implementation of the income tax law in the 19th century in Latin America was the keystone of sectoral conflicts and compromises which triggered a series of other state-building institutions. Building on the fiscal sociology paradigm,\footnote{\citet[]{Schumpeter:1991yq}.} it was argued that taxation helped to form the Latin American state. Since indirect taxes are easier to collect, they were typically administered by weak states.\footnote{\citet[14]{Moore2004}.} For example, customs administrations have always been concentrated in a few critical locations, especially ports. Hence, customs duties have never required an elaborate fiscal structure.\footnote{\citet[132]{Bertola2012}.} In turn, direct taxation, notably the income tax, required the development of a strong fiscal apparatus and sustained domestic alliances (\emph{mainly between the two elites}) to keep monitoring individual incomes in an efficient way. The income tax did not contribute to the state in revenue, it did so by triggering other state institutions that generated long term political development. Starting with the income tax, these institutions were product of inter-elite compromises, causing long run economic development. In fact, the industrial elite accepted to be income taxed by agricultural incumbents in exchange of protectionist tariffs and political access to the state.\footnote{See \citet{Bahamonde:2016aa} and \citet{Saylor:2014aa}.} In turn, political access contested and moderated early closed parliaments by introducing into the political game industrial political elites. In this paper I expand on this idea by arguing that \emph{political} institutions of state-building such as the income tax law set in motion a path of long-term \emph{economic} growth.
 
@@ -225,7 +86,7 @@ When the elite structure was faint and the agricultural sector could not fulfill
 The \emph{dual sector} or \emph{balanced growth} model argues that the economic system is divided into two sectors loosely defined as `advanced or modern sector' or `manufacturing sector,' and the `backward or traditional sector,' or `agriculture.'\footnote{\citet[311]{Jorgenson1961}. Importantly, I follow \citet[87]{Kuznets:1967aa} in that ``mining is combined with [...] industry because of the large scale of its productive unit, its close connection with manufacturing, and the distinctive trend in its share in product and resources.'' Similarly, \citet[237]{Debowicz2014} includes mining within the industrial sector.} The basic intuition of this paradigm is that in order for the industrial sector to develop, it needs \emph{first} an efficient and strong agricultural sector. Contingent on efficient agricultural productivity, the emergence of the industrial sector goes from a low production sector eventually surpassing the agricultural sector. If the agricultural sector lacks economic efficiency, the industrial sector will hardly develop, leaving the country in an economic (and \emph{political}) trap (too). 
 
 % Shortcomings of the Dual Sector Model: Why Two Sectors, and the Third Sector
-Economic growth depends on inter-sectoral \emph{balanced} development. It was \citet[151]{Lewis:1965nr} who popularized the idea that ``[t]he secret of most development problems is to maintain a proper balance between sectors.'' In fact, ``balanced growth is almost axiomatic as a desirable objective, for both developed and under-developed countries.''\footnote{\citet[169]{Streeten1959}.} The dual nature of the balanced growth model has been widely accepted too and forms part of ``a long tradition in development economics.''\footnote{\citet[8]{Kelley:1972zl}.} For example \citet[354]{Lindert1985} explain that the dual-sector model ``has become the dominant paradigm used by Third World observers.'' While dichotomizing the entire economy in just two sectors might sound as too much of an oversimplification, I follow \citet[325]{Dixit:1973aa} in that the dual economy model provides a significantly better description of the economy because ``it reflects several vital social and economic distinctions.'' \citet[280]{Johnston1966} also explain that ``[t]he reality found in most underdeveloped countries approximates this dichotomy [...] sufficiently.'' For example, \citet[8]{Bash1986} explains that ``Colombia's two traditional political parties crystallized in the 1840's and reflected in many respects the dual nature of the Colombian economy.'' That said, \citet[326]{Dixit:1973aa} is right in that a ``major drawback of dualistic theories [...] is the total neglect of the service sector.''\footnote{He continues: ``As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis.''} However, the literature is consistent in that the third sector necessarily develops \emph{after} the industrial sector is developed. In other words, industrialization is just halfway down the path to development. For example, \citet[506-507, 513]{Galenson1963} argues that ``countries in which manufacturing output grew most rapidly also experienced the largest increases in tertiary employment.'' This is also true for the Latin American case. \citet[95-96]{Baer1966} explain that the textile industry in Latin America went through a process of automation freeing labor to other sectors.
+Economic growth depends on inter-sectoral \emph{balanced} development. It was \citet[151]{Lewis:1965nr} who popularized the idea that ``[t]he secret of most development problems is to maintain a proper balance between sectors.'' In fact, ``balanced growth is almost axiomatic as a desirable objective, for both developed and under-developed countries.''\footnote{\citet[169]{Streeten1959}.} The dual nature of the balanced growth model has been widely accepted too and forms part of ``a long tradition in development economics.''\footnote{\citet[8]{Kelley:1972zl}.} For example \citet[354]{Lindert1985} explain that the dual-sector model ``has become the dominant paradigm used by Third World observers.'' While dichotomizing the entire economy in just two sectors might sound as too much of an oversimplification, I follow \citet[325]{Dixit:1973aa} in that the dual economy model provides a significantly better description of the economy because ``it reflects several vital social and economic distinctions.'' \citet[280]{Johnston1966} also explain that ``[t]he reality found in most underdeveloped countries approximates this dichotomy [...] sufficiently.'' For example, \citet[8]{Bergquist1986} explains that ``Colombia's two traditional political parties crystallized in the 1840's and reflected in many respects the dual nature of the Colombian economy.'' That said, \citet[326]{Dixit:1973aa} is right in that a ``major drawback of dualistic theories [...] is the total neglect of the service sector.''\footnote{He continues: ``As a very rough approximation, one might suppose these to expand in proportion to industry proper, and be absorbed in it for purpose of analysis.''} However, the literature is consistent in that the third sector necessarily develops \emph{after} the industrial sector is developed. In other words, industrialization is just halfway down the path to development. For example, \citet[506-507, 513]{Galenson1963} argues that ``countries in which manufacturing output grew most rapidly also experienced the largest increases in tertiary employment.'' This is also true for the Latin American case. \citet[95-96]{Baer1966} explain that the textile industry in Latin America went through a process of automation freeing labor to other sectors.
 
 % Mechanics of Development: Importance on the Development of the Agricultural Sector // Growth
 Economic development depends on the emergence of the industrial sector which in turn depends on the development of a productive agricultural sector.\footnote{\citet[567]{Johnston1961} argue that this process ``seems to be a necessary condition for cumulative and self-sustaining growth.''} As \citet[59]{Kuznets1961a} puts it, ``economic growth is \emph{impossible} unless there is a substantial rise in product per worker in the agricultural sector.''\footnote{Emphasis is mine.} This insight is shared by many other development economists. \citet[105]{Hayami1969} for example argue that ``[i]ndustrialization and modern economic growth are basically \emph{conditioned} by the level of agricultural productivity.''\footnote{Emphasis is mine.} There are two main reasons for why agricultural development is a prerequisite of industrial development: efficient agricultures are more likely to supply the industrial sector with cheap food and cheap labor. In \citet[498]{Johnston1951}'s words, ``[e]xpanded agricultural productivity releases people from the land for employment in industry [and] provides food for the growing population which is a characteristic of the industrialization process.'' This structural transformation is the key of economic growth. In fact \citet[2]{Landon-Lane2003} find that an important source of growth in developing economies is ``derived through the reallocation of resources [particularly] by drawing labour moving out of traditional sector employment into the modern sector.''
@@ -435,9 +296,15 @@ The paradox can be explained by Argentina's weak inter-elite structure, but part
 
 \section{Appendix}
 
-%% reset tables and figures counter
-\setcounter{table}{0}
-\renewcommand{\thetable}{A\arabic{table}}
+% reset counter for appendix
+\subimport{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/}{LaTeX_Reset_Counter_For_Appendix}
+
+
+
+
+
+
+
 
 
 %% define text warpping in table
