@@ -15,7 +15,7 @@
 \author[1]{
 \large
 \textsc{H\'ector Bahamonde}\\ 
-\thanks{I thank Bob Kaufman, Dan Kelemen, Doug Blair, Paul Poast, John Landon-Lane, Mark Pickup, Paul Kellstedt and Ira Gang for all the useful comments. I also thank the School of Arts and Sciences and the Political Science Department at Rutgers for granting me a Pre-Dissertation Award (2016) that helped me to continue with this project. All errors are my own.}
+\thanks{I thank Bob Kaufman, Dan Kelemen, Doug Blair, Paul Poast, John Landon-Lane, Mark Pickup, Paul Kellstedt and Ira Gang for all the helpful comments. I also thank the School of Arts and Sciences and the Political Science Department at Rutgers for granting me a Pre-Dissertation Award (2016) that helped me to continue with this project. All errors are my own.}
 \normalsize PhD Candidate $\bullet$ Political Science Dpt. $\bullet$ Rutgers University \\
 \normalsize \texttt{e:}\href{mailto:hector.bahamonde@rutgers.edu}{\texttt{hector.bahamonde@rutgers.edu}}\\
 \normalsize \texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}
@@ -142,13 +142,13 @@ In sum, these remarks suggest that \emph{un}balanced economic growth is associat
 \paragraph{Granger-causality Tests}
 
 % explain argument, break and what granger is
-The emergence of a new industrial sector rose a new politically disenfranchised elite who demanded political and economic reforms beneficial to them, ending years of political sectoral unbalances. In exchange for these demands, the industrial sector accepted to be income-taxed, setting countries in a path of both political and long-run economic development. The income tax, as an institution that contributed to develop further state capacities and institutional development, should then be associated with long-term economic growth, and consequently with a secular decline of agriculture and substantial expansion of manufacturing. To confirm this hypothesis, the theory should pass a number of tests. First, \emph{before} the inter-sectoral compromises and before the income tax law was implemented, political institutions and social norms inherited from the colonial period were designed to allocate economic inputs (and hence \emph{growth}) in a way that benefited the landowning class only. Hence, I expect the transference of economic inputs went \emph{from} the industrial sector \emph{to} the agriculture sector, a \emph{backwards} equilibrium as stated by the dual sector model. Second, \emph{after} the income tax was implemented, we should see a \emph{reversion} of the flow of inputs, generating growth \emph{from} the agricultural sector \emph{to} the industrial sector. In econometric terms, we should see that the income tax reverted the way in which one sector `Granger-caused' the other.\footnote{This is not an experimental design, and hence the term `causation' should be taken loosely. As \citet[241]{Beck1992} explains, cointegration is not causal.} \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not vise versa), $X$ is said to `Granger-cause' $Y$. According to \citet[349]{Granger1980}, this concept of `causation' is based on the idea ``that the future cannot cause the past.''\footnote{See \citet[197]{Durr1992} for a similar definition.}
+The emergence of a new industrial sector rose a new politically disenfranchised elite who demanded political and economic reforms beneficial to them, ending years of political sectoral unbalances. In exchange for these demands, the industrial sector accepted to be income-taxed, setting countries in a path of both political and long-run economic development. The income tax, as an institution that contributed to develop further state capacities and institutional development, should then be associated with long-term economic growth, and consequently with a secular decline of agriculture and substantial expansion of manufacturing. To confirm this hypothesis, the theory should pass a number of tests. First, \emph{before} the inter-sectoral compromises (i.e., before the income tax law was implemented), political institutions and social norms inherited from the colonial period were designed to allocate economic inputs (and hence \emph{growth}) in a way that benefited the landowning class only. Hence, I expect the transference of economic inputs went \emph{from} the industrial sector \emph{to} the agriculture sector, a \emph{backwards} equilibrium as stated by the dual sector model. Second, \emph{after} the income tax was implemented, we should see a \emph{reversion} of the flow of inputs, generating growth \emph{from} the agricultural sector \emph{to} the industrial sector. In econometric terms, we should see that the income tax reverted the way in which one sector `Granger-caused' the other.\footnote{This is not an experimental design, and hence the term `causation' should be taken loosely. As \citet[241]{Beck1992} explains, cointegration is not causal.} \citet[42]{Lutkepohl2006} explains that if some variable $X$ forecasts variable $Y$ (and not vise versa), $X$ is said to `Granger-cause' $Y$. According to \citet[349]{Granger1980}, this concept of `causation' is based on the idea ``that the future cannot cause the past.''\footnote{See \citet[197]{Durr1992} for a similar definition.}
 
 
 \afterpage{
 \begin{figure}[ph!]
 \begin{centering}
-  \includegraphics[width=1.0\textwidth]{Structural_Breaks_Paper.pdf}
+  \includegraphics[width=1.0\textwidth]{/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Structural_Breaks_Paper.pdf}
 \end{centering}
 \caption{Sectoral Outputs Before and After the Implementation of the Income Tax Law}
 \label{sectoral:outputs:fig:1}
@@ -262,7 +262,7 @@ Notice that in both lines the different dependent variables are expressed as a f
 \afterpage{
 \begin{figure}[ph!]
 \begin{centering}
-  \includegraphics[width=1.0\textwidth]{IRF_Paper.pdf}
+  \includegraphics[width=1.0\textwidth]{/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/IRF_Paper.pdf}
 \end{centering}
 \caption{VAR Impulse Response Functions: Sectoral Responses to Each Other's Growths}
 \label{irf:fig:1}
