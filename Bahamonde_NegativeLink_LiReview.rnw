@@ -723,7 +723,7 @@ State-building scholars emphasize the role of economic development as a prerequi
 
 			%\citet[2]{Landon-Lane2003}: ``show that an important source of growth in rapidly developing economies, is the productivity growth derived through the reallocation of resources and structural change. Specifically, factor accumulation generates productivity growth by drawing labour moving out of traditional sector employment in to the modern sector where it is more productive.''
 
-			%\citet[33?]{Nurkse:1953aa}: development means ``to employ the `surplus labor' on the construction of capital. '' % KEEP READING; This citation from \citet[91]{Leibenstein1957}.
+			%\citet[33?]{Nurkse:1953aa}: development means to employ the `surplus labor' on the construction of capital. % KEEP READING; This citation from \citet[91]{Leibenstein1957}.
 
 				\citet[?]{Nurkse:1953aa} and \citet{Rosenstein-Rodan1943} ``[advocate] a plan of simultaneous investment for industrialization and mainly concerns the investment criterion within the modern sector, while [\citet{Lewis1954}] deals with balanced growth between various sectors of the economy, in particular, between industry and agriculture.'' (in \citet[13]{Ohkawa1961}).
 
