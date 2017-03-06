@@ -3,8 +3,6 @@
 
 *.RData
 
-*.pdf
-
 *.gph
 
 xtwest.do
@@ -12,6 +10,8 @@ xtwest.do
 Resources/kellyenns_mood.do
 
 Resources
+
+cache
 
 .DS_Store
 
@@ -38,3 +38,33 @@ Resources
 .Rhistory
 
 *.irf
+
+*.runs
+
+*.doc
+
+*.docx
+
+Argentina_StructuralBreak.pdf
+
+Chile_StructuralBreak.pdf
+
+Colombia_StructuralBreak.pdf
+
+Guatemala_StructuralBreak.pdf
+
+IRF_Paper.pdf
+
+Mexico_StructuralBreak.pdf
+
+Nicaragua_StructuralBreak.pdf
+
+PaperAbstract.pdf
+
+Structural_Breaks_Paper.pdf
+
+Submission/
+
+*.rdb
+
+PaperAbstract.md
