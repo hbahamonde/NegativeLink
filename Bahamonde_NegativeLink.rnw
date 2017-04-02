@@ -9,7 +9,7 @@
 
 % TITLE SECTION
 
-\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{Structural Transformations and State Institutions in Latin America, 1900-2010}} % Article title
+\title{\vspace{-15mm}\fontsize{18pt}{7pt}\selectfont\textbf{\input{/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/title.txt}\unskip}} % Article title
 
 
 \author[1]{
