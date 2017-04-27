@@ -294,7 +294,7 @@ Given that ``it is often difficult to draw any conclusions from the large number
 I have argued that the emergence of the industrial sector caused political development by rising a political challenger. The argument differs deeply from modernization theory. What causes political development is not industrialization \emph{per se}, but the development of a productive landed elite which supplied labor and cheap foodstuff to the modern sector, promoting \emph{balanced} economic development between the \emph{two} sectors. In turn, balanced growth politically empowered \emph{both} economic elites. When there were weak inter-sectoral linkages and lack of economic complementarity between the two sectors, countries not only failed to grow, but also produced uncontested political environments, and investments in political institutions were less likely. The radical transformation of the economy is a precondition for political development.
 
 
-Two brief historical references were discussed. The Chilean case stressed the importance of sectoral competition and the role of income taxation, while the Argentinean case focused on an important issue, namely, the overlap between the export/agriculture and import/industry, a recurrent topic in Latin American economic history. Time-series analyses, particularly, Granger-causality tests and VAR models (and IRF analyses) were presented in an effort to suggest that this theory can be applied to other countries in the region. There are good reasons to believe that the theory has general applicability to other cases. 
+ 
 
 
 \clearpage
