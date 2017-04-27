@@ -230,7 +230,7 @@ Integration and cointegration are assumptions that should be tested. The first s
 
 
 
-
+% check \citet[401]{Becketti2013}.
 \newcolumntype{C}{>{\centering\arraybackslash}m{3cm}}
 \afterpage{
 \begin{table}[ph!]
@@ -238,17 +238,17 @@ Integration and cointegration are assumptions that should be tested. The first s
 \begin{scriptsize}
 \begin{tabular}{ c C c c c c }
 \toprule 
-{\bf Country} & {\bf Number of Cointegrated Vectors (rank)} &  {\color{red}Restrictions} & {\bf Lags} & {\bf Log-Likelihood} & {\bf Trace} \\[-.1em] 
+{\bf Country} & {\bf Number of Cointegrated Vectors (rank)} &  Restrictions & {\bf Lags} & {\bf Log-Likelihood} & {\bf Trace} \\[-.1em] 
 \midrule 
-Chile       & at least 1 &  & 5 & -1665.9736 & 0.3799\\[.2em] 
-Argentina   & at least 1 &  & 3 & -1802.292 & 4.7657\\[.2em] 
-Colombia    & at least 1 &  & 2 & -1805.6773 & 10.0076\\[.2em] 
-Mexico      & at least 1 &  & 4 & -1978.1322 & 1.0274\\[.2em] 
-Nicaragua   & at least 0 &  & 2 & -1020.221 & 11.5297 \\[.2em] 
-Guatemala   & at least 0 &  & 3 & -859.2802 & 16.5493 \\[.2em] 
+Chile       & at least 1 & Restricted Constant  & 5 & -1665.9736 & 0.3799\\[.2em] 
+Argentina   & at least 1 & Restricted Constant  & 3 & -1802.292 & 4.7657\\[.2em] 
+Colombia    & at least 1 & Restricted Trend  	& 2 & -1805.6773 & 10.0076\\[.2em] 
+Mexico      & at least 1 & Restricted Constant  & 4 & -1978.1322 & 1.0274\\[.2em] 
+Nicaragua   & at least 0 & Restricted Constant 	& 2 & -1020.221 & 11.5297 \\[.2em] 
+Guatemala   & at least 0 & Trend 				& 3 & -859.2802 & 16.5493 \\[.2em] 
 \bottomrule 
 \end{tabular} 
-\caption{Johansen Tests for Cointegration} 
+\caption{Johansen Tests for Cointegration: Complete Series} 
 \label{johansen:tests:tab} 
 \end{scriptsize}
 \end{center} 
@@ -291,7 +291,7 @@ Given that ``it is often difficult to draw any conclusions from the large number
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion\label{discussion}}
 
-Elites split along economic interests will use state power to influence certain policies and hence, growth and state building in different ways. I have argued that the emergence of the industrial sector caused political development by rising a political challenger. The argument differs deeply from modernization theory. What causes political development is not industrialization \emph{per se}, but the development of a productive landed elite which supplied labor and cheap foodstuff to the modern sector, promoting \emph{balanced} economic development between the \emph{two} sectors. In turn, balanced growth politically empowered \emph{both} economic elites. When there were weak inter-sectoral linkages and lack of economic complementarity between the two sectors, countries not only failed to grow, but also produced uncontested political environments, and investments in political institutions were less likely. The radical transformation of the economy is a precondition for political development.
+I have argued that the emergence of the industrial sector caused political development by rising a political challenger. The argument differs deeply from modernization theory. What causes political development is not industrialization \emph{per se}, but the development of a productive landed elite which supplied labor and cheap foodstuff to the modern sector, promoting \emph{balanced} economic development between the \emph{two} sectors. In turn, balanced growth politically empowered \emph{both} economic elites. When there were weak inter-sectoral linkages and lack of economic complementarity between the two sectors, countries not only failed to grow, but also produced uncontested political environments, and investments in political institutions were less likely. The radical transformation of the economy is a precondition for political development.
 
 
 Two brief historical references were discussed. The Chilean case stressed the importance of sectoral competition and the role of income taxation, while the Argentinean case focused on an important issue, namely, the overlap between the export/agriculture and import/industry, a recurrent topic in Latin American economic history. Time-series analyses, particularly, Granger-causality tests and VAR models (and IRF analyses) were presented in an effort to suggest that this theory can be applied to other countries in the region. There are good reasons to believe that the theory has general applicability to other cases. 
