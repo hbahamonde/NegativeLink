@@ -1176,3 +1176,30 @@ Dietz, J. L. and J. H. Street. 1987. Latin America's Economic Development. In J.
 % in bolivia
 \citet[57]{Gallo:1991kx} the ``Bolivian agriculture presented an extreme version of the problems typical of agrarian sectors in most Latin American countries: very low productivity, maldistribution of the population over the arable land, great concentration of property, and so on.''
 
+
+
+% removed from the paper
+
+
+The argument considers that agriculturalists had been a hegemonic group protected by practices inherited from institutions originated in colonial times, and that subsequent institutional investments reverted this situation causing long-term economic growth. However, others have argued that the independence wars around in the 1800's contributed to the collapse of all colonial institutions, including the privileges the landowning sector had. For example \citet[191]{Mahoney:2010aa} explains that the ``wars of independence were violent and destructive; they saw the collapse of the colonial fiscal system [...] and the elimination of the colonial political order.''\footnote{See also \citet[55]{Saylor:2014aa} and \citet[27-28, 35-36]{Lopez-Alves:2000zl}.} However, the collapse of a number of institutions does not necessarily mean the collapse of the legacies of \emph{the} colonial political economy. \citet[349]{Capoccia2007} argue that ``[e]ven where various institutions are interconnected, the occurrence of a critical juncture for one institution need not constitute a critical juncture with respect to all of its counterpart.'' I find in this paper that the landed elites did have privileges that the industrialists did not have \emph{because} of the inertia of colonial institutions. In fact, elsewhere I find that the implementation of the income tax was product of a series of inter-elite compromises that aimed to equate the political privileges of the two sectors, putting countries in a path of political development.\footnote{\citet{Bahamonde:2017ab}.} In this paper I focus on the intertwined relationship between political \emph{and} economic development.
+
+
+
+While the process of state-building had started earlier\footnote{See for example \citet{Kurtz:2013aa} and \citet{Soifer:2016zr}.} the implementation of the income tax was an important building block in this process.
+
+
+
+
+The income tax did not just contribute to the state in revenue, it did so by triggering other state institutions that generated long term \emph{political} development.\footnote{Humud (1969, p. 154) explains for the Chilean case that the income tax did generate considerable resources, and that ``1930 would become second only to import duties in size,'' in \citet[451-452]{Bowman1982}.} In this paper I expand on this idea by arguing that political institutions of state-building such as the income tax law set in motion a path of long-term \emph{economic} development. 
+
+
+
+Analytically, I consider sectoral conflicts the spring of fiscal development, which in turn translates into economic development. 
+
+
+
+While the agricultural sector dominated most of the economy, the landowning class controlled most of the politics.\footnote{See for the Chilean case \citet[13]{Zeitlin:1984aa}, \citet[45]{Bauer:2008kx}, \citet[1748]{Baland2008} and \citet[56]{Best1976}.} In turn, the lack of an economic challenger prevented political contestation and further institutional investments. However, 
+
+
+The following \hyperref[dual:sector]{section} introduces the \emph{dual sector model}, where I explain the mechanics of industrial expansion and why it is relevant for political development. Next I present the Chilean and Argentinean \hyperref[case:studies]{cases} to illustrate the theory and to provide some historical context. The two cases exemplify different aspects of the argument. The Chilean case stresses the initial structural advantages the landowning sector had and the inter-sectoral competition aspects. The Argentinean case explains a recurrent issue in Latin American economic history, namely, whether the export-oriented and import-oriented sectors overlapped with the the agriculture/industry cleavage. Then, in an effort to suggest that this hypothesis could be generalized to other countries in Latin America, in the econometric \hyperref[methods]{section} I provide evidence of different vector autoregressive models (VAR), Granger-causality tests and impulse response functions (IRFs) for a subset of Latin American countries and explain why when there were economic structural transformations there were also sectoral political conflicts and subsequent investment in institutional capacities. Lastly, I provide some final \hyperref[discussion]{remarks}.\vfill
+
