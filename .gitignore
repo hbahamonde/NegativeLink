@@ -21,8 +21,6 @@ cache
 
 *.bbl
 
-*.tex
-
 *.gz
 
 *.out
