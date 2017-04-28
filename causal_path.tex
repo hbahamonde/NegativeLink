@@ -1,0 +1,35 @@
+\documentclass[tikz, border=10pt]{standalone}
+\tikzset{
+    vertex/.style = {
+        circle,
+        fill            = black,
+        outer sep = 2pt,
+        inner sep = 1pt,
+    }
+}
+\begin{document}
+\begin{tikzpicture}
+    
+  % Opposition
+  \node[draw,fill=black,text=white] (ArgumentA) at (1,0) {Balanced Growth};
+  \node[draw,fill=black,text=white] (ArgumentB) at (5.5,0) {Political Development};
+  \node[draw] (ArgumentC) at (9,0) {Income Tax};
+  \node[draw] (ArgumentD) at (13,0) {Strong Industrial Sector};
+
+
+
+
+\draw[<-,draw=blue,thick] (ArgumentB) to (ArgumentC);
+\draw[->,draw=red,thick] (ArgumentB) to (ArgumentA);
+\draw[<-,draw=red,thick] (ArgumentB) to[out=5] (ArgumentA);
+\draw[->,draw=blue,thick] (ArgumentD) to (ArgumentC);
+
+
+
+  \node at (6., -1.0) {};
+
+
+
+  
+\end{tikzpicture}
+\end{document}
