@@ -37,7 +37,9 @@ write.dta(data, "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data
 
 ## ---- loading:data  ---- 
 ### (to show years of available years in the paper)
-library(foreign) # install.packages("foreign")
+if (!require("pacman")) install.packages("pacman"); library(pacman)
+p_load(foreign)
+
 data <- read.dta("/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta")
 chile.dat = subset(data, country == "Chile")
 chile.dat <- chile.dat[c("year", "constagricult", "constmanufact")]
