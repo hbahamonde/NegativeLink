@@ -38,7 +38,7 @@
 
 % ABSTRACT
 \begin{abstract}
-The paper proposes an alternative channel to explain the emergence of political and economic development in Latin America. Historically, agriculturalists had been a hegemonic group protected by institutions that originated in colonial times. These norms had survived due to institutional inertia, perpetuating their advantaged position. Building on the fiscal sociology and dual sector models, I argue that a structural transformation marked by a secular decline of agriculture and substantial expansion of manufacturing helped political development by promoting the emergence of an industrial political elite. Industrialization altered the status quo not by increasing incomes (\emph{\'a la} modernization theory) but by supporting the rise of a political challenger. Importantly, the structural transformation required both sectors to grow in a balanced fashion, leveling both elites in their relative political and military capacities. Under egalitarian conditions to engage in conflict, there were no incentives to make war, and thus conflict was avoided generating a status of inter-sectoral cooperation. I use the Chilean and Argentinean cases to illustrate the theory. In an effort to suggest that this hypothesis could be generalized to other countries in Latin America, I provide a number of time series analyses (VAR models, impulse response functions and Granger-causality tests) for a dataset spanning approximately 100 years on agricultural and industrial sectoral growths.
+Historically, agriculturalists were a hegemonic group protected by norms and institutions since colonial times. However, the emergence of the industrial sector imposed tight constraints on the way politics was run by the incumbent landowning class, forcing both political elites to make institutional agreements. I identify one such compromise, the implementation of the income tax. There were positive externalities for state-making surrounding the implementation of the income tax law. I argue that the new institutional order in which the income tax was situated fostered long-run economic development. Using the Chilean case to illustrate the causal mechanisms at work and time-series econometric techniques I find that before the income tax law, the institutional order was designed to give unfair economic advantages to the agricultural sector. The new institutional order in which the income tax was situated reverted that. When the industrial sector was strong, the implementation of the income tax put countries in a path of long-run economic development. However, when the industrial sector was weak, the income tax did not reflect these economic cleavages. In these cases, the levels of sectoral conflict were low, and agricultural elites were never challenged. The old institutional order was not challenged. An untransformed elite structure permitted unbalanced growth reinforcing the political and economic advantages of the landed elites.
 \end{abstract}
 
 \vspace*{1.5cm}\hspace*{1.3cm}{\bf{\color{red}Please consider downloading the last version of the paper \href{https://github.com/hbahamonde/Negative_Link_Paper/blob/master/Bahamonde_NegativeLink.pdf}{here}
@@ -80,7 +80,7 @@ The literature on political and economic development is vast. Without trying to 
 
 
 % sectoral conflict in the literature // my contribution
-The political development literature has traditionally focused on socio-economic cleavages and potential alliances between a \emph{homogeneous} ruling elite and politically excluded segments of the society, traditionally peasants or other disenfranchised groups such as the bourgeoisie. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples supporting this view.\footnote{\citet[293]{Acemoglu:1996rm} explain that `all members of the elite have identical endowments so there is no heterogeneity among the elites.' However, later in the book (p. 289) they briefly consider preferences over democracy of industrialists and agriculturalists.} In this paper I focus on political divisions \emph{among} the elite. The elite-sector approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite outsiders on democratic transitions, \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} examine the role of economic inequality/equality among the elite on democratization, \citet{Waldner:1999aa} studies how the formation of a modern state should coincide with the incorporation of lower classes to produce developmental states, \citet[8]{Saylor:2014aa} looks at the ``coalitional basis of state building'' while \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. While political economists have already recognized the relevance of sectoral conflicts and the structure of the economy, the focus has been on democratic development.\footnote{See specially \citet{Ansell:2014ty} and \citet{Acemoglu:1996rm}.} Using the same conflictual-sectoral approach as a starting point, the paper stresses how these structural conflicts are associated with institutional and economic development. 
+The political development literature has traditionally focused on socio-economic cleavages and potential alliances between a \emph{homogeneous} ruling elite and politically excluded segments of the society, traditionally peasants or other disenfranchised groups such as the bourgeoisie. \citet[]{Moore:1966tn}, \citet{Tilly:1992rr}, \citet[]{Boix:2003db}, \citet{Stasavage:2008fr} and \citet[]{Acemoglu:1996rm} are among the most prominent examples supporting this view.\footnote{\citet[293]{Acemoglu:1996rm} explain that `all members of the elite have identical endowments so there is no heterogeneity among the elites.' However, later in the book (p. 289) they briefly consider preferences over democracy of industrialists and agriculturalists.} In this paper I focus on political divisions \emph{among} the elite. The elite-sector approach is hardly new. Just to mention some examples, \citet[]{Guillermo-ODonnell:1986ul} emphasized the positive impact of elite outsiders on democratic transitions, \citet[]{Ansell:2014ty} and \citet[]{Boix:2015aa} examine the role of economic inequality/equality among the elite on democratization, \citet{Waldner:1999aa} studies how the formation of a modern state should coincide with the incorporation of lower classes to produce developmental states, \citet[8]{Saylor:2014aa} looks at the ``coalitional basis of state building'' while \citet{Mares2015} examine how income taxation in Europe is associated with inter-elite conflicts, particularly between the landed elite and the industrial elite. While political economists have already recognized the relevance of sectoral conflicts and the structure of the economy, the focus has been on democratic development.\footnote{See specially \citet{Ansell:2014ty} and \citet{Acemoglu:1996rm}.} Using the same sectoral approach as a starting point, the paper stresses how these structural conflicts are associated with institutional and economic development. 
 
 \begin{figure}[h]
 \caption{Causal Mechanism}\centering
@@ -95,20 +95,10 @@ An elite divided on an \emph{economic} cleavage should at the same time be divid
 % Argument
 I argue that the emergence of the industrial sector lowered the levels of inter-sectoral inequality making possible higher levels of inter-sectoral contestation, forcing industrial and agricultural political elites to make institutional agreements. I identify one such compromise, the implementation of the income tax. Elsewhere I have argued that the rise of the industrial sector accelerated the implementation of the income tax law,\footnote{\citet{Bahamonde:2017ab}.} causing a long-lasting positive impact on state institutions and political development.\footnote{\citet{Bahamonde:2017ac}.} In this paper I study how the implementation of the income tax set states in a path of political development causing long-term \emph{modern} (i.e. `balanced') economic growth.\footnote{\citet{Bahamonde:2017ab} studies the \emph{timing} of the implementation of the income tax as a function of the emergence of the industrial sector (white boxes in \autoref{causal:mechanism:fig}). In this paper I explain the conditions under which this mechanism causes long-term economic growth.} See \autoref{causal:mechanism:fig}.
 
-The crux of the argument is that the economic structural transformation characterized by ``a secular decline of agriculture and substantial expansion of manufacturing''\footnote{\citet[567]{Johnston1961}.} imposed tight constraints on the way politics was run by the incumbent landowning class. In that sense, this paper considers that given that each economic sector has a corresponding political arm, the \emph{sectoral} conflict is also a \emph{political} conflict.\footnote{See \citet{Ansell:2014ty} and \citet{Bahamonde:2017aa}.} Consequently, these gradual long-term changes not only altered the structure of the economy but also the balance of political power. Historically, agriculturalists had been a hegemonic group protected by norms and institutions that originated in colonial times. I find that before the income tax law, institutions were designed to give unfair advantage to the agricultural sector, locking countries in a backwards economic suboptimal equilibrium of \emph{un}balanced growth. The income tax law, as an institution that improved the overall state institutional capabilities reverted that. Taxation institutions as conflictual devices, by means that I explain later, \emph{make} the state. Not only these institutions improved bureaucratic development and expanded the dominion of the state, but also secured domestic elites - with diverse or even opposing interests - with long-lasting agreements which in turn translated into institutional development. I contend that the emergence of such new institutional order fostered long-term balanced economic growth. Analytically, this theory speaks to a broader conceptualization of the role of inter-elite (in)equality on political and economic development. In particular, lower levels of inter-elite inequality (expressed in the emergence of an industrial sector) put both sectors in an equilibrium of economic interdependence, where no sector predominated. The political correlate is that if both sectors grew in a balanced fashion, there was no leading elite, reinforcing the need to sustain levels of political cooperation. Finally, when the elite structure and levels of sectoral conflict were weak, the income tax did not reflect the sectoral conflict (because there was no sectoral contestation). Landowners were never challenged and there were less pressures to centralize the state, making further institutional investments less likely. Hence, even though in these cases the income tax was implemented, it did not reflect this foundational economic cleavage, compromising long-run economic development. Consequently, the income tax is a necessary but not sufficient cause of development as it requires the presence of high sectoral conflicts to cause economic development. 
+The crux of the argument is that the economic structural transformation characterized by ``a secular decline of agriculture and substantial expansion of manufacturing''\footnote{\citet[567]{Johnston1961}.} imposed tight constraints on the way politics was run by the incumbent landowning class. In that sense, this paper considers that given that each economic sector has a corresponding political arm, the \emph{sectoral} conflict is also a \emph{political} conflict.\footnote{See \citet{Ansell:2014ty} and \citet{Bahamonde:2017aa}.} Consequently, these gradual long-term changes not only altered the structure of the economy but also the balance of political power. Historically, agriculturalists had been a hegemonic group protected by norms and institutions that originated in colonial times. I find that before the income tax law, institutions were designed to give unfair economic advantages to the agricultural sector, locking countries in a backwards economic suboptimal equilibrium of \emph{un}balanced growth. The income tax law, as an institution that improved the overall state institutional capabilities, reverted that. Tax institutions as conflictual devices, by means that I explain later, \emph{make} the state. Not only these institutions improved bureaucratic development and expanded the \emph{dominion} of the state, but also secured long-lasting agreements between elites with diverse or even opposing interests which in turn translated into institutional development. I contend that the emergence of such new institutional order fostered long-term balanced economic growth. Analytically, this theory speaks to a broader conceptualization of the role of inter-elite (in)equality on political and economic development. In particular, lower levels of inter-elite inequality (expressed in the emergence of an industrial sector) put both sectors in an equilibrium of economic interdependence, where no sector predominated. The political correlate is that if both sectors grew in a balanced fashion, there was no clear leading elite, reinforcing the need to sustain levels of political cooperation. Finally, when the elite structure and levels of sectoral conflict were weak, the income tax did not reflect the sectoral conflict (because there was no sectoral contestation). Landowners were never challenged and there were less pressures to centralize the state, making further institutional investments less likely. Hence, even though in these cases the income tax was implemented, it did not reflect this foundational economic cleavage, compromising long-run economic development. Consequently, the income tax is a necessary but not sufficient cause of development as it requires the presence of high sectoral conflicts to cause economic development. 
 
 
-Next \hyperref[dual:sector]{section} explains the dual sector model, emphasizing its political correlate. Then I provide some historical \hyperref[chile:case]{context} using the Chilean case to illustrate the theory. Next, I present some econometric \hyperref[methods]{evidence}, putting especial attention to the relationship between long-term balanced growth and fiscal expansion. Finally, I provide some ending \hyperref[discussion]{comments}.
-
-
-
-
-% HERE
-
-
-
-
-
+Next \hyperref[dual:sector]{section} explains the dual sector model, explaining how balanced growth happens and why it is important for political development. Then I provide some historical \hyperref[chile:case]{context} using the Chilean case to illustrate the theory. I try to pay especial attention to how the series of inter-elite bargains that surrounded the implementation of the income tax also fostered institutional development and state-\emph{making}. Next, I present some econometric \hyperref[methods]{evidence}, putting especial attention to the relationship between institutional development, particularly, fiscal expansion and long-term balanced growth. Finally, I provide some ending \hyperref[discussion]{comments}.
 
 
 \section{Structural Transformations and the Dual Sector Economy Model}\label{dual:sector}
@@ -300,22 +290,64 @@ Given that ``it is often difficult to draw any conclusions from the large number
 
 
  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion\label{discussion}}
 
-I have argued that the emergence of the industrial sector caused political development by rising a political challenger. The argument differs deeply from modernization theory. What causes political development is not industrialization \emph{per se}, but the development of a productive landed elite which supplied labor and cheap foodstuff to the modern sector, promoting \emph{balanced} economic development between the \emph{two} sectors. In turn, balanced growth politically empowered \emph{both} economic elites. When there were weak inter-sectoral linkages and lack of economic complementarity between the two sectors, countries not only failed to grow, but also produced uncontested political environments, and investments in political institutions were less likely. The radical transformation of the economy is a precondition for political development.
+
+Historically, agriculturalists were a hegemonic group protected by norms and institutions since colonial times. However, the emergence of the industrial sector imposed tight constraints on the way politics was run by the incumbent landowning class. The emergence of the industrial sector lowered the levels of inter-sectoral inequality making possible higher levels of inter-sectoral contestation, forcing industrial and agricultural political elites to make institutional agreements. I identify one such compromise, the implementation of the income tax. The tax was the keystone of a series of other inter-elite compromises that fostered the expansion of the state. While agriculturalists had systematically resisted income taxation on themselves, industrialists' preferences toward taxation were more elastic as capital could be reinvested in nontaxable sectors. 
 
 
-\clearpage
+The Chilean case suggests that while industrial elites were being excluded from politics, they accepted to be income taxed in exchange of being allowed to participate in politics under fairer conditions. There were positive externalities for state-making surrounding the implementation of the income tax law. As the Chilean cases shows, these series of inter-elite bargains helped the state to expand its dominion by offering different and new state services, improving the bureaucracy, and critically bonding conflicting elites in an path of mutual institutional compliance. 
 
+
+The main argument is that this new institutional order fostered long-run economic development. I find that before the income tax law, the institutional order was designed to give unfair economic advantages to the agricultural sector. The new institutional order in which the income tax was situated reverted that. When the industrial sector was strong, the implementation of the income tax put countries in a path of long-run economic development. However, when the industrial sector was weak, the income tax did not reflect these economic cleavages. In these cases, the levels of sectoral conflict were low, and agricultural elites were never challenged. The old institutional order was not challenged. An untransformed elite structure permitted unbalanced growth reinforcing the political and economic advantages of the landed elites.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% word count
+\newpage
+<<wordcount, echo=FALSE, cache=FALSE>>=
+if (!require("pacman")) install.packages("pacman"); library(pacman)
+p_load(knitr)
+
+comma <- function (x, ...) {
+  format(x, ..., big.mark = ",", scientific = FALSE, trim = TRUE)
+} 
+
+# To dynamically extract name of the current file, use code below 
+nameoffile <- current_input() # get name of file
+nof2 <-  strsplit(nameoffile,"\\.")[[1]][1] # extract name, drop extension
+noftex <- paste(nof2, ".tex", sep="") # add .tex extension
+systemcall <- paste("system('texcount -inc -incbib -total -sum ", noftex, "', intern=TRUE)", sep="") # paste together texcount system command  
+texcount.out <- eval(parse(text=systemcall)) # run texcount on current last compiled .tex file
+
+sum.row <- grep("Sum count", texcount.out, value=TRUE) # extract row
+pattern <- "(\\d)+" # regex pattern for digits
+
+count <- regmatches(sum.row, regexpr(pattern, sum.row) ) 
+# extract digits
+
+count <- comma(as.numeric(count)) # add comma
+@
+
+\begin{center}
+\vspace*{\stretch{1}}
+\dotfill
+\dotfill {\huge {\bf Word count}: \Sexpr{count}} \dotfill
+\dotfill
+\vspace*{\stretch{1}}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\newpage
+%\clearpage
+%\Needspace{5\baselineskip}
 \section{Appendix}
 
 % reset counter for appendix
 \subimport{/Users/hectorbahamonde/RU/Bibliografia_PoliSci/}{LaTeX_Reset_Counter_For_Appendix}
-
-
-
-
 
 
 
@@ -456,50 +488,5 @@ I have argued that the emergence of the industrial sector caused political devel
 \bibliographystyle{plainnat}
 
 
-<<wordcount, echo=FALSE, cache=FALSE>>=
-if (!require("pacman")) install.packages("pacman"); library(pacman)
-p_load(knitr)
-
-comma <- function (x, ...) {
-  format(x, ..., big.mark = ",", scientific = FALSE, trim = TRUE)
-} 
-
-# To dynamically extract name of the current file, use code below 
-nameoffile <- current_input() # get name of file
-nof2 <-  strsplit(nameoffile,"\\.")[[1]][1] # extract name, drop extension
-noftex <- paste(nof2, ".tex", sep="") # add .tex extension
-systemcall <- paste("system('texcount -inc -incbib -total -sum ", noftex, "', intern=TRUE)", sep="") # paste together texcount system command  
-texcount.out <- eval(parse(text=systemcall)) # run texcount on current last compiled .tex file
-
-sum.row <- grep("Sum count", texcount.out, value=TRUE) # extract row
-pattern <- "(\\d)+" # regex pattern for digits
-
-count <- regmatches(sum.row, regexpr(pattern, sum.row) ) 
-# extract digits
-
-count <- comma(as.numeric(count)) # add comma
-@
-
-\begin{center}
-\vspace*{\stretch{1}}
-\dotfill
-\dotfill {\huge {\bf Word count}: \Sexpr{count}} \dotfill
-\dotfill
-\vspace*{\stretch{1}}
-\end{center}
-
 
 \end{document}
-
-
-
- %- the emergence of the industrial sector lowered the levels of inter-sectoral inequality making possible higher levels of inter-sectoral contestation, forcing industrial and agricultural political elites to make institutional agreements
-
-
-%- the implementation of the income tax.
-
-%- I study how the implementation of the income tax set states in a path of political development causing long-term modern (i.e. balanced) economic growth (see Figure 1).14 Given that each economic sector has a corresponding political arm, the sectoral conflict is also a political conflict.
-
-%- the crux of the argument is that the economic structural transformation characterized by “a secular decline of agriculture and substantial expansion of manufacturing”16 imposed tight constraints on the way politics was run by the incumbent landowning class. These gradual long-term changes not only altered the structure of the economy but also the balance of political power. In particular, lower levels of inter-elite inequality expressed in balanced economic growth put both sectors in an equilibrium of economic interdependence, where no sector predominated. The political correlate is that if both sectors grew in a balanced fashion, there was no leading elite, in turn reinforcing the need to sustain levels of political cooperation.
-
-
