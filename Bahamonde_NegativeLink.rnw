@@ -492,3 +492,11 @@ count <- comma(as.numeric(count)) # add comma
 
 
 \end{document}
+
+
+
+\citet[3]{Johnson2017}: `Institutions matter because they structure the incentives that direct economic activity into either socially productive or unproductive ends.'
+
+\citet[3]{Johnson2017}: `State capacity provides one answer to this question. Economies governed by strong, cohesive, and constrained states are better able to overcome vested interests and avoid disastrous economic policies, while societies ruled by weak states are prone to rent- seeking, corruption and civil war. State capacity, therefore, can complement market-supporting institutions in providing a conducive setting for economic development.'
+
+\citet[3]{Johnson2017}: `As Adam Smith also understood, powerful states can also impede economic growth and produce economic stagnation. The link between greater state capacity and sustained economic growth is contingent: it depends on whether state policies complement markets and market-supporting institutions. The experience of the twentieth century teaches that attempts to build state capacity in the absence of the rule of law or a market economy have failed to generate sustained economic growth.' (see for example Grier2016 and synthetic Venezuela.)
