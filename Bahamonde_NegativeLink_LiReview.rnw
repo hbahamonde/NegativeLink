@@ -440,6 +440,8 @@ State-building scholars emphasize the role of economic development as a prerequi
 
 		\citet{Todaro1969}: Starts by criticizing the `one-stage' rural-urban migration, proposing a `two-stage' model. ``The first state finds the unskilled rural worker migrating to an urban area and initially spending a certain period of time in the so-called `urban traditional' sector. The second stage is reached with the eventual attainment of a more permanent sector job.''
 
+		The structural transformation affected the labor structure as well. In fact, \citet[134-135]{Harris1970} explain that while ``the creation of an additional job in the urban area reduces agricultural output through induced migration,'' the opposite is not true.\footnote{See also \citet[280]{Johnston1966}.} This implies that agriculture-industry productivity differentials ``may even increase with development.''\footnote{\citet[110]{Kelley:1972zl}.} Actually, \citet{Serrano2016} find that in Latin America there has been a declining role of agricultural exports as industrialization levels have increased. That said,
+
 		\citet[464]{Ghosh2007}: ``Wage differentials across sectors are therefore also accompanied by effort differentials across sectors. Changes in effort levels as labour moves between sectors can produce much larger gains from intersectoral resource reallocations accompanying growth.'' % They're saying that BESIDES wage differentials being an explanation for inter-sectoral labor transference, wages also explain `effort', and hence `productivity.'
 
 		% reasons to migrate.
