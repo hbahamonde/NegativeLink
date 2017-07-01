@@ -1,6 +1,9 @@
 \citet{Waldner:1999aa} studies how the formation of a modern state should coincide with the incorporation of lower classes to produce developmental states,
 
 
+Following \citet[311]{Jorgenson1961}, \citet[59]{Ranis:1964uq}, \citet[291]{Jorgenson1967}, \citet[279-280]{Skott1998} and \citet[290]{Vollrath2009a}, the industrial sector is assumed to use capital and labor (having both increasing returns to scale). And while the agriculture sector also needs capital,\footnote{\citet[40]{Federico:2008xd}.} I follow conventional wisdom in development economics and assume that agriculture uses land (which is fixed) as the main input, and labor. This implies that the industrial sector is \emph{structurally} advantaged: the fixity of land requires countries to industrialize in order to grow, and for that they need first an efficient agricultural sector. This insight is shared by many other development economists.
+
+
 % Methods
 
 	% lags
@@ -440,7 +443,7 @@ State-building scholars emphasize the role of economic development as a prerequi
 
 		\citet{Todaro1969}: Starts by criticizing the `one-stage' rural-urban migration, proposing a `two-stage' model. ``The first state finds the unskilled rural worker migrating to an urban area and initially spending a certain period of time in the so-called `urban traditional' sector. The second stage is reached with the eventual attainment of a more permanent sector job.''
 
-		The structural transformation affected the labor structure as well. In fact, \citet[134-135]{Harris1970} explain that while ``the creation of an additional job in the urban area reduces agricultural output through induced migration,'' the opposite is not true.\footnote{See also \citet[280]{Johnston1966}.} This implies that agriculture-industry productivity differentials ``may even increase with development.''\footnote{\citet[110]{Kelley:1972zl}.} Actually, \citet{Serrano2016} find that in Latin America there has been a declining role of agricultural exports as industrialization levels have increased. That said,
+		The structural transformation affected the labor structure as well. In fact, \citet[134-135]{Harris1970} explain that while ``the creation of an additional job in the urban area reduces agricultural output through induced migration,'' the opposite is not true.\footnote{See also \citet[280]{Johnston1966}.} This implies that agriculture-industry productivity differentials ``may even increase with development.''\footnote{\citet[110]{Kelley:1972zl}.} 
 
 		\citet[464]{Ghosh2007}: ``Wage differentials across sectors are therefore also accompanied by effort differentials across sectors. Changes in effort levels as labour moves between sectors can produce much larger gains from intersectoral resource reallocations accompanying growth.'' % They're saying that BESIDES wage differentials being an explanation for inter-sectoral labor transference, wages also explain `effort', and hence `productivity.'
 
@@ -467,7 +470,11 @@ State-building scholars emphasize the role of economic development as a prerequi
 	% assumptions of the Harris-Todaro Model
 	\citet[65]{Calvo1978}: ``countries where there is a sector (urban sector) with an above-equilibrium minimum wage, side by side with another (rural sector) in which wages are determined by competitive forces. The urban sector is characterized by the fact that the unemployed workers of that sector have a positive probability of getting a job there, thus giving rise to search unemployment which equilibrium level is determined by the assumption that job seekers will migrate to the urban sector until expected wage in the latter is equalized to the rural wage. One of the crucial assumptions of that model is the existence of an exogenously determined (and binding) minimum wage in the urban sector.''
 
+Finally, it is important to say that ``the agricultural sector declines relative to the overall economy but continues to expand absolutely.''\footnote{\citet[14]{Nerlove1994}.} In other words, it is the ``the proportional contribution of agriculture to the growth''\footnote{\citet[45]{Kuznets1961a}.} that decays, implying that in the long run the agricultural sector ``must also grow,''\footnote{\citet[534]{Ranis1961}.} especially given the continuing dependence on a constant supply of food.\footnote{\citet[2]{Nicholls1963}.} Consequently, balanced growth does not imply `equal' growth, but rather a long-run inter-sectoral dependence.
 
+
+% social transformations
+Dixit in \citet[328]{Mirrlees1973a}: ``With these transformations come important social and economic changes. Increased urbanisation brings about increased commercialisation of economic activities, which is made possible by increased monetisation. This promotes development of capital markets, and allows easier intersectoral movements of savings. There is more transport activity. All these factors lead to an increase in the share of services in national product''.
 
 % Assumptions
 
