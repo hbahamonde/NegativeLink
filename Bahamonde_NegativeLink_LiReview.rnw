@@ -3,6 +3,7 @@
 
 Following \citet[311]{Jorgenson1961}, \citet[59]{Ranis:1964uq}, \citet[291]{Jorgenson1967}, \citet[279-280]{Skott1998} and \citet[290]{Vollrath2009a}, the industrial sector is assumed to use capital and labor (having both increasing returns to scale). And while the agriculture sector also needs capital,\footnote{\citet[40]{Federico:2008xd}.} I follow conventional wisdom in development economics and assume that agriculture uses land (which is fixed) as the main input, and labor. This implies that the industrial sector is \emph{structurally} advantaged: the fixity of land requires countries to industrialize in order to grow, and for that they need first an efficient agricultural sector. This insight is shared by many other development economists.
 
+To address this situation, industrialists started to ``form trade associations to engage in lobbying and propaganda.''\footnote{\citet[107]{Weaver:1980vn}.} Eventually, these interests groups turned into political parties.\footnote{\citet[109]{Collier:2002db}.}
 
 % Methods
 
