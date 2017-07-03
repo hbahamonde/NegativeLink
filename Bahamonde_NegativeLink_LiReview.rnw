@@ -5,6 +5,12 @@ Following \citet[311]{Jorgenson1961}, \citet[59]{Ranis:1964uq}, \citet[291]{Jorg
 
 To address this situation, industrialists started to ``form trade associations to engage in lobbying and propaganda.''\footnote{\citet[107]{Weaver:1980vn}.} Eventually, these interests groups turned into political parties.\footnote{\citet[109]{Collier:2002db}.}
 
+
+it is necessary ``a particular kind of model.''\footnote{\citet[571]{Wooldridge2002}. Cointegrated vectors, ECM and VAR models are widely common in political science too. Just to mention some examples, refer to \citet{Ostrom1992}, \citet{Krause1997}, \citet{Fish2007}, \citet{Haber2011}, \citet{Sobel2011}, \citet[489]{Herzer2012} and \citet{Blaydes2011}.} If traditional methods are used, given the interdependent relationship of these kinds of time-series, the results will be spurious.\footnote{\citet[142-143]{Ostrom1992}.} 
+
+
+`Unit root' or `integrated' \emph{I(1)} vectors\footnote{The order of integration could be higher than 1. However, for simplicity sake, I restrict my analyses to I(1) processes, which is the most common strategy in applied econometric analyses of time series.} are time-series that ``wander'' up and down, yet they never reverse to a given mean.\footnote{\citet[129]{Box-Steffensmeier:2014fe}.} In other words, these are series whose innovations do not dissipate, but persist in time. And such, analysts usually study economic growth using this methodological framework. \footnote{See \citet{Granger1981} and \citet{Engle1987}).} A ``set of integrated time-series is said to be cointegrated if some linear combination of the series in levels produces a stationary series,'' or \emph{I(0)}.\footnote{\citet[193]{Durr1992}.} 
+
 % Methods
 
 	% lags
