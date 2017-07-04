@@ -17,7 +17,7 @@
 \textsc{H\'ector Bahamonde, PhD}\\ 
 \thanks{I thank Robert Kaufman, Daniel Kelemen, Douglas Blair, Paul Poast, John Landon-Lane, Mark Pickup, Paul Kellstedt, Henry Thomson, Quintin Beazer and Ira Gang for all the helpful comments. I also thank the participants of the 75th Annual Conference of the Midwest Political Science Association, the School of Arts and Sciences and the Political Science Department at Rutgers for granting me a Pre-Dissertation Award (2016) that helped me to continue with this project. All errors are my own.}
 \normalsize Postdoctoral Fellow $\bullet$ Center For Inter-American Policy \& Research $\bullet$ Tulane University\\
-\normalsize \texttt{e:}\href{mailto:hector.bahamonde@rutgers.edu}{\texttt{hector.bahamonde@rutgers.edu}}\\
+\normalsize \texttt{e:}\href{mailto:bahamondeh@gmail.com}{\texttt{bahamondeh@gmail.com}}\\
 \normalsize \texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}
 \vspace{-5mm}
 }
