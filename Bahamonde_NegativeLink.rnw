@@ -17,7 +17,7 @@
 \textsc{H\'ector Bahamonde, PhD}\\ 
 \thanks{I thank Robert Kaufman, Daniel Kelemen, Douglas Blair, Paul Poast, John Landon-Lane, Mark Pickup, Paul Kellstedt, Henry Thomson, Quintin Beazer and Ira Gang for all the helpful comments. I also thank the participants of the 75th Annual Conference of the Midwest Political Science Association, the School of Arts and Sciences and the Political Science Department at Rutgers for granting me a Pre-Dissertation Award (2016) that helped me to continue with this project. All errors are my own.}
 \normalsize Postdoctoral Fellow $\bullet$ Center For Inter-American Policy \& Research $\bullet$ Tulane University\\
-\normalsize \texttt{e:}\href{mailto:bahamondeh@gmail.com}{\texttt{bahamondeh@gmail.com}}\\
+\normalsize \texttt{e:}\href{mailto:\filetext}{\texttt{\filetext}}\\
 \normalsize \texttt{w:}\href{http://www.hectorbahamonde.com}{\texttt{www.hectorbahamonde.com}}
 \vspace{-5mm}
 }
@@ -74,6 +74,7 @@ read_chunk('/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/NegativeL
 \section{Sectoral Conflicts and Development}
 
 \epigraph{\emph{Practically all governments are engaged in promoting one [group]. There are [...] landlord governments against the peasants and the industrialists}}{\citet[410]{Lewis:1965nr}}
+
 
 % literature says growth <- democracy \\ I propose an alternative question \\ argument
 The literature on political and economic development is vast. Without trying to survey all of it, there seems to be an agreement in that strong institutions cause better economic performance. For example \citet[3]{North:1990vl} asserts that the idea that ``institutions affect the performance of economies is hardly controversial.'' However, most explanations focus property rights protection.\footnote{\citet{Johnson2016}.} I find that this is a limitation since regimes that do not respect property rights still grow at levels that sometimes even surpass democratic countries. While I still think that institutions matter for economic growth, this paper seeks to contribute to the literature by emphasizing the role of sectoral conflicts on political \emph{and} economic development. I build on the \emph{fiscal sociology} paradigm to argue that fiscal institutions, which are the engine of state-\emph{making}, are product of a sectoral conflict. Borrowing from the \emph{dual sector} model, I document how the secular structural transformation (the gradual emergence of the industrial sector) reversed the backward institutional order implemented since colonial times, producing long-term balanced economic growth. More generally, the paper explains how political development is associated with economic growth. I use sectoral outputs from $\Sexpr{min(chile.dat$year)}$ to $\Sexpr{max(chile.dat$year)}$ to proxy the emergence of the industrial sector in a number of Latin American countries,\footnote{The actual data availability might vary by case.} vector autoregressive models (VAR), Granger-causality tests, impulse response functions (IRFs) and the Chilean case to illustrate the causal mechanisms. The results suggest that long-term economic development is channeled through sectoral contestation and institutional investments, particularly the expansion of the fiscal system.
