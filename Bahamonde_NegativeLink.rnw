@@ -86,7 +86,7 @@ I argue that the context in which countries implemented the income tax law was a
 % "First, governments provide the administrative infrastructure that supports a well-functioning market economy: secure property rights, market regulations, and quick and fair legal resolution." Dincecco2015a, 2.
 
 \begin{figure}[h]
-\includegraphics[scale=.75, center]{causal_path.pdf}
+\includegraphics[scale=.75, center]{/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/causal_path.pdf}
 \caption{Causal Mechanism\label{causal:mechanism:fig}}\centering
 \end{figure}
 
