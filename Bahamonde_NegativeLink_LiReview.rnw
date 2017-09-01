@@ -596,6 +596,9 @@ Dixit in \citet[328]{Mirrlees1973a}: ``With these transformations come important
 		- ``Keller y Wright encontraron en el cultivo de trigo, cebada y avena después de 1910 co- rresponde sólo a la última parte de la Era del Salitre y no puede ser considerado una caracterización fidedigna de las tendencias en el con- junto del periodo y para todo el sector agropecuario''
 
 
+	\citet[]{Ansell2010} ``assume a closed economy: They make no provision in their contractarian approach for the increased sales of land to foreigners and for the new forms of inequality that financial integration produces.'' % in Freeman2012, p. 60.
+
+
 		% el sector agricola era moderno y mecanizado.
 			\citet{Robles-Ortiz2009a}: ``demuestra que el fomento a la mecanización fue un elemento central de la estrategia que esta organización empresarial adoptó para impulsar la modernización tecnológica en la agricultura''
 
