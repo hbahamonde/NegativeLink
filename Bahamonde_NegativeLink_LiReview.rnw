@@ -579,6 +579,12 @@ Dixit in \citet[328]{Mirrlees1973a}: ``With these transformations come important
 
 		\citet[p. 179]{Bertola2012}: ``The criticisms that have traditionally been leveled at the Latin American industrialization process have focused on three issues: its anti-agriculture and anti-export biases and the macroeconomic imbalances that characterized it. A thorough analysis does not, however, corroborate the first of these traits and indicates that the second and third features were present in no more than a limited group of countries. Agriculture was not, in fact, sidelined from the growth trends in production and productivity or from the dynamic institution-building process of the time-''.
 
+			\citet[52-53]{Hirschman:1958aa}: ``One of the most curious aspects of the theory is the way in which it combines a defeatist attitude toward the capabilities of underdeveloped economies with completely unrealistic expectations about their creative abilities.''
+
+			\citet[53]{Hirschman:1958aa}: ``a people that is assumed to be unable to do any of these things and that is therefore entirely uninterested in change and satisfied with its lot is then expected to marshal sufficient entrepreneurial and managerial ability to set up at the same time a whole flock of industries.''
+
+			\citet[53]{Hirschman:1958aa}: ``if a country were ready to apply the doctrine of balanced growth, then it would not be underdeveloped in the first place.''
+
 		\citet[]{Matsuyama1991}
 
 		\citet[]{Matsuyama1992}: ``the positive effects of agricultural productivity on industrialization occur only in closed economies, while in open economies a comparative advantage in agriculture can slow down industrial growth. This is because labor reallocates towards the agricultural sector, reducing the size of the industrial sector and its scope to benefit from external scale economies.'' (in \citet{Bustos2016})
