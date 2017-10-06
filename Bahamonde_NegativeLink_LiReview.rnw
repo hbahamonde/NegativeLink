@@ -442,7 +442,7 @@ State-building scholars emphasize the role of economic development as a prerequi
    % technical progress is needed.
    \citet[188]{Kaldor1962}: their ``models shows technical progress [...] as the main engine of economic growth, determining not only the rate of growth of productivity but - together with other parameters - also the rate of obsolescence, the average lifetime of equipment, the share of investment in income, the share of profits, and the relationship between investments and potential output.''
 
-
+Similarly, \citet{Johnson2017} find that the link between state capacities and economic growth is conditional on several factors (population size, culture, population homo(hetero)geneity, among others). However, in my account, the role of the income tax is conditioned on the degree of intersectoral conflicts, which I measure via the size of the industrial sector.
 
 % Industrial/Agricultural Wage Differentials // Urban-City Migration
 
