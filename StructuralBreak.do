@@ -481,11 +481,10 @@ use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
 
 * Keeping one country
 drop if year <1900
-keep if country==13 & year<=1965
+keep if country==13 & year<=1925
 
 * SOURCE confirming that the law was passed:
-* \citet[130-133]{DiazGonzalez2013}: "En México, la historia fiscal se puede dividir en dos segmentos, en el primero los ingresos fiscales dependen crucialmente de impuestos indirectos, esto se prolonga hasta 1963-1965; a partir de ese año los ingresos tributarios empiezan de nuevo a depender de los impuestos sobre el ingreso [...] La reforma fiscal que entró en vigor a partir de 1965 suprimió el impuesto cedular y se implantó el impuesto al ingreso global de las empresas e impuestos al ingreso de las personas físicas, entre otros cambios relativos a las ganancias de capital, dividendos pagados, amortización de pérdidas y utilidades excedentes."
-
+* "Obregón, using his emergency powers, decreed two direct taxes: the federal property tax (FPT) (impuesto del uno al millar) in 1922 and the income tax (impuesto sobre la renta) in 1924" (in UndaGutierrez2017, p. 2). However, it was modernized (and eventually, the next year some modifications were made, and ultimately, it is this institution the one that persisted): "To this end, Calles decreed the income tax in March 1925 replacing the tax on wages, salaries and profits (ISSU) that Obregón had decreed." (in UndaGutierrez2017, p. 8).
 
 * set ts data
 tsset, clear
@@ -496,12 +495,13 @@ tsline constagricult constmanufact, subtitle("Pre Income Tax") xtitle("") ytitle
 
 ** MacKinnon approximate sign. p-value = stationarity
 dfuller constmanufact, lag(1) reg // I(1)
-dfuller constagricult, lag(1) reg // I(1)
-* Phillips-Perron
+dfuller constagricult, lag(1) reg // sign. p-value = stationarity
+* Phillips-Perron // sign. p-value = stationarity
 pperron constmanufact, lag(1) // I(1)
-pperron constagricult, lag(1) // I(1)
+pperron constagricult, lag(1) // sign. p-value = stationarity
 * kpss
-kpss constagricult, auto
+* null hypothesis of stationarity \\ statistic > critical value = nonstationary/integrated/unit root
+kpss constagricult, auto // nonstationary
 kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)
@@ -511,8 +511,8 @@ var d.constmanufact d.constagricult, lags(1)
 	varstable, graph
 
 vargranger 
-// IND -> AGR (.001)
-// AGR -> IND (.393)
+// IND -> AGR (0.090)
+// AGR -> IND (0.508)
 
 * IRF
 irf create Mexico, step(5) set(Mexico, replace)
@@ -530,7 +530,7 @@ cd "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink"
 use "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/data.dta", clear
 
 * Keeping one country
-keep if country==13 & year>1965
+keep if country==13 & year>1925
 
 * set ts data
 tsset, clear
@@ -545,7 +545,7 @@ dfuller constagricult, lag(1) reg // I(1)
 * Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-* kpss
+* kpss // critical value > test = significance
 kpss constagricult, auto
 kpss constmanufact, auto
 
@@ -556,8 +556,8 @@ var d.constmanufact d.constagricult, lags(1/2)
 	varstable
 
 vargranger
-// IND -> AGR (.518)
-// AGR -> IND (.062)
+// IND -> AGR (0.124)
+// AGR -> IND (0.088)
 
 
 
@@ -590,7 +590,7 @@ tsset, clear
 tsset year, yearly
 
 reg constmanufact constagricult
-estat sbknown, break(1965) breakvars(constagricult)
+estat sbknown, break(1925) breakvars(constagricult)
 
 
 * All periods
@@ -610,7 +610,7 @@ dfuller constagricult, lag(1) reg
 *
 pperron constmanufact, lag(1) 
 pperron constagricult, lag(1) 
-* kpss
+* kpss // critical value > test = significance
 kpss constagricult, auto
 kpss constmanufact, auto
 * Johansen's test
@@ -645,7 +645,7 @@ dfuller constagricult, lag(1) reg // I(1)
 * Phillips-Perron
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
-* kpss
+* kpss // critical value > test = significance
 kpss constagricult, auto
 kpss constmanufact, auto
 
@@ -691,7 +691,7 @@ dfuller constagricult, lag(1) reg // I(1)
 pperron constmanufact, lag(1) // I(1)
 pperron constagricult, lag(1) // I(1)
 * kpss
-kpss constagricult, auto
+kpss constagricult, auto // 
 kpss constmanufact, auto
 
 var d.constmanufact d.constagricult, lags(1)

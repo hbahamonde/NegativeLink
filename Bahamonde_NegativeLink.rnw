@@ -239,10 +239,10 @@ In \autoref{granger:table} I test for Granger-causality both prior to and after 
 \\                            & \multirow{2}{*}{Post} & \multirow{2}{*}{1937 - 2010}  & Agriculture $\rightarrow$ Industry & .18 & 0.91 \\
 \\                            &                       &                               & Industry $\rightarrow$ Agriculture & 1.37 & 0.50 \\
 \hline
-\\\multirow{4}{*}{Mexico} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1965}  & Agriculture $\rightarrow$ Industry & .73 & 0.39 \\
-\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 11.57 & 0.00 \\ [.2em]\cline{2-6}
-\\                        & \multirow{2}{*}{Post} & \multirow{2}{*}{1969 - 2009}  & Agriculture $\rightarrow$ Industry & 5.56  & 0.06 \\
-\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 1.32 &  0.52 \\
+\\\multirow{4}{*}{Mexico} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1925}  & Agriculture $\rightarrow$ Industry & .438  &  0.508 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 2.86  & 0.090 \\ [.2em]\cline{2-6}
+\\                        & \multirow{2}{*}{Post} & \multirow{2}{*}{1925 - 2009}  & Agriculture $\rightarrow$ Industry & 4.86  & 0.08 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 4.18  & 0.12 \\
 \hline
 \\\multirow{4}{*}{Nicaragua}  & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1923 - 1974}  & Agriculture $\rightarrow$ Industry & .48 & 0.79 \\
 \\                            &                       &                               & Industry $\rightarrow$ Agriculture & 6.83 & 0.03 \\ [.2em]\cline{2-6}
@@ -413,7 +413,7 @@ count <- comma(as.numeric(count)) # add comma
 \\[.1em] Argentina & 1900 - 2010 & 1933 & \emph{Ley} 11682 & \href{https://goo.gl/UkWq7W}{Infoleg.Gob.Ar} (official) \\ 
 \\[-.5em] 
 \hline 
-\\[.1em] Mexico & 1900 - 2009 & 1965 & \emph{Ley de Impuesto sobre la Renta} & \citet[130-133]{DiazGonzalez2013} and \href{https://goo.gl/A3zDVJ}{Diario Oficial} (official) \\ 
+\\[.1em] Mexico & 1900 - 2009 & 1925 & \emph{Ley de Impuesto sobre la Renta} & \citet[8]{UndaGutierrez2017} \\ 
 \\[-.5em] 
 \hline 
 \\[.1em] Nicaragua & 1920 - 2009 & 1974 & \emph{Ley} 662 & \href{https://goo.gl/JGcA9p}{Legislacion.Asamblea.Gob.Ni} (official)\\ 
@@ -459,12 +459,12 @@ count <- comma(as.numeric(count)) # add comma
 \\                        &                         & Industry    & 0.228 (0.97) & 0.381 (0.98) & .0901$^{\dagger}$ & I(1)\\[.2em]\cline{3-7}                  
 \\                        & \multirow{2}{*}{All}  & Agriculture & 1.484 (0.99)  & 1.401 (0.99) & .332 & I(1)\\
 \\                        &                         & Industry    & 1.007 (0.99) & 1.237 (0.99) & .183 & I(1)\\[.2em]\cline{2-7}
-\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  & Agriculture & 4.601 (1.00) & 5.552 (1.00) & .288 & I(1)\\
-\\                        &                         & Industry & 5.803 (1.00) & 10.776 (1.00) & .29 & I(1)\\[.2em]\cline{3-7}  
-\\                        & \multirow{2}{*}{Post} & Agriculture & 0.599 (0.9876) & 0.497 (0.99) & .109$^{\dagger}$ & I(1)\\
-\\                        &                         & Industry   & -1.255 (0.65) & -0.982 (0.76) & .113$^{\dagger}$ & I(1)\\[.2em]\cline{3-7}                        
-\\                        & \multirow{2}{*}{All}  & Agriculture & 3.431 (1.00) & 3.607 (1.00) & .341 & I(1)\\
-\\                        &                         & Industry  & 0.672 (0.99) & 2.020 (0.99) & .367 & I(1)\\[.2em]\cline{2-7}
+\\\multirow{6}{*}{Mexico}& \multirow{2}{*}{Pre}  	& Agriculture 	& -3.073 (0.03)	& -3.146 (0.02)  & .156$^{\dagger}$ & Stationary \\
+\\                        &                         & Industry 		& 1.575 (0.99)	& 1.422 (0.99)  & .171$^{\dagger}$ & I(1) \\[.2em]\cline{3-7}  
+\\                        & \multirow{2}{*}{Post} & Agriculture 	& 1.961 (0.99)  & 2.064 (0.99)	& .161$^{\dagger}$ & I(1) \\
+\\                        &                         & Industry   	& 0.169 (0.97) 	& 1.120 (0.99)  & .313$^{\dagger}$ & I(1) \\[.2em]\cline{3-7}                        
+\\                        & \multirow{2}{*}{All}  & Agriculture & 3.431 (1.00)  & 3.607 (1.00)  & .341 & I(1) \\
+\\                        &                         & Industry  &  0.672 (0.98)  & 2.020 (0.99)  & .367 & I(1) \\[.2em]\cline{2-7}
 \\\multirow{6}{*}{Nicaragua}& \multirow{2}{*}{Pre}  & Agriculture & 2.473 (0.99) & 2.355 (0.99) & .25 & I(1)\\
 \\                        &                         & Industry    & 4.958 (1.00) & 9.100 (1.00) & .244 & I(1)\\[.2em]\cline{3-7}  
 \\                        & \multirow{2}{*}{Post} & Agriculture & -0.154 (0.94) & 0.154 (0.97) & .2 & I(1)\\
