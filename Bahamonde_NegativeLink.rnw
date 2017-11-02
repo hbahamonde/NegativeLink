@@ -239,10 +239,10 @@ In \autoref{granger:table} I test for Granger-causality both prior to and after 
 \\                            & \multirow{2}{*}{Post} & \multirow{2}{*}{1937 - 2010}  & Agriculture $\rightarrow$ Industry & .18 & 0.91 \\
 \\                            &                       &                               & Industry $\rightarrow$ Agriculture & 1.37 & 0.50 \\
 \hline
-\\\multirow{4}{*}{Mexico} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1925}  & Agriculture $\rightarrow$ Industry & .438  &  0.508 \\
-\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 2.86  & 0.090 \\ [.2em]\cline{2-6}
-\\                        & \multirow{2}{*}{Post} & \multirow{2}{*}{1925 - 2009}  & Agriculture $\rightarrow$ Industry & 4.86  & 0.08 \\
-\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 4.18  & 0.12 \\
+\\\multirow{4}{*}{Mexico} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1925}  & Agriculture $\rightarrow$ Industry & 6.17  &  0.10 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 29.71  & 0.00 \\ [.2em]\cline{2-6}
+\\                        & \multirow{2}{*}{Post} & \multirow{2}{*}{1925 - 2009}  & Agriculture $\rightarrow$ Industry & 8.90  & 0.06 \\
+\\                        &                       &                               & Industry $\rightarrow$ Agriculture & 4.41  & 0.35 \\
 \hline
 \\\multirow{4}{*}{Nicaragua}  & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1923 - 1974}  & Agriculture $\rightarrow$ Industry & .48 & 0.79 \\
 \\                            &                       &                               & Industry $\rightarrow$ Agriculture & 6.83 & 0.03 \\ [.2em]\cline{2-6}
@@ -505,10 +505,10 @@ count <- comma(as.numeric(count)) # add comma
 \\                        & Post  & 2 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
 \\\multirow{2}{*}{Colombia}   & Pre   & 1 & \cmark$^{-}$ & \xmark & \xmark & \xmark & \cmark \\
 \\                            & Post  & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
-\\\multirow{2}{*}{Argentina}  & Pre   & 2 & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\\\multirow{2}{*}{Argentina}  & Pre   & 2 & \cmark$^{-}$ & \cmark & \cmark & \cmark & \cmark \\
 \\                            & Post  & 2 & \cmark & \cmark$^{-}$ & \cmark & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
-\\\multirow{2}{*}{Mexico} & Pre   & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
-\\                        & Post  & 2 & \cmark & \cmark & \cmark & \cmark & \cmark \\[.2em]\cline{3-8}
+\\\multirow{2}{*}{Mexico} & Pre   & 3 & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ \\
+\\                        & Post  & 4 & \cmark$^{-}$ & \cmark$^{-}$ & \cmark & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
 \\\multirow{2}{*}{Nicaragua}  & Pre   & 2 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\
 \\                            & Post  & 1 & \cmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\[.2em]\cline{3-8}
 \\\multirow{2}{*}{Guatemala}  & Pre   & 3 & \cmark & \xmark & \cmark$^{-}$ & \cmark$^{-}$ & \cmark \\

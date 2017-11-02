@@ -504,15 +504,15 @@ pperron constagricult, lag(1) // sign. p-value = stationarity
 kpss constagricult, auto // nonstationary
 kpss constmanufact, auto
 
-var d.constmanufact d.constagricult, lags(1)
+var d.constmanufact d.constagricult, lags(1/3)
 
 	varlmar, mlag(5)
 	varnorm
 	varstable, graph
 
 vargranger 
-// IND -> AGR (0.090)
-// AGR -> IND (0.508)
+// IND -> AGR (0.000)
+// AGR -> IND (0.103)
 
 * IRF
 irf create Mexico, step(5) set(Mexico, replace)
@@ -549,15 +549,15 @@ pperron constagricult, lag(1) // I(1)
 kpss constagricult, auto
 kpss constmanufact, auto
 
-var d.constmanufact d.constagricult, lags(1/2)
+var d.constmanufact d.constagricult, lags(1/4) 
 
 	varlmar, mlag(5)
 	varnorm
 	varstable
 
 vargranger
-// IND -> AGR (0.124)
-// AGR -> IND (0.088)
+// IND -> AGR (0.352)
+// AGR -> IND (0.063)
 
 
 
