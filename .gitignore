@@ -1,8 +1,4 @@
 
-*.dta
-
-*.RData
-
 *.gph
 
 xtwest.do
