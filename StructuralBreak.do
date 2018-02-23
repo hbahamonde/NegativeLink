@@ -949,7 +949,9 @@ graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Structu
 *******************************************************************************************************************************************
 
 
-graph combine Chile_irf_PRE.gph Chile_irf_POST.gph, rows(2) title("Chile") iscale(.6) graphregion(margin(zero)) saving(Chile_IRF_paper.gph, replace)
+graph combine Chile_irf_PRE.gph Chile_irf_POST.gph, rows(2) title("Chile") iscale(.6) graphregion(margin(zero)) saving(Chile_IRF_paper.gph, replace) 
+graph export "/Users/hectorbahamonde/RU/Dissertation/Papers/NegativeLink/Chile_IRF_paper.pdf", replace
+
 graph combine Colombia_irf_PRE.gph Colombia_irf_POST.gph, rows(2) title("Colombia") iscale(.6) graphregion(margin(zero)) saving(Colombia_IRF_paper.gph, replace)
 graph combine Argentina_irf_PRE.gph Argentina_irf_POST.gph, rows(2) title("Argentina") iscale(.6) graphregion(margin(zero)) saving(Argentina_IRF_paper.gph, replace)
 graph combine Mexico_irf_PRE.gph Mexico_irf_POST.gph, rows(2) title("Mexico") iscale(.6) graphregion(margin(zero)) saving(Mexico_IRF_paper.gph, replace)
