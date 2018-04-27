@@ -42,8 +42,8 @@
 
 
 
-\vspace*{1.5cm}\hspace*{1.3cm}{\bf{\color{red}Please consider downloading the last version of the paper \href{https://github.com/hbahamonde/Negative_Link_Paper/blob/master/Bahamonde_NegativeLink.pdf}{here}
-}}
+\vspace*{1.5cm}\hspace*{1.3cm}{\bf Please consider downloading the last version of the paper \href{https://github.com/hbahamonde/Negative_Link_Paper/blob/master/Bahamonde_NegativeLink.pdf}{here}
+}
 
 \vfill
 
@@ -226,7 +226,7 @@ In \autoref{granger:table} I test for Granger-causality both prior to and after 
 \midrule
 \\\multirow{4}{*}{Chile} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1905 - 1924} & Agriculture $\rightarrow$ Industry & 3.55 & 0.47\\
 \\                       &                       &                              & Industry $\rightarrow$ Agriculture & 12.13 & 0.02 \\ [.2em]\cline{2-6}
-\\                       & \multirow{2}{*}{Post} & \multirow{2}{*}{1928 - 2009} & Agriculture $\rightarrow$ Industry & 11.92 & 0.00 \\
+\\                       & \multirow{2}{*}{Post} & \multirow{2}{*}{1925 - 2009} & Agriculture $\rightarrow$ Industry & 11.92 & 0.00 \\
 \\                       &                       &                              & Industry $\rightarrow$ Agriculture & 5.37 & 0.07 \\
 \hline
 \\\multirow{4}{*}{Colombia} & \multirow{2}{*}{Pre}  & \multirow{2}{*}{1902 - 1935} & Agriculture $\rightarrow$ Industry & 4.96 & 0.03 \\
