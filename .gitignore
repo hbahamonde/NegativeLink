@@ -70,3 +70,9 @@ causal_path.pdf
 Bahamonde_NegativeLink\.tex
 
 *.synctex
+
+*.bcf
+
+*.ent
+
+*.xml
