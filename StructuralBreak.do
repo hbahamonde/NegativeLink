@@ -1,5 +1,8 @@
 set more off, permanently
 set scheme s1color, permanently
+* findit kpss
+
+
 
 
 * Chile // pretax
@@ -915,7 +918,8 @@ vecrank constmanufact constagricult, lags(3) max trend(t) // report LL and signi
 ******************************************************************************************************************************************** Structural Breaks Graph
 *******************************************************************************************************************************************
 
-net install grc1leg, replace
+*net install grc1leg1, replace
+net install grc1leg, from(http://www.stata.com/users/vwiggins)
 
 ** this below is just to create a fake Chile plot with a smaller legend.
 clear all
